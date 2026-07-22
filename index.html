@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LeadingEdge | Building Tomorrows</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --forest: #1c3628;
+    --forest-dark: #142720;
+    --cream: #f7f5f0;
+    --cream-2: #efece4;
+    --ink: #1a1a18;
+    --muted: #6b6b63;
+    --line: #e2ded2;
+    --white: #ffffff;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:'Inter',sans-serif;
+    color:var(--ink);
+    background:var(--cream);
+    -webkit-font-smoothing:antialiased;
+  }
+  a{text-decoration:none;color:inherit;}
+  img{display:block;max-width:100%;}
+  .serif{font-family:'Playfair Display',serif;}
+  .container{max-width:1240px;margin:0 auto;padding:0 40px;}
+
+  /* HEADER */
+  header{
+    position:sticky;top:0;z-index:100;
+    background:rgba(247,245,240,0.92);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav-wrap{
+    display:flex;align-items:center;justify-content:space-between;
+    padding:18px 40px;max-width:1240px;margin:0 auto;
+  }
+  .logo{display:flex;align-items:center;gap:12px;}
+  .logo-mark{
+    width:38px;height:38px;border-radius:8px;
+    background:var(--forest);
+    display:flex;align-items:center;justify-content:center;
+  }
+  .logo-mark svg{width:20px;height:20px;}
+  .logo-text .name{font-size:15px;font-weight:700;letter-spacing:1px;line-height:1.1;}
+  .logo-text .tag{font-size:9px;letter-spacing:1.5px;color:var(--muted);}
+  nav ul{display:flex;gap:34px;list-style:none;}
+  nav a{
+    font-size:13px;letter-spacing:0.5px;color:var(--ink);
+    position:relative;padding-bottom:4px;
+    transition:color .2s;
+  }
+  nav a.active{color:var(--forest);font-weight:600;}
+  nav a.active::after{
+    content:'';position:absolute;bottom:-2px;left:0;right:0;height:2px;background:var(--forest);
+  }
+  nav a:hover{color:var(--forest);}
+  .btn{
+    display:inline-flex;align-items:center;gap:8px;
+    padding:12px 22px;border-radius:6px;
+    font-size:12.5px;font-weight:600;letter-spacing:0.5px;
+    cursor:pointer;border:1px solid transparent;
+    transition:all .2s;
+  }
+  .btn-dark{background:var(--forest);color:#fff;}
+  .btn-dark:hover{background:var(--forest-dark);}
+  .btn-outline{background:transparent;border:1px solid var(--ink);color:var(--ink);}
+  .btn-outline:hover{background:var(--ink);color:#fff;}
+  .btn-white{background:#fff;color:var(--forest);}
+  .btn-white:hover{background:var(--cream-2);}
+
+  /* HERO */
+  .hero{
+    position:relative;height:78vh;min-height:560px;max-height:720px;
+    overflow:hidden;
+  }
+  .hero img{
+    width:100%;height:100%;object-fit:cover;
+  }
+  .hero-overlay{
+    position:absolute;inset:0;
+    background:linear-gradient(90deg, rgba(247,245,240,0.97) 0%, rgba(247,245,240,0.88) 30%, rgba(247,245,240,0.15) 58%, rgba(0,0,0,0) 70%);
+  }
+  .hero-content{
+    position:absolute;inset:0;display:flex;align-items:center;
+  }
+  .hero-inner{max-width:560px;padding:0 40px 0 40px;}
+  .eyebrow{
+    font-size:11.5px;font-weight:700;letter-spacing:2px;color:var(--forest);
+    margin-bottom:18px;display:block;
+  }
+  .hero h1{
+    font-size:54px;line-height:1.08;font-weight:500;color:var(--ink);
+    margin-bottom:22px;
+  }
+  .hero h1 em{font-style:italic;color:var(--forest);font-weight:400;}
+  .hero p{
+    font-size:16px;line-height:1.6;color:var(--muted);max-width:420px;margin-bottom:32px;
+  }
+  .hero-btns{display:flex;gap:14px;}
+
+  /* EXPERTISE */
+  .expertise{padding:90px 0 70px;text-align:center;}
+  .section-eyebrow{
+    font-size:11.5px;font-weight:700;letter-spacing:2px;color:var(--forest);
+    display:block;margin-bottom:12px;
+  }
+  .section-title{font-size:36px;font-weight:500;margin-bottom:50px;}
+  .expertise-grid{
+    display:grid;grid-template-columns:repeat(4,1fr);
+    background:var(--white);border:1px solid var(--line);border-radius:10px;
+    overflow:hidden;
+  }
+  .expertise-item{
+    padding:44px 30px;border-right:1px solid var(--line);
+  }
+  .expertise-item:last-child{border-right:none;}
+  .expertise-icon{
+    width:44px;height:44px;margin:0 auto 20px;color:var(--forest);
+  }
+  .expertise-icon svg{width:100%;height:100%;}
+  .expertise-item h3{font-family:'Playfair Display',serif;font-size:20px;font-weight:500;margin-bottom:10px;}
+  .expertise-item p{font-size:13.5px;color:var(--muted);line-height:1.6;}
+
+  /* PROJECTS */
+  .projects{padding:80px 0;}
+  .projects-head{
+    display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:40px;
+  }
+  .projects-head h2{font-size:36px;font-weight:500;}
+  .view-all{
+    font-size:12.5px;font-weight:600;letter-spacing:0.5px;
+    display:flex;align-items:center;gap:8px;color:var(--ink);
+    border-bottom:1px solid var(--ink);padding-bottom:2px;
+  }
+  .project-grid{
+    display:grid;grid-template-columns:repeat(3,1fr);gap:26px;
+  }
+  .project-card{
+    background:var(--white);border-radius:10px;overflow:hidden;border:1px solid var(--line);
+    transition:transform .3s, box-shadow .3s;
+  }
+  .project-card:hover{transform:translateY(-6px);box-shadow:0 20px 40px rgba(28,54,40,0.12);}
+  .project-img{height:230px;overflow:hidden;}
+  .project-img img{width:100%;height:100%;object-fit:cover;transition:transform .5s;}
+  .project-card:hover .project-img img{transform:scale(1.06);}
+  .project-info{
+    padding:22px 24px;display:flex;justify-content:space-between;align-items:center;
+  }
+  .project-info h3{font-family:'Playfair Display',serif;font-size:19px;font-weight:500;margin-bottom:4px;}
+  .project-info span{font-size:12.5px;color:var(--muted);}
+  .arrow-circle{
+    width:34px;height:34px;border-radius:50%;border:1px solid var(--line);
+    display:flex;align-items:center;justify-content:center;flex-shrink:0;
+    transition:background .2s, border-color .2s;
+  }
+  .project-card:hover .arrow-circle{background:var(--forest);border-color:var(--forest);}
+  .project-card:hover .arrow-circle svg{stroke:#fff;}
+
+  /* WHY CHOOSE US */
+  .why{background:var(--cream-2);padding:80px 0;}
+  .why-grid{
+    display:grid;grid-template-columns:0.85fr 1.15fr;gap:60px;align-items:center;
+  }
+  .why-img-wrap{position:relative;}
+  .why-img-wrap img{border-radius:10px;width:100%;height:400px;object-fit:cover;}
+  .why-badge{
+    position:absolute;bottom:24px;right:-20px;
+    background:var(--forest);color:#fff;padding:24px 26px;border-radius:8px;
+    width:150px;
+  }
+  .why-badge .num{font-family:'Playfair Display',serif;font-size:32px;font-weight:600;margin-bottom:4px;}
+  .why-badge .lbl{font-size:12.5px;line-height:1.4;opacity:0.9;}
+  .why h2{font-size:36px;font-weight:500;margin-bottom:34px;}
+  .why h2 em{font-style:italic;color:var(--forest);font-weight:400;}
+  .why-features{
+    display:grid;grid-template-columns:repeat(2,1fr);gap:34px 30px;
+  }
+  .why-feature .f-icon{width:30px;height:30px;color:var(--forest);margin-bottom:14px;}
+  .why-feature .f-icon svg{width:100%;height:100%;}
+  .why-feature h4{font-family:'Playfair Display',serif;font-size:16.5px;font-weight:500;margin-bottom:8px;}
+  .why-feature p{font-size:13px;color:var(--muted);line-height:1.6;}
+
+  /* CTA */
+  .cta{
+    position:relative;padding:100px 0;text-align:center;color:#fff;overflow:hidden;
+  }
+  .cta img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;}
+  .cta::before{
+    content:'';position:absolute;inset:0;background:rgba(15,25,20,0.72);z-index:1;
+  }
+  .cta-content{position:relative;z-index:2;}
+  .cta h2{font-family:'Playfair Display',serif;font-size:38px;font-weight:500;margin-bottom:16px;}
+  .cta p{font-size:15px;opacity:0.85;margin-bottom:32px;line-height:1.6;}
+
+  /* FOOTER */
+  footer{background:var(--cream);padding:70px 0 30px;border-top:1px solid var(--line);}
+  .footer-grid{
+    display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr 1.2fr;gap:30px;margin-bottom:50px;
+  }
+  .footer-about p{font-size:13.5px;color:var(--muted);line-height:1.7;margin:16px 0 20px;max-width:230px;}
+  .social{display:flex;gap:12px;}
+  .social a{
+    width:32px;height:32px;border-radius:50%;border:1px solid var(--line);
+    display:flex;align-items:center;justify-content:center;
+  }
+  .social svg{width:14px;height:14px;}
+  .footer-col h4{font-family:'Playfair Display',serif;font-size:14.5px;font-weight:600;margin-bottom:18px;}
+  .footer-col ul{list-style:none;}
+  .footer-col li{margin-bottom:12px;}
+  .footer-col a{font-size:13.5px;color:var(--muted);}
+  .footer-col a:hover{color:var(--forest);}
+  .contact-item{display:flex;gap:10px;margin-bottom:14px;font-size:13.5px;color:var(--muted);}
+  .contact-item svg{width:15px;height:15px;flex-shrink:0;margin-top:2px;color:var(--forest);}
+  .footer-bottom{
+    display:flex;justify-content:space-between;padding-top:26px;border-top:1px solid var(--line);
+    font-size:12.5px;color:var(--muted);
+  }
+  .footer-bottom .links{display:flex;gap:20px;}
+
+  @media(max-width:980px){
+    nav ul{display:none;}
+    .why-grid, .footer-grid{grid-template-columns:1fr;}
+    .expertise-grid, .project-grid{grid-template-columns:repeat(2,1fr);}
+    .expertise-item{border-right:none;border-bottom:1px solid var(--line);}
+    .hero h1{font-size:38px;}
+    .why-badge{position:static;margin-top:-40px;margin-left:20px;width:fit-content;}
+  }
+  @media(max-width:640px){
+    .container{padding:0 20px;}
+    .nav-wrap{padding:16px 20px;}
+    .expertise-grid, .project-grid{grid-template-columns:1fr;}
+    .hero{height:auto;padding:60px 0;}
+    .hero-inner{padding:0 20px;}
+    .hero-overlay{background:rgba(247,245,240,0.94);}
+    .projects-head{flex-direction:column;align-items:flex-start;gap:14px;}
+    .why-features{grid-template-columns:1fr;}
+    .footer-bottom{flex-direction:column;gap:10px;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="nav-wrap">
+    <a href="index.html" class="logo">
+      <div class="logo-mark">
+        <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6M9 10h.01M15 10h.01M9 14h.01M15 14h.01"/></svg>
+      </div>
+      <div class="logo-text">
+        <div class="name">LEADINGEDGE</div>
+        <div class="tag">BUILDING TOMORROWS</div>
+      </div>
+    </a>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">HOME</a></li>
+        <li><a href="about.html">ABOUT US</a></li>
+        <li><a href="communities.html">COMMUNITIES</a></li>
+        <li><a href="services.html">SERVICES</a></li>
+        <li><a href="index.html#gallery">GALLERY</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+      </ul>
+    </nav>
+    <a href="booking.html" class="btn btn-dark">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M3 10h18M8 2v4M16 2v4"/></svg>
+      BOOK CONSULTATION
+    </a>
+  </div>
+</header>
+
+<section class="hero">
+  <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1800&auto=format&fit=crop" alt="Modern luxury villa exterior">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-inner">
+      <span class="eyebrow">BUILDING LEGACIES</span>
+      <h1 class="serif">Crafting Spaces.<br><em>Elevating Lives.</em></h1>
+      <p>We design and build premium residential and commercial spaces that stand the test of time.</p>
+      <div class="hero-btns">
+        <a href="index.html#gallery" class="btn btn-dark">EXPLORE PROJECTS
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a href="services.html" class="btn btn-outline">OUR SERVICES</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="expertise container">
+  <span class="section-eyebrow">OUR EXPERTISE</span>
+  <h2 class="section-title serif">End-to-End Excellence</h2>
+  <div class="expertise-grid">
+    <div class="expertise-item">
+      <div class="expertise-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 12l9-9 9 9M5 10v10h14V10"/></svg></div>
+      <h3>Residential</h3>
+      <p>Luxury homes designed for comfort and elegance.</p>
+    </div>
+    <div class="expertise-item">
+      <div class="expertise-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 21V7l6-4 6 4v14M14 21V11l6-3v13M8 9h.01M8 13h.01M8 17h.01"/></svg></div>
+      <h3>Commercial</h3>
+      <p>Modern commercial spaces for a growing future.</p>
+    </div>
+    <div class="expertise-item">
+      <div class="expertise-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 21l4-8 3 4 3-6 6 10H4z"/></svg></div>
+      <h3>Communities</h3>
+      <p>Master-planned communities built around you.</p>
+    </div>
+    <div class="expertise-item">
+      <div class="expertise-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 8C8 10 5 13 5 20h2c1-6 4-9 10-10zM11 20c0-3 2-6 6-9"/></svg></div>
+      <h3>Sustainable</h3>
+      <p>Eco-friendly solutions for a better tomorrow.</p>
+    </div>
+  </div>
+</section>
+
+<section class="projects container" id="gallery">
+  <div class="projects-head">
+    <div>
+      <span class="section-eyebrow">FEATURED PROJECTS</span>
+      <h2 class="serif">Spaces That <em style="font-style:italic;color:var(--forest);">Inspire</em></h2>
+    </div>
+    <a href="index.html#gallery" class="view-all">VIEW ALL PROJECTS
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </a>
+  </div>
+  <div class="project-grid">
+    <div class="project-card">
+      <div class="project-img"><img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=900&auto=format&fit=crop" alt="Hillside Villa"></div>
+      <div class="project-info">
+        <div><h3>Hillside Villa</h3><span>Residential</span></div>
+        <div class="arrow-circle"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
+      </div>
+    </div>
+    <div class="project-card">
+      <div class="project-img"><img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?q=80&w=900&auto=format&fit=crop" alt="Maple Grove"></div>
+      <div class="project-info">
+        <div><h3>Maple Grove</h3><span>Residential</span></div>
+        <div class="arrow-circle"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
+      </div>
+    </div>
+    <div class="project-card">
+      <div class="project-img"><img src="https://images.unsplash.com/photo-1600047509358-9dc75507daeb?q=80&w=900&auto=format&fit=crop" alt="Evergreen Heights"></div>
+      <div class="project-info">
+        <div><h3>Evergreen Heights</h3><span>Community</span></div>
+        <div class="arrow-circle"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="why" id="about">
+  <div class="container why-grid">
+    <div class="why-img-wrap">
+      <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=900&auto=format&fit=crop" alt="Luxury interior living room">
+      <div class="why-badge">
+        <div class="num serif">20+</div>
+        <div class="lbl">Years of Excellence</div>
+      </div>
+    </div>
+    <div>
+      <span class="section-eyebrow">WHY CHOOSE US</span>
+      <h2 class="serif">Built on Trust.<br><em>Focused on You.</em></h2>
+      <div class="why-features">
+        <div class="why-feature">
+          <div class="f-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2l8 3v6c0 5-3.5 8.5-8 11-4.5-2.5-8-6-8-11V5l8-3z"/></svg></div>
+          <h4>Quality Assurance</h4>
+          <p>We use premium materials and the best practices.</p>
+        </div>
+        <div class="why-feature">
+          <div class="f-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6M15 14.5c2.5 0 4.5 2 4.5 4.5"/></svg></div>
+          <h4>Expert Team</h4>
+          <p>Experienced professionals delivering outstanding results.</p>
+        </div>
+        <div class="why-feature">
+          <div class="f-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+          <h4>On-Time Delivery</h4>
+          <p>We value your time and deliver as promised.</p>
+        </div>
+        <div class="why-feature">
+          <div class="f-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M11 13l2-2 3 3M2 12l5-5 3 2 5-5M14 3h5v5"/></svg></div>
+          <h4>Client Commitment</h4>
+          <p>We build relationships that last beyond projects.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta" id="contact">
+  <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=1800&auto=format&fit=crop" alt="Modern home at night">
+  <div class="container cta-content">
+    <h2>Let's Build Something Great Together</h2>
+    <p>Whether it's your dream home or a commercial space,<br>we're here to turn your vision into reality.</p>
+    <a href="booking.html" class="btn btn-white">BOOK A CONSULTATION
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#1c3628" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </a>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <a href="index.html" class="logo">
+          <div class="logo-mark">
+            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6M9 10h.01M15 10h.01M9 14h.01M15 14h.01"/></svg>
+          </div>
+          <div class="logo-text">
+            <div class="name">LEADINGEDGE</div>
+            <div class="tag">BUILDING TOMORROWS</div>
+          </div>
+        </a>
+        <p>We are a leading development company creating premium communities and timeless spaces that inspire.</p>
+        <div class="social">
+          <a href="#"><svg viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="1.5"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+          <a href="#"><svg viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+          <a href="#"><svg viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="1.5"><circle cx="4" cy="4" r="2"/><path d="M2 9h4v13H2zM9 9h4v2s1-2 4-2 5 2 5 6v7h-4v-6c0-2-1-3-2.5-3S11 11 11 13v9H9z"/></svg></a>
+          <a href="#"><svg viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M10 9l5 3-5 3z"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="about.html#leadership">Our Team</a></li>
+          <li><a href="contact.html">Careers</a></li>
+          <li><a href="about.html">News &amp; Insights</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html#residential">Residential</a></li>
+          <li><a href="services.html#commercial">Commercial</a></li>
+          <li><a href="communities.html">Communities</a></li>
+          <li><a href="services.html">Sustainable Design</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html#gallery">Projects</a></li>
+          <li><a href="index.html#gallery">Gallery</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <div class="contact-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012 4.2 2 2 0 014 2h3a2 2 0 012 1.7c.1 1 .3 2 .6 3a2 2 0 01-.5 2L8 10a16 16 0 006 6l1.3-1.1a2 2 0 012-.5c1 .3 2 .5 3 .6a2 2 0 011.7 2z"/></svg>
+          <span>+1 (123) 456-7890</span>
+        </div>
+        <div class="contact-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 6l10 7 10-7"/></svg>
+          <span>info@leadingedge.com</span>
+        </div>
+        <div class="contact-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s7-6.5 7-12a7 7 0 10-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>
+          <span>123 Greenway Ave, Suite 100<br>Austin, TX 78701, USA</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 LeadingEdge Developments. All Rights Reserved.</span>
+      <div class="links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Use</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

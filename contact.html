@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact Us | LEADINGEDGE Developments</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&amp;family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-surface": "#1c1b1b",
+                    "surface-container-high": "#ebe7e7",
+                    "inverse-surface": "#313030",
+                    "background": "#fcf9f8",
+                    "surface-variant": "#e5e2e1",
+                    "secondary-fixed-dim": "#e9c176",
+                    "on-primary": "#ffffff",
+                    "tertiary": "#161815",
+                    "on-error": "#ffffff",
+                    "surface-container": "#f0edec",
+                    "on-secondary": "#ffffff",
+                    "on-tertiary-fixed-variant": "#464744",
+                    "surface-tint": "#4d6453",
+                    "surface-container-highest": "#e5e2e1",
+                    "on-secondary-container": "#785a1a",
+                    "surface-bright": "#fcf9f8",
+                    "primary-fixed-dim": "#b4cdb8",
+                    "tertiary-fixed-dim": "#c7c7c2",
+                    "on-tertiary-container": "#93938f",
+                    "surface-container-low": "#f6f3f2",
+                    "primary": "#061b0e",
+                    "outline-variant": "#c3c8c1",
+                    "primary-fixed": "#d0e9d4",
+                    "primary-container": "#1b3022",
+                    "secondary-container": "#fed488",
+                    "on-surface-variant": "#434843",
+                    "on-secondary-fixed-variant": "#5d4201",
+                    "on-secondary-fixed": "#261900",
+                    "inverse-primary": "#b4cdb8",
+                    "tertiary-fixed": "#e3e3de",
+                    "error": "#ba1a1a",
+                    "outline": "#737973",
+                    "secondary-fixed": "#ffdea5",
+                    "on-primary-fixed": "#0b2013",
+                    "on-background": "#1c1b1b",
+                    "tertiary-container": "#2b2c29",
+                    "surface-dim": "#dcd9d9",
+                    "surface-container-lowest": "#ffffff",
+                    "on-error-container": "#93000a",
+                    "surface": "#fcf9f8",
+                    "inverse-on-surface": "#f3f0ef",
+                    "on-tertiary-fixed": "#1b1c19",
+                    "on-primary-fixed-variant": "#364c3c",
+                    "error-container": "#ffdad6",
+                    "on-tertiary": "#ffffff",
+                    "on-primary-container": "#819986",
+                    "secondary": "#775a19"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "section-gap": "120px",
+                    "margin-mobile": "20px",
+                    "gutter": "24px",
+                    "container-max": "1280px",
+                    "base": "8px"
+            },
+            "fontFamily": {
+                    "label-caps": ["Montserrat"],
+                    "display-lg-mobile": ["Playfair Display"],
+                    "headline-md": ["Playfair Display"],
+                    "body-lg": ["Montserrat"],
+                    "hindi-body": ["Montserrat"],
+                    "display-lg": ["Playfair Display"],
+                    "body-md": ["Montserrat"]
+            },
+            "fontSize": {
+                    "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                    "display-lg-mobile": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                    "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "hindi-body": ["18px", {"lineHeight": "32px", "fontWeight": "400"}],
+                    "display-lg": ["64px", {"lineHeight": "76px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .hero-gradient-overlay {
+            background: linear-gradient(to right, rgba(6, 27, 14, 0.85), rgba(6, 27, 14, 0.4));
+        }
+        .stagger-overlap {
+            z-index: 10;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md antialiased overflow-x-hidden">
+<!-- TopNavBar -->
+<nav class="sticky top-0 w-full z-50 bg-background dark:bg-primary-container border-b border-outline-variant dark:border-primary-container h-20 transition-all duration-300">
+<div class="flex justify-between items-center h-full px-margin-mobile md:px-gutter max-w-container-max mx-auto">
+<a href="index.html" class="flex items-center gap-2">
+<span class="font-display-lg text-body-lg font-bold tracking-tighter text-primary dark:text-primary-fixed">LEADINGEDGE</span>
+</a>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-label-caps text-label-caps text-on-surface-variant dark:text-on-primary-container hover:text-secondary dark:hover:text-secondary-fixed-dim transition-colors duration-300" href="index.html">Home</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant dark:text-on-primary-container hover:text-secondary dark:hover:text-secondary-fixed-dim transition-colors duration-300" href="about.html">About Us</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant dark:text-on-primary-container hover:text-secondary dark:hover:text-secondary-fixed-dim transition-colors duration-300" href="communities.html">Communities</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant dark:text-on-primary-container hover:text-secondary dark:hover:text-secondary-fixed-dim transition-colors duration-300" href="services.html">Services</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant dark:text-on-primary-container hover:text-secondary dark:hover:text-secondary-fixed-dim transition-colors duration-300" href="index.html#gallery">Gallery</a>
+<a class="font-label-caps text-label-caps text-primary dark:text-secondary-fixed border-b-2 border-secondary-fixed pb-1" href="contact.html">Contact</a>
+</div>
+<a href="booking.html" class="bg-primary text-on-primary px-6 py-3 font-label-caps text-label-caps scale-95 transition-transform duration-200 active:scale-90 hidden lg:block">
+                Book Consultation
+            </a>
+<!-- Mobile Menu Toggle -->
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="relative w-full h-[400px] md:h-[500px] overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="A cinematic, high-resolution view of a modern luxury office building at dusk with large glass windows and elegant architectural lighting. The scene is shot with a wide-angle lens, capturing the prestigious and authoritative atmosphere of an elite development firm headquarters. Warm golden interior lights contrast with the deep forest green twilight sky, evoking a sense of timeless sophistication and architectural permanence." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC4SBtMAn4AMlW0Qmv2sjKoHhlquuR8eyULDVjIWpM8UJ_OUqGwafTQMWizjOqJ8HOHUlvZfyLiaKE-7hW1KbgW-YpRsIJDQM8OG3SBqlTVvqUuDATUSP-XS30eMklYWbrGgnrOGABo-s8hiQGDZeTK4p1DG1NoJPlxy4nKrZ9tM708Q0RnGloQYJmAH8c48g1EgLLOSj-u2RcMH7DCCMzQ75dlDGluGfKt4sG3CUYljlZtCg5BDENCaUtx941eVUtESFSTrJ37CK4')"></div>
+<div class="absolute inset-0 hero-gradient-overlay"></div>
+<div class="relative h-full max-w-container-max mx-auto px-margin-mobile md:px-gutter flex flex-col justify-center">
+<span class="font-label-caps text-label-caps text-secondary-fixed-dim mb-4">CONNECT WITH US</span>
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-on-primary max-w-2xl leading-tight">
+                    Let's Build Your <span class="italic font-normal">Legacy</span> Together.
+                </h1>
+</div>
+</section>
+<!-- Contact & Form Section -->
+<section class="py-section-gap max-w-container-max mx-auto px-margin-mobile md:px-gutter">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start">
+<!-- Left: Contact Information -->
+<div class="lg:col-span-5 space-y-12">
+<div>
+<span class="font-label-caps text-label-caps text-secondary uppercase block mb-4">Our Headquarters</span>
+<h2 class="font-headline-md text-headline-md text-primary mb-6">Reach Out to Our Elite Team.</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-md">
+                            Whether you're looking to discuss a residential masterpiece or a commercial landmark, our partners are ready to provide an authoritative consultation.
+                        </p>
+</div>
+<div class="space-y-8">
+<div class="flex items-start gap-6 group">
+<div class="w-12 h-12 flex-shrink-0 bg-surface-container-high flex items-center justify-center group-hover:bg-primary-fixed transition-colors duration-300">
+<span class="material-symbols-outlined text-primary" data-icon="location_on">location_on</span>
+</div>
+<div>
+<h4 class="font-label-caps text-label-caps text-primary mb-1">VISIT US</h4>
+<address class="not-italic font-body-md text-on-surface-variant">
+                                    123 Greenway Ave, Suite 100<br/>
+                                    Austin, TX 78701, USA
+                                </address>
+</div>
+</div>
+<div class="flex items-start gap-6 group">
+<div class="w-12 h-12 flex-shrink-0 bg-surface-container-high flex items-center justify-center group-hover:bg-primary-fixed transition-colors duration-300">
+<span class="material-symbols-outlined text-primary" data-icon="call">call</span>
+</div>
+<div>
+<h4 class="font-label-caps text-label-caps text-primary mb-1">CALL US</h4>
+<p class="font-body-md text-on-surface-variant">+1 (123) 456-7890</p>
+</div>
+</div>
+<div class="flex items-start gap-6 group">
+<div class="w-12 h-12 flex-shrink-0 bg-surface-container-high flex items-center justify-center group-hover:bg-primary-fixed transition-colors duration-300">
+<span class="material-symbols-outlined text-primary" data-icon="mail">mail</span>
+</div>
+<div>
+<h4 class="font-label-caps text-label-caps text-primary mb-1">EMAIL US</h4>
+<p class="font-body-md text-on-surface-variant">info@leadingedge.com</p>
+</div>
+</div>
+</div>
+<div>
+<h4 class="font-label-caps text-label-caps text-primary mb-6">FOLLOW OUR PROGRESS</h4>
+<div class="flex gap-4">
+<a class="w-10 h-10 border border-outline hover:bg-primary hover:text-on-primary flex items-center justify-center transition-all duration-300" href="#">
+<svg class="w-5 h-5 fill-current" viewbox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path></svg>
+</a>
+<a class="w-10 h-10 border border-outline hover:bg-primary hover:text-on-primary flex items-center justify-center transition-all duration-300" href="#">
+<svg class="w-5 h-5 fill-current" viewbox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg>
+</a>
+<a class="w-10 h-10 border border-outline hover:bg-primary hover:text-on-primary flex items-center justify-center transition-all duration-300" href="#">
+<svg class="w-5 h-5 fill-current" viewbox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path></svg>
+</a>
+</div>
+</div>
+</div>
+<!-- Right: Bento Form & Image -->
+<div class="lg:col-span-7 grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<!-- Form Container -->
+<div class="md:col-span-2 bg-surface-container-low p-10 border border-outline-variant relative">
+<h3 class="font-headline-md text-headline-md text-primary mb-8 italic">Inquire About Your Project</h3>
+<form class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="space-y-2">
+<label class="font-label-caps text-label-caps text-on-surface-variant uppercase">Full Name</label>
+<input class="w-full bg-transparent border-b border-outline focus:border-secondary focus:ring-0 transition-colors py-2 outline-none font-body-md" placeholder="e.g. Julian Sterling" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="font-label-caps text-label-caps text-on-surface-variant uppercase">Email Address</label>
+<input class="w-full bg-transparent border-b border-outline focus:border-secondary focus:ring-0 transition-colors py-2 outline-none font-body-md" placeholder="julian@example.com" type="email"/>
+</div>
+<div class="md:col-span-2 space-y-2">
+<label class="font-label-caps text-label-caps text-on-surface-variant uppercase">Interested Service</label>
+<select class="w-full bg-transparent border-b border-outline focus:border-secondary focus:ring-0 transition-colors py-2 outline-none font-body-md appearance-none">
+<option>Select a category</option>
+<option>Residential Development</option>
+<option>Commercial Architecture</option>
+<option>Community Planning</option>
+<option>Sustainable Consulting</option>
+</select>
+</div>
+<div class="md:col-span-2 space-y-2">
+<label class="font-label-caps text-label-caps text-on-surface-variant uppercase">Message</label>
+<textarea class="w-full bg-transparent border-b border-outline focus:border-secondary focus:ring-0 transition-colors py-2 outline-none font-body-md resize-none" placeholder="Briefly describe your vision..." rows="4"></textarea>
+</div>
+<div class="md:col-span-2">
+<button class="w-full md:w-auto bg-primary text-on-primary px-12 py-4 font-label-caps text-label-caps hover:bg-opacity-90 transition-all flex items-center justify-center gap-2" type="submit">
+                                    SEND INQUIRY <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</form>
+</div>
+<!-- Visual Accent Card -->
+<div class="hidden md:block relative h-64 overflow-hidden group">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="A macro close-up of premium architectural materials: cold grey stone, warm-toned oak wood, and brushed brass. The textures are sharp and detailed, highlighted by soft directional sunlight. This editorial-style image represents the high-end quality and tactile nature of LeadingEdge projects, echoing a minimalist and sophisticated aesthetic." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA0NDXZr8LMl16jEn5LbMaTLGzHw1l0I1YRQpQeoHIE6kBzzvJthEpSFu6RzTE1lDzXCtqA9QhECBeB4RNDFDbtS5RQAMGc7SgX-TViWD0BdREKbH8lY85gxKs8UBTIRy6qpe15xsadFThovIrDakMALBx1U3_9X1sVHGp-pYBVgrt9FbWBgIc-2lNi5AEmT4lP_Q9uuuhHIKATxtqsDsP4kwRSdbu8uRiFXTytJEshoLkxnyVweCOM0nS5w_Gw95k2Ali6xGSYKhw')"></div>
+<div class="absolute inset-0 bg-primary/20"></div>
+<div class="absolute bottom-4 left-4 right-4 text-on-primary">
+<span class="font-label-caps text-[10px] tracking-widest block mb-1">CRAFT</span>
+<span class="font-headline-md text-body-lg italic">Premium Materials</span>
+</div>
+</div>
+<div class="hidden md:block bg-secondary-fixed p-8 flex flex-col justify-center">
+<div class="border-l-4 border-primary pl-4">
+<p class="font-display-lg text-headline-md italic leading-tight text-primary">"The difference is in the details."</p>
+<span class="font-label-caps text-label-caps text-primary mt-4 block">— LEADINGEDGE PRINCIPLE</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Location Section -->
+<section class="w-full bg-surface-container-high py-section-gap relative overflow-hidden">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter grid grid-cols-1 lg:grid-cols-2 gap-gutter items-center">
+<div class="order-2 lg:order-1 h-[500px] w-full border border-outline-variant relative">
+<!-- Map Placeholder -->
+<div class="w-full h-full bg-surface-variant flex items-center justify-center" data-location="Austin, TX" style="">
+<div class="absolute inset-0 grayscale contrast-125 opacity-70" data-alt="A stylized, architectural map of downtown Austin, Texas, rendered in a minimalist white and grey color palette. Major landmarks and the river are subtly indicated with thin line art. The map has a clean, professional aesthetic that aligns with a high-end development firm's brand identity, emphasizing urban planning and precision." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAPxld5Z3RhPoz5odzd3PycYb5SFPNAaoONvWEPlTR7AfQ-C02oKetbWBYU_fBYRHbvqcXj6N7qrCU0maVQYjzvPYdeqr7oqUB-xmIrTIDbKBMWBQN17T1eANSAjB9popz33GqwEbadYpS9CVdEQI6I5NTVhb6PBCjpl1OMsKiJiKl2K2_6oAK_UaBWop5y_Axvt2KxT4zmrQoaCkzUwpkcfJ7cxhmqIV8CzyKtizSG_zXusKEIWJqJWWZ5yGP2Ty9EZjRalAlhoqg')"></div>
+<div class="relative z-10 flex flex-col items-center">
+<div class="w-16 h-16 bg-primary text-on-primary rounded-full flex items-center justify-center shadow-2xl animate-bounce">
+<span class="material-symbols-outlined text-3xl" data-icon="location_on">location_on</span>
+</div>
+<div class="mt-4 bg-white px-4 py-2 shadow-lg border border-outline-variant">
+<span class="font-label-caps text-label-caps text-primary">LEADINGEDGE HQ</span>
+</div>
+</div>
+</div>
+</div>
+<div class="order-1 lg:order-2 lg:pl-16">
+<span class="font-label-caps text-label-caps text-secondary block mb-4 uppercase">Our Location</span>
+<h2 class="font-headline-md text-headline-md text-primary mb-6">In the Heart of <span class="italic">Texas</span>.</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-8">
+                        Our Austin office is a testament to our design philosophy—clean, efficient, and inspiring. We invite you to experience our workspace and discuss your future projects in an environment of architectural excellence.
+                    </p>
+<div class="space-y-4">
+<div class="flex items-center gap-4 text-on-surface-variant">
+<span class="material-symbols-outlined text-primary" data-icon="schedule">schedule</span>
+<span class="font-body-md">Mon - Fri: 9:00 AM - 6:00 PM</span>
+</div>
+<div class="flex items-center gap-4 text-on-surface-variant">
+<span class="material-symbols-outlined text-primary" data-icon="directions">directions</span>
+<span class="font-body-md">Parking available on Greenway Ave.</span>
+</div>
+</div>
+<a class="inline-block mt-10 font-label-caps text-label-caps text-primary border-b border-primary pb-1 hover:text-secondary hover:border-secondary transition-all" href="#">GET DIRECTIONS</a>
+</div>
+</div>
+</section>
+<!-- Pre-footer CTA -->
+<section class="py-24 bg-primary text-on-primary text-center">
+<div class="max-w-2xl mx-auto px-margin-mobile">
+<h2 class="font-headline-md text-headline-md mb-6 italic">Ready to transcend the ordinary?</h2>
+<p class="font-body-lg text-on-primary-container mb-10 opacity-80">Join our exclusive circle of clients who value architectural distinction and enduring quality.</p>
+<a href="booking.html" class="bg-secondary text-on-primary px-10 py-4 font-label-caps text-label-caps hover:bg-secondary-fixed hover:text-on-secondary-fixed transition-all">
+                    START YOUR JOURNEY
+                </a>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-low dark:bg-primary border-t border-outline-variant w-full py-section-gap">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-gutter max-w-container-max mx-auto">
+<div class="space-y-6">
+<span class="font-display-lg text-body-lg font-bold text-primary dark:text-primary-fixed">LEADINGEDGE</span>
+<p class="font-body-md text-on-surface-variant dark:text-on-primary-container max-w-xs">
+                    Building premium residential and commercial spaces that stand the test of time.
+                </p>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-primary" data-icon="facebook">face_nod</span>
+<span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-primary" data-icon="instagram">infrared</span>
+<span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-primary" data-icon="linkedin">dine_in</span>
+</div>
+</div>
+<div>
+<h4 class="font-label-caps text-label-caps text-primary dark:text-primary-fixed mb-6">COMPANY</h4>
+<ul class="space-y-3">
+<li><a class="font-body-md text-on-surface-variant dark:text-on-primary-container hover:text-primary dark:hover:text-inverse-primary transition-colors" href="about.html">About Us</a></li>
+<li><a class="font-body-md text-on-surface-variant dark:text-on-primary-container hover:text-primary dark:hover:text-inverse-primary transition-colors" href="about.html#leadership">Our Team</a></li>
+<li><a class="font-body-md text-on-surface-variant dark:text-on-primary-container hover:text-primary dark:hover:text-inverse-primary transition-colors" href="contact.html">Careers</a></li>
+<li><a class="font-body-md text-on-surface-variant dark:text-on-primary-container hover:text-primary dark:hover:text-inverse-primary transition-colors" href="about.html">News &amp; Insights</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-caps text-label-caps text-primary dark:text-primary-fixed mb-6">SERVICES</h4>
+<ul class="space-y-3">
+<li><a class="font-body-md text-on-surface-variant dark:text-on-primary-container hover:text-primary dark:hover:text-inverse-primary transition-colors" href="services.html#residential">Residential</a></li>
+<li><a class="font-body-md text-on-surface-variant dark:text-on-primary-container hover:text-primary dark:hover:text-inverse-primary transition-colors" href="services.html#commercial">Commercial</a></li>
+<li><a class="font-body-md text-on-surface-variant dark:text-on-primary-container hover:text-primary dark:hover:text-inverse-primary transition-colors" href="communities.html">Communities</a></li>
+<li><a class="font-body-md text-on-surface-variant dark:text-on-primary-container hover:text-primary dark:hover:text-inverse-primary transition-colors" href="services.html">Sustainable Design</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-caps text-label-caps text-primary dark:text-primary-fixed mb-6">RESOURCES</h4>
+<ul class="space-y-3">
+<li><a class="font-body-md text-on-surface-variant dark:text-on-primary-container hover:text-primary dark:hover:text-inverse-primary transition-colors" href="index.html#gallery">Projects</a></li>
+<li><a class="font-body-md text-on-surface-variant dark:text-on-primary-container hover:text-primary dark:hover:text-inverse-primary transition-colors" href="index.html#gallery">Gallery</a></li>
+<li><a class="font-body-md text-on-surface-variant dark:text-on-primary-container hover:text-primary dark:hover:text-inverse-primary transition-colors" href="faq.html">FAQ</a></li>
+<li><a class="font-body-md text-on-surface-variant dark:text-on-primary-container hover:text-primary dark:hover:text-inverse-primary transition-colors" href="contact.html">Contact Us</a></li>
+</ul>
+</div>
+</div>
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter mt-20 pt-8 border-t border-outline-variant flex flex-col md:flex-row justify-between gap-4">
+<p class="font-label-caps text-[10px] text-on-surface-variant dark:text-on-primary-container opacity-80">© 2026 LeadingEdge Developments. All Rights Reserved.</p>
+<div class="flex gap-6">
+<a class="font-label-caps text-[10px] text-on-surface-variant dark:text-on-primary-container hover:text-primary" href="#">Privacy Policy</a>
+<a class="font-label-caps text-[10px] text-on-surface-variant dark:text-on-primary-container hover:text-primary" href="#">Terms of Use</a>
+</div>
+</div>
+</footer>
+<script>
+        // Form Interaction
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const btn = this.querySelector('button');
+            const originalText = btn.innerHTML;
+            btn.innerHTML = '<span class="material-symbols-outlined animate-spin">progress_activity</span> SENDING...';
+            btn.disabled = true;
+            
+            setTimeout(() => {
+                btn.innerHTML = '<span class="material-symbols-outlined">check_circle</span> SENT SUCCESSFULLY';
+                btn.classList.replace('bg-primary', 'bg-secondary');
+                this.reset();
+            }, 1500);
+        });
+
+        // Sticky Nav Effect
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('h-16', 'shadow-md');
+                nav.classList.remove('h-20');
+            } else {
+                nav.classList.add('h-20');
+                nav.classList.remove('h-16', 'shadow-md');
+            }
+        });
+    </script>
+</body></html>

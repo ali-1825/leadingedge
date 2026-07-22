@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Communities | LEADINGEDGE Developments</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      colors: {
+        "on-surface": "#1c1b1b",
+        "surface-container-high": "#ebe7e7",
+        "background": "#fcf9f8",
+        "secondary-fixed-dim": "#e9c176",
+        "on-primary": "#ffffff",
+        "surface-container": "#f0edec",
+        "surface-container-low": "#f6f3f2",
+        "primary": "#061b0e",
+        "outline-variant": "#c3c8c1",
+        "primary-container": "#1b3022",
+        "on-surface-variant": "#434843",
+        "on-primary-container": "#819986",
+        "secondary": "#775a19",
+        "secondary-fixed": "#ffdea5",
+        "on-secondary-fixed": "#261900",
+        "outline": "#737973"
+      },
+      spacing: {
+        "section-gap": "120px",
+        "margin-mobile": "20px",
+        "gutter": "24px",
+        "container-max": "1280px"
+      },
+      fontFamily: {
+        "label-caps": ["Montserrat"],
+        "display-lg-mobile": ["Playfair Display"],
+        "headline-md": ["Playfair Display"],
+        "body-lg": ["Montserrat"],
+        "display-lg": ["Playfair Display"],
+        "body-md": ["Montserrat"]
+      },
+      fontSize: {
+        "label-caps": ["12px", { lineHeight: "16px", letterSpacing: "0.1em", fontWeight: "600" }],
+        "display-lg-mobile": ["40px", { lineHeight: "48px", fontWeight: "700" }],
+        "headline-md": ["32px", { lineHeight: "40px", fontWeight: "600" }],
+        "body-lg": ["18px", { lineHeight: "28px" }],
+        "display-lg": ["64px", { lineHeight: "76px", fontWeight: "700" }],
+        "body-md": ["16px", { lineHeight: "24px" }]
+      }
+    }
+  }
+}
+</script>
+<style>
+.material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24; }
+</style>
+</head>
+<body class="bg-background text-on-surface font-body-md antialiased">
+<header class="sticky top-0 w-full z-50 bg-background border-b border-outline-variant">
+<nav class="flex justify-between items-center h-20 px-margin-mobile md:px-gutter max-w-container-max mx-auto">
+<a href="index.html" class="flex flex-col">
+<span class="font-display-lg text-body-lg font-bold tracking-tighter text-primary uppercase">LEADINGEDGE</span>
+<span class="text-[10px] tracking-widest text-on-surface-variant font-label-caps -mt-1">BUILDING TOMORROWS</span>
+</a>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-secondary transition-colors" href="index.html">Home</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-secondary transition-colors" href="about.html">About Us</a>
+<a class="font-label-caps text-label-caps text-primary border-b-2 border-secondary-fixed pb-1" href="communities.html">Communities</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-secondary transition-colors" href="services.html">Services</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-secondary transition-colors" href="index.html#gallery">Gallery</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-secondary transition-colors" href="contact.html">Contact</a>
+</div>
+<a href="booking.html" class="bg-primary text-on-primary px-6 py-3 font-label-caps text-label-caps hover:opacity-90 hidden md:inline-flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">calendar_today</span>
+Book Consultation
+</a>
+</nav>
+</header>
+<main>
+<section class="relative h-[500px] flex items-center overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1600047509358-9dc75507daeb?q=80&w=1800&auto=format&fit=crop')"></div>
+<div class="absolute inset-0 bg-primary/55"></div>
+<div class="relative z-10 max-w-container-max mx-auto px-margin-mobile md:px-gutter w-full">
+<span class="font-label-caps text-label-caps text-secondary-fixed-dim block mb-4">MASTER-PLANNED LIVING</span>
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-on-primary max-w-2xl">Communities Built <span class="italic font-normal">Around You.</span></h1>
+<p class="font-body-lg text-body-lg text-on-primary/85 max-w-xl mt-6">Thoughtfully planned neighborhoods that blend green spaces, modern amenities, and timeless architecture.</p>
+</div>
+</section>
+<section class="py-section-gap max-w-container-max mx-auto px-margin-mobile md:px-gutter">
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-gutter">
+<div class="border border-outline-variant p-8 hover:border-secondary transition-colors">
+<span class="material-symbols-outlined text-secondary text-4xl mb-4">park</span>
+<h2 class="font-headline-md text-headline-md text-primary mb-4">Evergreen Heights</h2>
+<p class="font-body-md text-on-surface-variant mb-6">A walkable community with parks, trails, and family-focused amenities in a serene natural setting.</p>
+<a href="index.html#gallery" class="font-label-caps text-label-caps text-primary border-b border-primary pb-1">View Project</a>
+</div>
+<div class="border border-outline-variant p-8 hover:border-secondary transition-colors">
+<span class="material-symbols-outlined text-secondary text-4xl mb-4">apartment</span>
+<h2 class="font-headline-md text-headline-md text-primary mb-4">Maple Grove</h2>
+<p class="font-body-md text-on-surface-variant mb-6">Premium residential enclave featuring curated landscaping and shared recreational spaces.</p>
+<a href="index.html#gallery" class="font-label-caps text-label-caps text-primary border-b border-primary pb-1">View Project</a>
+</div>
+<div class="border border-outline-variant p-8 hover:border-secondary transition-colors">
+<span class="material-symbols-outlined text-secondary text-4xl mb-4">eco</span>
+<h2 class="font-headline-md text-headline-md text-primary mb-4">Greenway District</h2>
+<p class="font-body-md text-on-surface-variant mb-6">Mixed-use development integrating sustainable design, retail, and contemporary living.</p>
+<a href="contact.html" class="font-label-caps text-label-caps text-primary border-b border-primary pb-1">Inquire Now</a>
+</div>
+</div>
+</section>
+<section class="bg-primary-container py-section-gap">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter text-center">
+<h2 class="font-headline-md text-headline-md text-on-primary mb-6">Ready to Find Your Community?</h2>
+<p class="font-body-lg text-on-primary-container max-w-2xl mx-auto mb-10">Speak with our development team to explore availability, floor plans, and investment opportunities.</p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
+<a href="booking.html" class="bg-secondary-fixed text-on-secondary-fixed px-10 py-4 font-label-caps text-label-caps hover:bg-secondary-fixed-dim transition-colors">Book Consultation</a>
+<a href="contact.html" class="border border-on-primary-container text-on-primary px-10 py-4 font-label-caps text-label-caps hover:bg-on-primary-container hover:text-primary transition-colors">Contact Us</a>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-surface-container-low border-t border-outline-variant py-section-gap">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-gutter max-w-container-max mx-auto">
+<div>
+<a href="index.html" class="font-display-lg text-body-lg font-bold text-primary block mb-4">LEADINGEDGE</a>
+<p class="font-body-md text-sm text-on-surface-variant">Premium communities and timeless spaces that inspire.</p>
+</div>
+<div>
+<h4 class="font-label-caps text-label-caps text-primary mb-6">COMPANY</h4>
+<ul class="space-y-3 text-sm text-on-surface-variant">
+<li><a class="hover:text-primary" href="about.html">About Us</a></li>
+<li><a class="hover:text-primary" href="about.html#leadership">Our Team</a></li>
+<li><a class="hover:text-primary" href="faq.html">FAQ</a></li>
+<li><a class="hover:text-primary" href="contact.html">Contact Us</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-caps text-label-caps text-primary mb-6">SERVICES</h4>
+<ul class="space-y-3 text-sm text-on-surface-variant">
+<li><a class="hover:text-primary" href="services.html#residential">Residential</a></li>
+<li><a class="hover:text-primary" href="services.html#commercial">Commercial</a></li>
+<li><a class="hover:text-primary" href="communities.html">Communities</a></li>
+<li><a class="hover:text-primary" href="services.html">Sustainable Design</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-caps text-label-caps text-primary mb-6">CONTACT</h4>
+<p class="text-sm text-on-surface-variant">+1 (123) 456-7890<br/>info@leadingedge.com<br/>123 Greenway Ave, Austin, TX</p>
+</div>
+</div>
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter mt-16 pt-8 border-t border-outline-variant flex flex-col md:flex-row justify-between gap-4 text-xs text-on-surface-variant">
+<p>© 2026 LeadingEdge Developments. All Rights Reserved.</p>
+<div class="flex gap-6">
+<a class="hover:text-primary" href="#">Privacy Policy</a>
+<a class="hover:text-primary" href="#">Terms of Use</a>
+</div>
+</div>
+</footer>
+</body>
+</html>

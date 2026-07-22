@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About Us | LEADINGEDGE Developments</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&amp;family=Playfair+Display:ital,wght@0,600;0,700;1,600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                "on-surface": "#1c1b1b",
+                "surface-container-high": "#ebe7e7",
+                "inverse-surface": "#313030",
+                "background": "#fcf9f8",
+                "surface-variant": "#e5e2e1",
+                "secondary-fixed-dim": "#e9c176",
+                "on-primary": "#ffffff",
+                "tertiary": "#161815",
+                "on-error": "#ffffff",
+                "surface-container": "#f0edec",
+                "on-secondary": "#ffffff",
+                "on-tertiary-fixed-variant": "#464744",
+                "surface-tint": "#4d6453",
+                "surface-container-highest": "#e5e2e1",
+                "on-secondary-container": "#785a1a",
+                "surface-bright": "#fcf9f8",
+                "primary-fixed-dim": "#b4cdb8",
+                "tertiary-fixed-dim": "#c7c7c2",
+                "on-tertiary-container": "#93938f",
+                "surface-container-low": "#f6f3f2",
+                "primary": "#061b0e",
+                "outline-variant": "#c3c8c1",
+                "primary-fixed": "#d0e9d4",
+                "primary-container": "#1b3022",
+                "secondary-container": "#fed488",
+                "on-surface-variant": "#434843",
+                "on-secondary-fixed-variant": "#5d4201",
+                "on-secondary-fixed": "#261900",
+                "inverse-primary": "#b4cdb8",
+                "tertiary-fixed": "#e3e3de",
+                "error": "#ba1a1a",
+                "outline": "#737973",
+                "secondary-fixed": "#ffdea5",
+                "on-primary-fixed": "#0b2013",
+                "on-background": "#1c1b1b",
+                "tertiary-container": "#2b2c29",
+                "surface-dim": "#dcd9d9",
+                "surface-container-lowest": "#ffffff",
+                "on-error-container": "#93000a",
+                "surface": "#fcf9f8",
+                "inverse-on-surface": "#f3f0ef",
+                "on-tertiary-fixed": "#1b1c19",
+                "on-primary-fixed-variant": "#364c3c",
+                "error-container": "#ffdad6",
+                "on-tertiary": "#ffffff",
+                "on-primary-container": "#819986",
+                "secondary": "#775a19"
+            },
+            "borderRadius": {
+                "DEFAULT": "0.25rem",
+                "lg": "0.5rem",
+                "xl": "0.75rem",
+                "full": "9999px"
+            },
+            "spacing": {
+                "section-gap": "120px",
+                "margin-mobile": "20px",
+                "gutter": "24px",
+                "container-max": "1280px",
+                "base": "8px"
+            },
+            "fontFamily": {
+                "label-caps": ["Montserrat"],
+                "display-lg-mobile": ["Playfair Display"],
+                "headline-md": ["Playfair Display"],
+                "body-lg": ["Montserrat"],
+                "hindi-body": ["Montserrat"],
+                "display-lg": ["Playfair Display"],
+                "body-md": ["Montserrat"]
+            },
+            "fontSize": {
+                "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                "display-lg-mobile": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                "hindi-body": ["18px", {"lineHeight": "32px", "fontWeight": "400"}],
+                "display-lg": ["64px", {"lineHeight": "76px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}]
+            }
+          }
+        }
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .hero-gradient {
+            background: linear-gradient(to right, rgba(6, 27, 14, 0.4), rgba(6, 27, 14, 0.1));
+        }
+        .staggered-overlap {
+            transform: translateY(-40px);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md antialiased">
+<!-- TopNavBar -->
+<header class="sticky top-0 w-full z-50 bg-background border-b border-outline-variant">
+<nav class="flex justify-between items-center h-20 px-margin-mobile md:px-gutter max-w-container-max mx-auto">
+<a href="index.html" class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-3xl">architecture</span>
+<div class="flex flex-col">
+<span class="font-display-lg text-body-lg font-bold tracking-tighter text-primary">LEADINGEDGE</span>
+<span class="text-[10px] uppercase tracking-[0.2em] -mt-1 opacity-70">Building Tomorrows</span>
+</div>
+</a>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-secondary transition-colors duration-300" href="index.html">Home</a>
+<a class="font-label-caps text-label-caps text-primary border-b-2 border-secondary-fixed pb-1" href="about.html">About Us</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-secondary transition-colors duration-300" href="communities.html">Communities</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-secondary transition-colors duration-300" href="services.html">Services</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-secondary transition-colors duration-300" href="index.html#gallery">Gallery</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-secondary transition-colors duration-300" href="contact.html">Contact</a>
+</div>
+<a href="booking.html" class="bg-primary text-on-primary px-6 py-3 font-label-caps text-label-caps transition-transform duration-200 active:scale-95 flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">calendar_today</span>
+                Book Consultation
+            </a>
+</nav>
+</header>
+<main>
+<!-- Page Header -->
+<section class="relative h-[614px] flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="w-full h-full bg-cover bg-center scale-105" data-alt="A sweeping cinematic view of a sprawling modernist architectural complex at dusk. The building features large glass panels reflecting a warm orange sunset against a backdrop of deep forest green pine trees. The overall atmosphere is prestigious, serene, and authoritative, with high-end editorial lighting that emphasizes clean lines and structural permanence." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBzQ59V1-DNxSydedfTu616Io10MfNrKEX5K8chqrG_Z5zPXCaga_o25yeUJ9MYaOHhSLfoqg_TpDeWY-Ba4pIamVeHjV1FdOqFhbNMMsrDogCtY0NTOfAOaeLtuOhEsOG8bwIc6MZDhTefoN23uyHSMny_BsVXkxqGmBCvtuDq83CO14mr8Y_KkyflV6JRTROnZVB5YKajRWhJtjMlL0vn5g3hVkijgq4JzAPwt3t5pcZ22vDlWM9DB1wsIN9-3H9EH5WGIuNfS94')">
+</div>
+<div class="absolute inset-0 hero-gradient"></div>
+</div>
+<div class="relative z-10 px-margin-mobile md:px-gutter max-w-container-max mx-auto w-full">
+<span class="font-label-caps text-label-caps text-secondary-fixed-dim uppercase tracking-widest mb-4 block">Our Legacy</span>
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-white max-w-2xl leading-tight mb-6">
+                    A Vision for <span class="italic font-normal">Permanence.</span>
+</h1>
+<p class="font-body-lg text-body-lg text-white/80 max-w-xl">
+                    For two decades, LeadingEdge has redefined the skylines of tomorrow by honoring the craftsmanship of yesterday. We don't just build structures; we curate environments.
+                </p>
+</div>
+</section>
+<!-- Our Story Section -->
+<section class="py-section-gap px-margin-mobile md:px-gutter max-w-container-max mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+<div class="md:col-span-5 space-y-8">
+<div class="space-y-4">
+<span class="font-label-caps text-label-caps text-secondary uppercase">Crafting the Future</span>
+<h2 class="font-headline-md text-headline-md text-primary">Rooted in Tradition, Driven by Innovation</h2>
+</div>
+<div class="font-body-md text-body-md text-on-surface-variant space-y-6 leading-relaxed">
+<p>
+                            Founded in 2004, LeadingEdge Developments began with a singular premise: architecture should be as enduring as the land it stands upon. What started as a boutique design studio has evolved into a full-scale development powerhouse known for our uncompromising standard of excellence.
+                        </p>
+<p>
+                            We believe that every beam, stone, and window placement is an opportunity to enhance the human experience. Our methodology merges the structural rigidity of modern engineering with the warmth of bespoke luxury, ensuring that every project becomes a timeless benchmark for its community.
+                        </p>
+<div class="grid grid-cols-2 gap-6 pt-4">
+<div class="border-l-2 border-secondary pl-4">
+<span class="block font-headline-md text-2xl text-primary">500+</span>
+<span class="font-label-caps text-[10px] uppercase text-on-surface-variant">Units Delivered</span>
+</div>
+<div class="border-l-2 border-secondary pl-4">
+<span class="block font-headline-md text-2xl text-primary">12</span>
+<span class="block font-label-caps text-[10px] uppercase text-on-surface-variant">Design Awards</span>
+</div>
+</div>
+</div>
+</div>
+<div class="md:col-span-7 relative">
+<div class="aspect-[4/3] w-full bg-surface-container-high overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A high-quality architectural photograph of a detailed building blueprint lying on a heavy dark wood desk next to a scale model of a modern villa. Soft natural light streams from a large window, highlighting the precision and craftsmanship. The setting is a professional, high-end design studio with a minimalist aesthetic and a palette of forest greens and warm oaks." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDurdJH1f5zfqN0eMuc3nc1_hSbHhCkmMefAUymE28Ym6oFAJqqTyHWl7k92gEq2w2DRAQImDgt3x8oXUGS184aoBbKdolY0LvEmxnkgqFLrejb1SFdHh7EMsp_ZJV4sMCuPTZvOg4SpveSsSyctW7Tr9KdKgSp3QGpRFgSuehEpBgwavWFBWVLGgOAUVrFOXm3b-cRUKNISd1kPKvwqgmh9OiIyhOI2iK9XEvGMqxu60HW8f4ZSM2bWr1AvumbGxDWB38h9CK7Lpk"/>
+</div>
+<div class="absolute -bottom-10 -left-10 hidden md:block w-64 bg-primary p-8 text-white z-10 staggered-overlap">
+<span class="material-symbols-outlined text-4xl mb-4 text-secondary-fixed">workspace_premium</span>
+<h3 class="font-label-caps text-label-caps mb-2">The Gold Standard</h3>
+<p class="text-sm opacity-80 leading-snug">Certified sustainable materials and elite architectural planning for every project.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Values Banner (Editorial Style) -->
+<section class="bg-primary py-24 px-margin-mobile md:px-gutter">
+<div class="max-w-container-max mx-auto text-center">
+<div class="inline-flex items-center gap-4 text-secondary-fixed-dim font-label-caps text-label-caps mb-8">
+<div class="h-[1px] w-12 bg-secondary-fixed-dim"></div>
+                    OUR CORE PHILOSOPHY
+                    <div class="h-[1px] w-12 bg-secondary-fixed-dim"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<div class="space-y-4">
+<h4 class="font-headline-md text-headline-md text-white">Integrity</h4>
+<p class="font-body-md text-body-md text-on-primary-container">We build on trust. Transparency is our foundation, from the first sketch to the final brick.</p>
+</div>
+<div class="space-y-4">
+<h4 class="font-headline-md text-headline-md text-white">Vision</h4>
+<p class="font-body-md text-body-md text-on-primary-container">Designing for decades, not seasons. We anticipate future needs through intelligent spatial planning.</p>
+</div>
+<div class="space-y-4">
+<h4 class="font-headline-md text-headline-md text-white">Precision</h4>
+<p class="font-body-md text-body-md text-on-primary-container">Every millimeter matters. Our commitment to detail is what separates a house from a masterpiece.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Our Leadership Section -->
+<section class="py-section-gap px-margin-mobile md:px-gutter max-w-container-max mx-auto" id="leadership">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+<div class="max-w-2xl">
+<span class="font-label-caps text-label-caps text-secondary uppercase mb-4 block">The People Behind the Brand</span>
+<h2 class="font-headline-md text-headline-md text-primary">Guided by <span class="italic">Elite Expertise</span></h2>
+</div>
+<p class="max-w-sm text-on-surface-variant">Our team brings together world-class architects, dedicated site managers, and visionary designers.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Team Member 1 -->
+<div class="group">
+<div class="aspect-[3/4] overflow-hidden mb-6 relative">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A professional portrait of a senior male architect with a refined, authoritative look. He is wearing a dark charcoal suit and standing in front of a minimalist concrete wall. The lighting is soft and flattering, typical of high-end corporate editorial photography. The mood is confident and sophisticated." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrq2XWpNgdp7JnI9YfMMelqxRQ-DL7kVbI34MrmZ94LiGXalcR8nfJmPSNrZ5WXxVhj7Q3YfFaPUBWWLYZzbyd7bQqXnlI8xBJiRlZI3f_yc5DQCh5VzO8BjaxL2aTGEJ1IkLKr4WyYaqwXmmorUhCYIs6HUcBb2ssdocvQ2M8-vPID-_-so0mw35m7HkLzjJrgwAKCApnnb2BPvt6JfMYKuvZNnuilEfbNA-JFQVnftuOZl5NOiOJh2Cc3JvsU9CIW5lEL9p990w"/>
+<div class="absolute inset-0 border-2 border-transparent group-hover:border-secondary transition-colors duration-300"></div>
+</div>
+<span class="font-label-caps text-[10px] uppercase tracking-widest text-secondary block mb-1">Founder &amp; CEO</span>
+<h3 class="font-headline-md text-xl text-primary">Julian Thorne</h3>
+<p class="text-on-surface-variant text-sm mt-2">25 years of architectural excellence and strategic growth.</p>
+</div>
+<!-- Team Member 2 -->
+<div class="group">
+<div class="aspect-[3/4] overflow-hidden mb-6 relative">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A professional portrait of a female lead designer with a creative and modern appearance. She is wearing a structured forest green blazer and glasses, standing in a bright, modern studio with architectural sketches in the blurred background. High-end lighting creates a sharp and intelligent atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBoADMgye8laGtjig2tUEtRw5jgBYiHoZ_m8PSl890VU9m6fZwTVxmmTX3lCP3w_-_ETFrOzmPDlzGQVBXOgbXa8fo9C9_yQkOb_tEtAH1KOG23XxnPpo6ouL9acj_10fte9qkngMOCR-jyBRMx-OALAgO99gQ-WY50V7p-lFyZAxjwD9iqSZPhJVUyMp2mlsA-7opu0vbBQRkadZTN4HL8-p15VFzabXrA1LLx7Yx-p_IHHqJA1F7TuYKUzX2azqaEgl0o-QpHyDU"/>
+<div class="absolute inset-0 border-2 border-transparent group-hover:border-secondary transition-colors duration-300"></div>
+</div>
+<span class="font-label-caps text-[10px] uppercase tracking-widest text-secondary block mb-1">Head of Design</span>
+<h3 class="font-headline-md text-xl text-primary">Elena Rossi</h3>
+<p class="text-on-surface-variant text-sm mt-2">Pioneering sustainable aesthetics for residential masterpieces.</p>
+</div>
+<!-- Team Member 3 -->
+<div class="group">
+<div class="aspect-[3/4] overflow-hidden mb-6 relative">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A professional portrait of a male construction director in his late 40s. He is standing at a construction site with a blurred view of a modern building frame behind him. He is wearing a high-quality utility vest and a white button-down shirt. The image exudes reliability, experience, and authority." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBAtu1S5ceI1XP9lk0TRZbi8zRIh29LwmGnRG1a-4IwPhUCikUcySSaKVMy363CFUp-l7fKUSb_htQDt9_CfQSqkruTePTl9O8hoOntC72j5Tc-ObCQ8q5A2gj1SH9-GsZUMM084BzysqVnZH2i_uNzERNhAnYjegbPCd27rLSH01bn5S5LMAcmkGfJuh_PIimHCrcdJgkRjGPyaX-GCa5p1NtZzRh9ViBX9glO-V4_1s3dLLDECO58q2mtXxA8AAM4UplFZq9ajz4"/>
+<div class="absolute inset-0 border-2 border-transparent group-hover:border-secondary transition-colors duration-300"></div>
+</div>
+<span class="font-label-caps text-[10px] uppercase tracking-widest text-secondary block mb-1">Director of Projects</span>
+<h3 class="font-headline-md text-xl text-primary">Marcus Vance</h3>
+<p class="text-on-surface-variant text-sm mt-2">Overseeing structural integrity and timely delivery since 2010.</p>
+</div>
+<!-- Team Member 4 -->
+<div class="group">
+<div class="aspect-[3/4] overflow-hidden mb-6 relative">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A professional portrait of a female client relations manager. She has a warm, welcoming, yet prestigious demeanor. She is wearing a professional beige dress and standing in a luxury lounge area. The background is soft-focus with hints of gold and dark wood. The mood is sophisticated and customer-focused." src="https://lh3.googleusercontent.com/aida-public/AB6AXuATh10cWaIgkEVRYbBEhsUL4Qwz876c2asrzPQyl-0R0a2oPG-NEYHOl4flHvEaZpysXXcBxMDNcnZtGPcNSqdiEVQclIqxizjuxetU6nJUrgF68HDqzU40viavy-aK7nDuF_J9jUNgn2NNoE7qthGC7UVuKo-bKlI9QTUsi-sVc8GI_pwJOu0-zlrogi9v4CTLo4gl11kC7Ay2xMAsgHqR1lnn-9xb3PSVjoTJCqt73hL7vGF2xECj4GDGx1AVMKEQEqT-NL8gjOY"/>
+<div class="absolute inset-0 border-2 border-transparent group-hover:border-secondary transition-colors duration-300"></div>
+</div>
+<span class="font-label-caps text-[10px] uppercase tracking-widest text-secondary block mb-1">Chief Relations Officer</span>
+<h3 class="font-headline-md text-xl text-primary">Sarah Jenkins</h3>
+<p class="text-on-surface-variant text-sm mt-2">Dedicated to curating a seamless journey for our prestigious clientele.</p>
+</div>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="py-24 bg-surface-container-low border-t border-outline-variant">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter text-center">
+<h2 class="font-headline-md text-display-lg-mobile md:text-headline-md text-primary mb-6">Let’s Build Something Great Together</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-10 max-w-2xl mx-auto">
+                    Whether it’s your dream home or a commercial space, we’re here to turn your vision into reality.
+                </p>
+<a href="booking.html" class="bg-primary text-on-primary px-10 py-4 font-label-caps text-label-caps transition-all duration-300 hover:bg-primary/90 flex items-center gap-3 mx-auto">
+                    BOOK A CONSULTATION
+                    <span class="material-symbols-outlined">trending_flat</span>
+</a>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-low border-t border-outline-variant py-section-gap">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-gutter max-w-container-max mx-auto">
+<div class="space-y-6">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-3xl">architecture</span>
+<div class="flex flex-col">
+<span class="font-display-lg text-body-lg font-bold text-primary">LEADINGEDGE</span>
+<span class="text-[10px] uppercase tracking-[0.2em] -mt-1 opacity-70">Building Tomorrows</span>
+</div>
+</div>
+<p class="font-body-md text-sm text-on-surface-variant leading-relaxed">
+                    We are a leading development company creating premium communities and timeless spaces that inspire.
+                </p>
+<div class="flex gap-4 text-primary">
+<a class="opacity-80 hover:opacity-100 transition-opacity" href="#"><span class="material-symbols-outlined">face_nod</span></a>
+<a class="opacity-80 hover:opacity-100 transition-opacity" href="#"><span class="material-symbols-outlined">photo_camera</span></a>
+<a class="opacity-80 hover:opacity-100 transition-opacity" href="#"><span class="material-symbols-outlined">link</span></a>
+<a class="opacity-80 hover:opacity-100 transition-opacity" href="#"><span class="material-symbols-outlined">play_circle</span></a>
+</div>
+</div>
+<div>
+<h4 class="font-label-caps text-label-caps text-primary mb-8">COMPANY</h4>
+<ul class="space-y-4 font-body-md text-sm text-on-surface-variant">
+<li><a class="hover:text-primary transition-colors" href="about.html">About Us</a></li>
+<li><a class="hover:text-primary transition-colors" href="about.html#leadership">Our Team</a></li>
+<li><a class="hover:text-primary transition-colors" href="contact.html">Careers</a></li>
+<li><a class="hover:text-primary transition-colors" href="about.html">News &amp; Insights</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-caps text-label-caps text-primary mb-8">SERVICES</h4>
+<ul class="space-y-4 font-body-md text-sm text-on-surface-variant">
+<li><a class="hover:text-primary transition-colors" href="services.html#residential">Residential</a></li>
+<li><a class="hover:text-primary transition-colors" href="services.html#commercial">Commercial</a></li>
+<li><a class="hover:text-primary transition-colors" href="communities.html">Communities</a></li>
+<li><a class="hover:text-primary transition-colors" href="services.html">Sustainable Design</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-caps text-label-caps text-primary mb-8">CONTACT US</h4>
+<ul class="space-y-6 font-body-md text-sm text-on-surface-variant">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary">call</span>
+<span>+1 (123) 456-7890</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary">mail</span>
+<span>info@leadingedge.com</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary">location_on</span>
+<span>123 Greenway Ave, Suite 100<br/>Austin, TX 78701, USA</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter mt-24 pt-8 border-t border-outline-variant flex flex-col md:flex-row justify-between gap-4">
+<p class="text-xs text-on-surface-variant">© 2026 LeadingEdge Developments. All Rights Reserved.</p>
+<div class="flex gap-6 text-xs text-on-surface-variant">
+<a class="hover:text-primary" href="#">Privacy Policy</a>
+<a class="hover:text-primary" href="#">Terms of Use</a>
+</div>
+</div>
+</footer>
+</body></html>

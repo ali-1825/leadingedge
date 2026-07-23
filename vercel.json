@@ -1,6 +1,12 @@
 {
   "cleanUrls": true,
   "trailingSlash": false,
+  "rewrites": [
+    {
+      "source": "/videos/:path*",
+      "destination": "/public/videos/:path*"
+    }
+  ],
   "headers": [
     {
       "source": "/videos/(.*)",

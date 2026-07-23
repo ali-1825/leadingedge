@@ -7,7 +7,7 @@
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&amp;family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="assets/3d-effects.css">
 <script id="tailwind-config">
       tailwind.config = {
         darkMode: "class",
@@ -109,7 +109,7 @@
         }
     </style>
 </head>
-<body class="bg-background text-on-surface font-body-md antialiased overflow-x-hidden">
+<body class="bg-background text-on-surface font-body-md antialiased overflow-x-hidden has-3d">
 <!-- TopNavBar -->
 <nav class="sticky top-0 w-full z-50 bg-background dark:bg-primary-container border-b border-outline-variant dark:border-primary-container h-20 transition-all duration-300">
 <div class="flex justify-between items-center h-full px-margin-mobile md:px-gutter max-w-container-max mx-auto">
@@ -135,7 +135,7 @@
 </nav>
 <main>
 <!-- Hero Section -->
-<section class="relative w-full h-[400px] md:h-[500px] overflow-hidden">
+<section class="relative w-full h-[400px] reveal-3d md:h-[500px] overflow-hidden">
 <div class="absolute inset-0 bg-cover bg-center" data-alt="A cinematic, high-resolution view of a modern luxury office building at dusk with large glass windows and elegant architectural lighting. The scene is shot with a wide-angle lens, capturing the prestigious and authoritative atmosphere of an elite development firm headquarters. Warm golden interior lights contrast with the deep forest green twilight sky, evoking a sense of timeless sophistication and architectural permanence." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC4SBtMAn4AMlW0Qmv2sjKoHhlquuR8eyULDVjIWpM8UJ_OUqGwafTQMWizjOqJ8HOHUlvZfyLiaKE-7hW1KbgW-YpRsIJDQM8OG3SBqlTVvqUuDATUSP-XS30eMklYWbrGgnrOGABo-s8hiQGDZeTK4p1DG1NoJPlxy4nKrZ9tM708Q0RnGloQYJmAH8c48g1EgLLOSj-u2RcMH7DCCMzQ75dlDGluGfKt4sG3CUYljlZtCg5BDENCaUtx941eVUtESFSTrJ37CK4')"></div>
 <div class="absolute inset-0 hero-gradient-overlay"></div>
 <div class="relative h-full max-w-container-max mx-auto px-margin-mobile md:px-gutter flex flex-col justify-center">
@@ -382,4 +382,5 @@
             }
         });
     </script>
+<script src="assets/3d-effects.js"></script>
 </body></html>

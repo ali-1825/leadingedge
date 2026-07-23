@@ -7,6 +7,7 @@
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="assets/3d-effects.css">
 <script id="tailwind-config">
 tailwind.config = {
   darkMode: "class",
@@ -60,8 +61,8 @@ tailwind.config = {
 .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24; }
 </style>
 </head>
-<body class="bg-background text-on-surface font-body-md antialiased">
-<header class="sticky top-0 w-full z-50 bg-background border-b border-outline-variant">
+<body class="bg-background text-on-surface font-body-md antialiased has-3d">
+<header class="glass-nav sticky top-0 w-full z-50 bg-background border-b border-outline-variant">
 <nav class="flex justify-between items-center h-20 px-margin-mobile md:px-gutter max-w-container-max mx-auto">
 <a href="index.html" class="flex flex-col">
 <span class="font-display-lg text-body-lg font-bold tracking-tighter text-primary uppercase">LEADINGEDGE</span>
@@ -161,5 +162,6 @@ Book Consultation
 </div>
 </div>
 </footer>
+<script src="assets/3d-effects.js"></script>
 </body>
 </html>

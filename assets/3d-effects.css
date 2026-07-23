@@ -1,0 +1,114 @@
+/* LeadingEdge — shared 3D / motion effects */
+:root {
+  --perspective: 1200px;
+  --lift-shadow: 0 25px 50px -12px rgba(28, 54, 40, 0.25);
+  --lift-shadow-lg: 0 35px 60px -15px rgba(28, 54, 40, 0.35);
+}
+
+html { scroll-behavior: smooth; }
+
+body.has-3d {
+  overflow-x: hidden;
+}
+
+/* Scroll reveal */
+.reveal-3d {
+  opacity: 0;
+  transform: translateY(40px) rotateX(8deg);
+  transform-origin: center top;
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.reveal-3d.visible {
+  opacity: 1;
+  transform: translateY(0) rotateX(0);
+}
+.reveal-3d.delay-1 { transition-delay: 0.1s; }
+.reveal-3d.delay-2 { transition-delay: 0.2s; }
+.reveal-3d.delay-3 { transition-delay: 0.3s; }
+.reveal-3d.delay-4 { transition-delay: 0.4s; }
+
+/* 3D tilt cards */
+.tilt-card {
+  transform-style: preserve-3d;
+  transition: transform 0.15s ease-out, box-shadow 0.4s ease;
+  will-change: transform;
+}
+.tilt-card:hover {
+  box-shadow: var(--lift-shadow-lg);
+}
+.tilt-card .tilt-shine {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: linear-gradient(135deg, rgba(255,255,255,0.15) 0%, transparent 50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+  pointer-events: none;
+  z-index: 2;
+}
+.tilt-card:hover .tilt-shine { opacity: 1; }
+
+/* Floating animation */
+@keyframes float3d {
+  0%, 100% { transform: translateY(0) translateZ(20px); }
+  50% { transform: translateY(-10px) translateZ(30px); }
+}
+.float-3d {
+  animation: float3d 4s ease-in-out infinite;
+}
+
+/* Glass nav scroll state */
+header.glass-nav.scrolled {
+  background: rgba(247, 245, 240, 0.75) !important;
+  backdrop-filter: blur(16px) saturate(180%);
+  box-shadow: 0 8px 32px rgba(28, 54, 40, 0.08);
+}
+
+/* Button 3D press */
+.btn-3d {
+  position: relative;
+  transform: translateZ(0);
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 4px 0 rgba(0,0,0,0.15);
+}
+.btn-3d:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 0 rgba(0,0,0,0.12), 0 12px 24px rgba(28,54,40,0.2);
+}
+.btn-3d:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 0 rgba(0,0,0,0.15);
+}
+
+/* Parallax layers */
+.parallax-wrap { overflow: hidden; position: relative; }
+.parallax-bg {
+  will-change: transform;
+  transition: transform 0.1s linear;
+}
+
+/* Depth section */
+.depth-section {
+  perspective: var(--perspective);
+  transform-style: preserve-3d;
+}
+
+/* Cursor glow (optional subtle) */
+.glow-orb {
+  position: fixed;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(28,54,40,0.06) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: 0;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.3s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal-3d { opacity: 1; transform: none; transition: none; }
+  .float-3d { animation: none; }
+  .parallax-bg { transform: none !important; }
+}

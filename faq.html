@@ -6,7 +6,7 @@
 <title>FAQ | LeadingEdge Development LLC</title>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&amp;family=Playfair+Display:ital,wght@0,600;0,700;1,600&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="assets/3d-effects.css">
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <script id="tailwind-config">
       tailwind.config = {
@@ -115,9 +115,9 @@
         }
     </style>
 </head>
-<body class="bg-background text-on-surface font-body-md antialiased">
+<body class="bg-background text-on-surface font-body-md antialiased has-3d">
 <!-- TopNavBar -->
-<header class="sticky top-0 w-full z-50 bg-background dark:bg-primary-container border-b border-outline-variant dark:border-primary-container h-20">
+<header class="glass-nav sticky top-0 w-full z-50 bg-background dark:bg-primary-container border-b border-outline-variant dark:border-primary-container h-20">
 <nav class="flex justify-between items-center h-full px-margin-mobile md:px-gutter max-w-container-max mx-auto">
 <a href="index.html" class="flex flex-col">
 <span class="font-display-lg text-body-lg font-bold tracking-tighter text-primary dark:text-primary-fixed uppercase">LEADINGEDGE</span>
@@ -139,8 +139,7 @@
 </header>
 <main>
 <!-- Hero Section -->
-<section class="py-section-gap px-margin-mobile md:px-gutter max-w-container-max mx-auto">
-<div class="flex flex-col items-center text-center max-w-3xl mx-auto">
+<section class="py-section-gap px-margin-mobile md:px-gutter max-w-container-max mx-auto reveal-3d"><div class="flex flex-col items-center text-center max-w-3xl mx-auto">
 <span class="font-label-caps text-label-caps text-secondary mb-4">CLARITY IN ARCHITECTURE</span>
 <h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-6">Frequently Asked <br/><span class="italic font-normal">Questions</span></h1>
 <p class="font-body-lg text-body-lg text-on-surface-variant">Transparency is at the heart of our design process. Find answers to our most common inquiries regarding timelines, investments, and architectural standards.</p>
@@ -331,4 +330,5 @@
             }
         }
     </script>
+<script src="assets/3d-effects.js"></script>
 </body></html>

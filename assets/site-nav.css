@@ -51,21 +51,14 @@
   transition:color .25s;
 }
 
-/* Scrolled: one stable dark compact bar (no blink) */
+/* Scrolled: stay white, just compact + subtle shadow */
 .le-header.is-scrolled{
-  background:rgba(20,36,24,0.96);
-  border-bottom-color:rgba(255,255,255,0.08);
-  box-shadow:0 4px 20px rgba(0,0,0,0.15);
+  background:rgba(255,255,255,0.98);
+  border-bottom-color:var(--line);
+  box-shadow:0 2px 16px rgba(0,0,0,0.06);
 }
 .le-header.is-scrolled .nav-wrap{padding:8px 40px;}
 .le-header.is-scrolled .logo-img{height:46px;}
-.le-header.is-scrolled nav a{color:rgba(255,255,255,0.85);}
-.le-header.is-scrolled nav a.active,
-.le-header.is-scrolled nav a:hover{color:#fff;}
-.le-header.is-scrolled nav a.active::after{background:#fff;}
-.le-header.is-scrolled .menu-toggle{color:#fff;}
-.le-header.is-scrolled .btn-dark{background:#fff;color:var(--forest);}
-.le-header.is-scrolled .btn-dark:hover{background:var(--bg);}
 .le-header.is-scrolled .btn{padding:7px 14px;font-size:9.5px;}
 .le-footer{background:var(--bg);padding:72px 0 32px;border-top:1px solid var(--line);}
 .le-footer .container{max-width:1240px;margin:0 auto;padding:0 40px;}

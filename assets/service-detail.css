@@ -1,6 +1,7 @@
 :root{
   --forest:#1D3121;--forest-dark:#142418;--bg:#F9F9F9;--bg-2:#F3F3F1;
-  --ink:#1a1a18;--muted:#6b6b63;--line:#e8e8e4;--white:#ffffff;
+  --ink:#1a1a18;--charcoal:#2d2d2a;--muted:#6b6b63;--line:#e8e8e4;--white:#ffffff;
+  --sage:#8FA27A;--sage-dark:#7a8f68;--sage-light:#eef2ea;
 }
 *{margin:0;padding:0;box-sizing:border-box;}
 html{scroll-behavior:smooth;}
@@ -135,6 +136,47 @@ footer{background:var(--bg);padding:72px 0 32px;border-top:1px solid var(--line)
 .reveal{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease;}
 .reveal.visible{opacity:1;transform:translateY(0);}
 
+/* Home Remodeling premium section */
+.remodel-page{background:var(--white);}
+.remodel-hero{padding:88px 0 72px;background:var(--white);}
+.remodel-hero-inner{max-width:760px;margin:0 auto;text-align:center;}
+.remodel-top-icon{
+  width:52px;height:52px;margin:0 auto 28px;border-radius:14px;
+  background:var(--sage-light);color:var(--sage);
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:0 8px 24px rgba(143,162,122,0.15);
+}
+.remodel-top-icon svg{width:26px;height:26px;}
+.remodel-label{font-size:11px;font-weight:600;letter-spacing:2.4px;color:var(--sage);text-transform:uppercase;margin-bottom:18px;display:block;}
+.remodel-title{font-family:'Playfair Display',serif;font-size:clamp(36px,4.5vw,52px);font-weight:500;line-height:1.12;color:var(--charcoal);margin-bottom:24px;}
+.remodel-desc{font-size:16px;line-height:1.75;color:var(--muted);max-width:640px;margin:0 auto 56px;}
+.remodel-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-bottom:56px;}
+.remodel-card{
+  background:var(--white);border:1px solid var(--line);border-radius:14px;
+  padding:32px 26px;text-align:left;
+  box-shadow:0 4px 20px rgba(0,0,0,0.04);
+  transition:transform .35s cubic-bezier(0.16,1,0.3,1),box-shadow .35s ease,border-color .35s ease;
+}
+.remodel-card:hover{
+  transform:translateY(-6px);
+  border-color:var(--sage);
+  box-shadow:0 16px 40px rgba(143,162,122,0.18);
+}
+.remodel-card-icon{width:36px;height:36px;color:var(--sage);margin-bottom:18px;}
+.remodel-card-icon svg{width:100%;height:100%;}
+.remodel-card h3{font-family:'Playfair Display',serif;font-size:18px;font-weight:500;color:var(--charcoal);margin-bottom:8px;}
+.remodel-card p{font-size:13.5px;line-height:1.6;color:var(--muted);}
+.remodel-cta-wrap{text-align:center;}
+.btn-sage{
+  display:inline-flex;align-items:center;gap:10px;
+  padding:14px 28px;border-radius:8px;
+  background:var(--sage);color:#fff;
+  font-size:12px;font-weight:600;letter-spacing:0.8px;text-transform:uppercase;
+  transition:background .25s,transform .25s,box-shadow .25s;
+  box-shadow:0 4px 16px rgba(143,162,122,0.3);
+}
+.btn-sage:hover{background:var(--sage-dark);transform:translateY(-2px);box-shadow:0 8px 24px rgba(143,162,122,0.35);}
+
 @media(max-width:980px){
   .nav-wrap{grid-template-columns:1fr auto;gap:12px;}
   nav{grid-column:1/-1;justify-self:stretch;}
@@ -144,6 +186,7 @@ footer{background:var(--bg);padding:72px 0 32px;border-top:1px solid var(--line)
   .menu-toggle{display:block;}
   .overview-grid,.why-grid,.footer-grid{grid-template-columns:1fr;}
   .offer-grid,.related-grid{grid-template-columns:repeat(2,1fr);}
+  .remodel-grid{grid-template-columns:repeat(2,1fr);}
   .benefits-grid{grid-template-columns:repeat(2,1fr);}
 }
 @media(max-width:640px){
@@ -151,5 +194,8 @@ footer{background:var(--bg);padding:72px 0 32px;border-top:1px solid var(--line)
   .nav-wrap{padding:16px 20px;}
   .section{padding:72px 0;}
   .offer-grid,.related-grid,.benefits-grid{grid-template-columns:1fr;}
+  .remodel-grid{grid-template-columns:1fr;}
+  .remodel-hero{padding:64px 0 56px;}
   .sd-hero{min-height:460px;}
+  .logo-img{height:58px;}
 }

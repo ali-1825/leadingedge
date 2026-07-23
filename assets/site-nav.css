@@ -65,7 +65,7 @@ body.nav-open{overflow:hidden;}
 .le-footer{background:var(--bg);padding:72px 0 32px;border-top:1px solid var(--line);}
 .le-footer .container{max-width:1240px;margin:0 auto;padding:0 40px;}
 .le-footer .footer-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr 1.2fr;gap:32px;margin-bottom:52px;}
-.le-footer .footer-about p{font-size:13px;color:var(--muted);line-height:1.7;margin:18px 0 22px;max-width:250px;}
+.le-footer .footer-about p{font-size:13px;color:var(--ink);line-height:1.7;margin:18px 0 22px;max-width:250px;}
 .le-footer .logo-img{height:56px;width:auto;display:block;}
 .le-footer .social{display:flex;gap:10px;}
 .le-footer .social a{

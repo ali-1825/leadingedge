@@ -7,9 +7,9 @@ const root = path.join(path.dirname(fileURLToPath(import.meta.url)), '..');
 function header(prefix, active) {
   const links = [
     ['home', 'index.html', 'HOME'],
-    ['about', 'about.html', 'ABOUT US'],
-    ['blog', 'blog.html', 'BLOG'],
     ['services', 'services.html', 'SERVICES'],
+    ['blog', 'blog.html', 'BLOG'],
+    ['about', 'about.html', 'ABOUT US'],
     ['faq', 'faq.html', 'FAQ'],
     ['contact', 'contact.html', 'CONTACT']
   ];

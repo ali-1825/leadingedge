@@ -219,7 +219,7 @@ function buildPage(service) {
       </div>
     </div>
     <div class="footer-bottom">
-      <span>&copy; 2024 LeadingEdge Developments. All Rights Reserved.</span>
+      <span>&copy; 2026 LeadingEdge Development LLC. All Rights Reserved.</span>
       <div class="links"><a href="../privacy-policy.html">Privacy Policy</a><a href="../terms-of-use.html">Terms of Use</a></div>
     </div>
   </div>

@@ -148,6 +148,7 @@
   .blog-newsletter-form{flex-direction:column;}
 }
 @media(max-width:640px){
+  .blog-page .container{padding:0 20px;}
   .blog-hero-split{padding:32px 0 40px;}
   .blog-featured-body{padding:28px 22px;}
   .blog-grid{grid-template-columns:1fr;}

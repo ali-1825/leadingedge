@@ -9,9 +9,25 @@
   var isScrolled = false;
   var ticking = false;
 
+  function setMenuOpen(open) {
+    if (!nav || !toggle) return;
+    nav.classList.toggle('open', open);
+    toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    document.body.classList.toggle('nav-open', open);
+  }
+
   if (toggle && nav) {
+    toggle.setAttribute('aria-expanded', 'false');
     toggle.addEventListener('click', function () {
-      nav.classList.toggle('open');
+      setMenuOpen(!nav.classList.contains('open'));
+    });
+    nav.querySelectorAll('a').forEach(function (link) {
+      link.addEventListener('click', function () {
+        setMenuOpen(false);
+      });
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') setMenuOpen(false);
     });
   }
 
@@ -44,6 +60,7 @@
 
   var path = window.location.pathname.replace(/\\/g, '/');
   var file = path.split('/').pop() || 'index.html';
+  if (file === '' || file.indexOf('.') === -1) file = 'index.html';
   var map = {
     'index.html': 'home',
     'about.html': 'about',

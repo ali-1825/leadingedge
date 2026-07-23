@@ -78,7 +78,7 @@ img{display:block;max-width:100%;}
 .faq-q svg{flex-shrink:0;transition:transform .3s;color:var(--forest);}
 .faq-item.open .faq-q svg{transform:rotate(180deg);}
 .faq-a{max-height:0;overflow:hidden;transition:max-height .35s ease,padding .35s ease;}
-.faq-item.open .faq-a{max-height:400px;padding-bottom:22px;}
+.faq-item.open .faq-a{max-height:2000px;padding-bottom:22px;}
 .faq-a p{font-size:14px;line-height:1.75;color:var(--muted);}
 
 .related-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}

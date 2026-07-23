@@ -1,14 +1,6 @@
 (function () {
   'use strict';
 
-  var menuToggle = document.getElementById('menuToggle');
-  var mainNav = document.getElementById('mainNav');
-  if (menuToggle && mainNav) {
-    menuToggle.addEventListener('click', function () {
-      mainNav.classList.toggle('open');
-    });
-  }
-
   document.querySelectorAll('.faq-q').forEach(function (btn) {
     btn.addEventListener('click', function () {
       var item = btn.closest('.faq-item');

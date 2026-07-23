@@ -29,12 +29,13 @@ function header(prefix, active) {
       <ul>
         ${navItems}
       </ul>
+      <a href="${prefix}booking.html" class="btn btn-dark nav-mobile-cta">BOOK CONSULTATION</a>
     </nav>
     <a href="${prefix}booking.html" class="btn btn-dark nav-cta">
       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M3 10h18M8 2v4M16 2v4"/></svg>
       BOOK CONSULTATION
     </a>
-    <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+    <button class="menu-toggle" id="menuToggle" aria-label="Menu" aria-expanded="false">
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
     </button>
   </div>
@@ -76,13 +77,13 @@ function footer(prefix) {
         <li><a href="${prefix}contact.html">Contact Us</a></li>
       </ul></div>
       <div class="footer-col"><h4>CONTACT US</h4>
-        <div class="contact-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012 4.2 2 2 0 014 2h3a2 2 0 012 1.7c.1 1 .3 2 .6 3a2 2 0 01-.5 2L8 10a16 16 0 006 6l1.3-1.1a2 2 0 012-.5c1 .3 2 .5 3 .6a2 2 0 011.7 2z"/></svg><span>+1 (414) 630-5297</span></div>
-        <div class="contact-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 6l10 7 10-7"/></svg><span>jay.lorino@leadingedgemgt.com</span></div>
+        <div class="contact-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012 4.2 2 2 0 014 2h3a2 2 0 012 1.7c.1 1 .3 2 .6 3a2 2 0 01-.5 2L8 10a16 16 0 006 6l1.3-1.1a2 2 0 012-.5c1 .3 2 .5 3 .6a2 2 0 011.7 2z"/></svg><a href="tel:+14146305297">+1 (414) 630-5297</a></div>
+        <div class="contact-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 6l10 7 10-7"/></svg><a href="mailto:jay.lorino@leadingedgemgt.com">jay.lorino@leadingedgemgt.com</a></div>
         <div class="contact-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s7-6.5 7-12a7 7 0 10-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg><span>Milwaukee, WI 53201, USA</span></div>
       </div>
     </div>
     <div class="footer-bottom">
-      <span>&copy; 2024 LeadingEdge Developments. All Rights Reserved.</span>
+      <span>&copy; 2026 LeadingEdge Development LLC. All Rights Reserved.</span>
       <div class="links"><a href="${prefix}privacy-policy.html">Privacy Policy</a><a href="${prefix}terms-of-use.html">Terms of Use</a></div>
     </div>
   </div>

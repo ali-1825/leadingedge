@@ -18,6 +18,7 @@
 
   /* 3D tilt on cards */
   function initTilt() {
+    if (!window.matchMedia('(hover: hover)').matches) return;
     document.querySelectorAll('.tilt-card').forEach(function (card) {
       if (!card.querySelector('.tilt-shine')) {
         var shine = document.createElement('div');
@@ -91,6 +92,12 @@
   }
 
   document.addEventListener('DOMContentLoaded', function () {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      document.querySelectorAll('.reveal-3d').forEach(function (el) {
+        el.classList.add('visible');
+      });
+      return;
+    }
     initReveal();
     initTilt();
     initParallax();

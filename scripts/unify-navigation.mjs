@@ -122,15 +122,28 @@ function patchFile(filePath, prefix, active) {
   html = html.replace(/<footer[\s\S]*?<\/footer>/i, footer(prefix));
 
   html = html.replace(/<script>\s*document\.getElementById\('menuToggle'\)[\s\S]*?<\/script>/g, '');
-  html = html.replace(/<script src="(\.\.\/)?assets\/3d-effects\.js"><\/script>\n?/g, '');
-  html = html.replace(/<script src="(\.\.\/)?assets\/site-nav\.js"><\/script>\n?/g, '');
+  html = html.replace(/<script src="(\.\.\/)?assets\/hero-video\.js"(\s+defer)?><\/script>\n?/g, '');
+  html = html.replace(/<script src="(\.\.\/)?assets\/form-handler\.js"(\s+defer)?><\/script>\n?/g, '');
+  html = html.replace(/<script src="(\.\.\/)?assets\/3d-effects\.js"(\s+defer)?><\/script>\n?/g, '');
+  html = html.replace(/<script src="(\.\.\/)?assets\/service-detail\.js"(\s+defer)?><\/script>\n?/g, '');
+  html = html.replace(/<script src="(\.\.\/)?assets\/site-nav\.js"(\s+defer)?><\/script>\n?/g, '');
+
+  const hasHeroVideo = html.includes('heroVideo') || html.includes('hero-video');
+  const hasFormHandler = html.includes('data-le-form');
 
   const scripts = [
-    `<script src="${prefix}assets/3d-effects.js"></script>`,
-    `<script src="${prefix}assets/site-nav.js"></script>`
+    `<script src="${prefix}assets/3d-effects.js" defer></script>`,
+    `<script src="${prefix}assets/site-nav.js" defer></script>`
   ];
   if (filePath.includes(`${path.sep}services${path.sep}`) || html.includes('service-detail')) {
-    scripts.unshift(`<script src="${prefix}assets/service-detail.js"></script>`);
+    scripts.unshift(`<script src="${prefix}assets/service-detail.js" defer></script>`);
+  }
+  if (hasHeroVideo) {
+    scripts.unshift(`<script src="${prefix}assets/hero-video.js" defer></script>`);
+  }
+  if (hasFormHandler) {
+    const navIdx = scripts.findIndex(function (s) { return s.indexOf('site-nav.js') !== -1; });
+    scripts.splice(navIdx, 0, `<script src="${prefix}assets/form-handler.js" defer></script>`);
   }
   html = html.replace('</body>', scripts.join('\n') + '\n</body>');
 

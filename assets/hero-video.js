@@ -7,11 +7,11 @@
   var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   var conn = navigator.connection;
   var saveData = conn && conn.saveData;
-  var slow = conn && /2g|slow-2g/.test(conn.effectiveType || '');
+  var slow = conn && /2g|slow-2g|3g/.test(conn.effectiveType || '');
 
   if (reduced || saveData || slow) {
     video.removeAttribute('autoplay');
-    video.pause();
+    video.preload = 'none';
     return;
   }
 
@@ -24,9 +24,19 @@
     }
   }
 
-  if (video.readyState >= 2) {
-    startVideo();
+  function loadAndPlay() {
+    if (video.readyState >= 2) {
+      startVideo();
+    } else {
+      video.addEventListener('loadeddata', startVideo, { once: true });
+      if (video.preload === 'metadata') video.preload = 'auto';
+      video.load();
+    }
+  }
+
+  if ('requestIdleCallback' in window) {
+    requestIdleCallback(loadAndPlay, { timeout: 2000 });
   } else {
-    video.addEventListener('loadeddata', startVideo, { once: true });
+    window.addEventListener('load', loadAndPlay, { once: true });
   }
 })();

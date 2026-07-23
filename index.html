@@ -109,14 +109,26 @@
   .expertise{padding:96px 0 88px;text-align:center;background:var(--bg);}
   .section-eyebrow{font-size:11px;font-weight:600;letter-spacing:2.2px;color:var(--forest);display:block;margin-bottom:14px;}
   .section-title{font-size:clamp(30px,3.5vw,38px);font-weight:500;margin-bottom:56px;color:var(--ink);}
+  .expertise .section-eyebrow{color:var(--muted);font-weight:500;letter-spacing:2.5px;}
   .expertise-grid{
-    display:grid;grid-template-columns:repeat(4,1fr);gap:40px;
+    display:grid;grid-template-columns:repeat(4,1fr);
+    background:var(--white);border-radius:14px;
+    box-shadow:0 8px 40px rgba(0,0,0,0.06);
+    border:1px solid var(--line);
+    overflow:hidden;
   }
-  .expertise-item{padding:0 16px;}
-  .expertise-icon{width:40px;height:40px;margin:0 auto 22px;color:var(--forest);}
+  .expertise-item{
+    position:relative;padding:48px 28px 52px;
+    text-align:center;
+  }
+  .expertise-item:not(:last-child)::after{
+    content:'';position:absolute;right:0;top:36px;bottom:36px;
+    width:1px;background:var(--line);
+  }
+  .expertise-icon{width:36px;height:36px;margin:0 auto 24px;color:var(--ink);}
   .expertise-icon svg{width:100%;height:100%;}
-  .expertise-item h3{font-family:'Playfair Display',serif;font-size:19px;font-weight:500;margin-bottom:10px;}
-  .expertise-item p{font-size:13.5px;color:var(--muted);line-height:1.65;}
+  .expertise-item h3{font-family:'Playfair Display',serif;font-size:18px;font-weight:500;margin-bottom:10px;color:var(--ink);}
+  .expertise-item p{font-size:13px;color:var(--muted);line-height:1.65;max-width:210px;margin:0 auto;}
 
   /* ── Projects ── */
   .projects{padding:88px 0 96px;background:var(--white);}
@@ -218,6 +230,8 @@
     .menu-toggle{display:block;}
     .why-grid,.footer-grid{grid-template-columns:1fr;}
     .expertise-grid,.project-grid{grid-template-columns:repeat(2,1fr);}
+    .expertise-item::after{display:none;}
+    .expertise-item:nth-child(odd)::after{display:block;}
     .why-badge{right:16px;bottom:16px;}
   }
   @media(max-width:640px){
@@ -225,6 +239,8 @@
     .nav-wrap{padding:16px 20px;}
     .hero-inner{padding:0 20px;}
     .expertise-grid,.project-grid{grid-template-columns:1fr;}
+    .expertise-item::after{display:none!important;}
+    .expertise-item:not(:last-child){border-bottom:1px solid var(--line);}
     .hero{height:auto;min-height:540px;padding:80px 0 60px;}
     .hero-overlay{background:linear-gradient(180deg, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.7) 100%);}
     .why-features{grid-template-columns:1fr;}
@@ -291,22 +307,22 @@
     <h2 class="section-title serif">End-to-End Excellence</h2>
     <div class="expertise-grid">
       <div class="expertise-item">
-        <div class="expertise-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 12l9-9 9 9M5 10v10h14V10"/></svg></div>
+        <div class="expertise-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 12l8-7 8 7"/><path d="M6 11v9h12v-9"/><path d="M10 20v-5h4v5"/></svg></div>
         <h3>Residential</h3>
         <p>Luxury homes designed for comfort and elegance.</p>
       </div>
       <div class="expertise-item">
-        <div class="expertise-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 21V7l6-4 6 4v14M14 21V11l6-3v13M8 9h.01M8 13h.01M8 17h.01"/></svg></div>
+        <div class="expertise-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="5" y="3" width="14" height="18" rx="1"/><path d="M9 7h.01M13 7h.01M17 7h.01M9 11h.01M13 11h.01M17 11h.01M9 15h.01M13 15h.01M17 15h.01"/></svg></div>
         <h3>Commercial</h3>
         <p>Modern commercial spaces for a growing future.</p>
       </div>
       <div class="expertise-item">
-        <div class="expertise-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 21l4-8 3 4 3-6 6 10H4z"/><path d="M4 21h16"/></svg></div>
+        <div class="expertise-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 20h18"/><path d="M6 20V12l3-5 2 3 3-6 4 8v8"/><path d="M8 8l-1-3M14 6l1-3"/></svg></div>
         <h3>Communities</h3>
         <p>Master-planned communities built around you.</p>
       </div>
       <div class="expertise-item">
-        <div class="expertise-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 8C8 10 5 13 5 20h2c1-6 4-9 10-10zM11 20c0-3 2-6 6-9"/></svg></div>
+        <div class="expertise-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 3C8 8 5 11 5 16c0 2.2 1.8 4 4 4h6c2.2 0 4-1.8 4-4 0-5-3-8-7-13z"/><path d="M12 3v13"/></svg></div>
         <h3>Sustainable</h3>
         <p>Eco-friendly solutions for a better tomorrow.</p>
       </div>

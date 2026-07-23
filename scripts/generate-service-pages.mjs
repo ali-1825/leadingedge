@@ -65,7 +65,7 @@ function buildPage(service) {
 <header>
   <div class="nav-wrap">
     <a href="../index.html" class="logo">
-      <img src="../assets/logo.png" alt="LeadingEdge — Building Tomorrow, Today" class="logo-img">
+      <img src="../assets/logo.png" alt="LeadingEdge" class="logo-img">
     </a>
     <nav id="mainNav">
       <ul>
@@ -183,7 +183,7 @@ function buildPage(service) {
     <div class="footer-grid">
       <div class="footer-about">
         <a href="../index.html" class="logo">
-          <img src="../assets/logo.png" alt="LeadingEdge — Building Tomorrow, Today" class="logo-img">
+          <img src="../assets/logo.png" alt="LeadingEdge" class="logo-img">
         </a>
         <p>We design and build premium residential and commercial spaces that stand the test of time.</p>
         <div class="social">

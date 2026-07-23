@@ -4,8 +4,10 @@
   var toggle = document.getElementById('menuToggle');
   var nav = document.getElementById('mainNav');
   var header = document.querySelector('.le-header');
-  var scrollTimer = null;
-  var SCROLL_THRESHOLD = 20;
+  var SCROLL_DOWN = 32;
+  var SCROLL_UP = 10;
+  var isScrolled = false;
+  var ticking = false;
 
   if (toggle && nav) {
     toggle.addEventListener('click', function () {
@@ -13,31 +15,28 @@
     });
   }
 
-  function updateScrolledState() {
+  function updateHeader() {
     if (!header) return;
-    if (window.scrollY > SCROLL_THRESHOLD) {
+    var y = window.scrollY;
+    if (!isScrolled && y > SCROLL_DOWN) {
+      isScrolled = true;
       header.classList.add('is-scrolled');
-    } else {
+    } else if (isScrolled && y < SCROLL_UP) {
+      isScrolled = false;
       header.classList.remove('is-scrolled');
-      header.classList.remove('is-scrolling');
     }
+    ticking = false;
   }
 
   if (header) {
-    updateScrolledState();
+    updateHeader();
     window.addEventListener(
       'scroll',
       function () {
-        if (window.scrollY > SCROLL_THRESHOLD) {
-          header.classList.add('is-scrolling');
-        } else {
-          header.classList.remove('is-scrolling');
+        if (!ticking) {
+          ticking = true;
+          requestAnimationFrame(updateHeader);
         }
-        updateScrolledState();
-        clearTimeout(scrollTimer);
-        scrollTimer = setTimeout(function () {
-          header.classList.remove('is-scrolling');
-        }, 140);
       },
       { passive: true }
     );

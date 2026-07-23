@@ -5,11 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>News &amp; Insights | LeadingEdge</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/3d-effects.css">
 <link rel="stylesheet" href="assets/site-nav.css">
 <link rel="stylesheet" href="assets/blog.css">
-<link rel="stylesheet" href="assets/home-cta.css">
 </head>
 <body class="has-3d">
 
@@ -38,65 +37,129 @@
   </div>
 </header>
 
-<main>
-  <section class="blog-hero reveal-3d">
+<main class="blog-page">
+  <section class="blog-hero-split reveal-3d">
     <div class="container">
-      <span class="eyebrow">LeadingEdge Journal</span>
-      <h1 class="serif">News &amp; Insights</h1>
-      <p>Updates, project highlights, and practical guidance on residential construction, land development, and building with confidence across Southeast Wisconsin.</p>
+      <div>
+        <nav class="blog-breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a><span>/</span><span>Blog</span>
+        </nav>
+        <h1>Insights That Build Better Projects</h1>
+        <p class="hero-desc">Expert advice, industry updates, and practical tips to help you plan, build, and manage with confidence across Southeast Wisconsin.</p>
+      </div>
+      <div class="blog-hero-visual">
+        <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=1200&auto=format&fit=crop" alt="Construction planning blueprints">
+      </div>
     </div>
   </section>
 
-  <section class="blog-section">
+  <section class="blog-filters">
+    <div class="container">
+      <div class="blog-filter-bar" role="tablist" aria-label="Filter articles by category">
+        <button class="blog-filter-btn active" type="button" data-filter="all">All Articles</button>
+        <button class="blog-filter-btn" type="button" data-filter="residential">Residential</button>
+        <button class="blog-filter-btn" type="button" data-filter="land-development">Land Development</button>
+        <button class="blog-filter-btn" type="button" data-filter="construction-tips">Construction Tips</button>
+        <button class="blog-filter-btn" type="button" data-filter="project-management">Project Management</button>
+        <button class="blog-filter-btn" type="button" data-filter="industry-news">Industry News</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="blog-featured">
+    <div class="container">
+      <a href="blog/custom-home-build-wisconsin.html" class="blog-featured-card reveal-3d" data-category="residential">
+        <div class="blog-featured-img">
+          <span class="blog-featured-badge">Featured</span>
+          <img src="assets/service-residential.png" alt="Custom home construction in Wisconsin">
+        </div>
+        <div class="blog-featured-body">
+          <div class="blog-post-meta">
+            <span class="cat">Residential</span><span class="dot">|</span>
+            <span>July 10, 2026</span><span class="dot">|</span>
+            <span>6 min read</span>
+          </div>
+          <h2>What to Expect During a Custom Home Build in Wisconsin</h2>
+          <p>From planning and permitting to final walkthrough — a practical overview of the milestones every homeowner should understand before breaking ground on a custom residential project.</p>
+          <span class="blog-read-link">Read Article <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <section class="blog-listing">
     <div class="container">
       <div class="blog-grid">
-        <a href="blog/custom-home-build-wisconsin.html" class="blog-card reveal-3d">
-          <div class="blog-card-img">
-            <img src="assets/service-residential.png" alt="Custom home construction in Wisconsin">
-          </div>
-          <div class="blog-card-body">
-            <span class="blog-card-meta">Residential</span>
-            <h3>What to Expect During a Custom Home Build in Wisconsin</h3>
-            <p>From planning and permitting to final walkthrough, here is a practical overview of the milestones homeowners should understand before breaking ground.</p>
-            <span class="blog-card-link">Read More <span aria-hidden="true">→</span></span>
-          </div>
-        </a>
-        <a href="blog/site-preparation-development.html" class="blog-card reveal-3d delay-1">
+        <a href="blog/site-preparation-development.html" class="blog-card reveal-3d" data-category="land-development">
           <div class="blog-card-img">
             <img src="assets/service-land-development.png" alt="Land development site preparation">
           </div>
           <div class="blog-card-body">
-            <span class="blog-card-meta">Land Development</span>
+            <div class="blog-post-meta">
+              <span class="cat">Land Development</span><span class="dot">|</span>
+              <span>June 15, 2026</span>
+            </div>
             <h3>Site Preparation Essentials for Successful Development</h3>
             <p>Grading, utilities, drainage, and approvals all play a role in turning raw land into a build-ready parcel. We break down the key steps.</p>
-            <span class="blog-card-link">Read More <span aria-hidden="true">→</span></span>
+            <span class="blog-read-link">Read Article <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
           </div>
         </a>
-        <a href="blog/smart-planning-construction.html" class="blog-card reveal-3d delay-2">
+
+        <a href="blog/smart-planning-construction.html" class="blog-card reveal-3d delay-1" data-category="project-management">
           <div class="blog-card-img">
-            <img src="assets/service-business-consulting-overview.png" alt="Construction business consulting meeting">
+            <img src="assets/service-business-consulting-overview.png" alt="Construction project planning">
           </div>
           <div class="blog-card-body">
-            <span class="blog-card-meta">Business Consulting</span>
+            <div class="blog-post-meta">
+              <span class="cat">Project Management</span><span class="dot">|</span>
+              <span>May 28, 2026</span>
+            </div>
             <h3>Smart Planning for Stronger Construction Projects</h3>
             <p>How disciplined project planning, budget oversight, and risk management help owners and developers avoid costly surprises.</p>
-            <span class="blog-card-link">Read More <span aria-hidden="true">→</span></span>
+            <span class="blog-read-link">Read Article <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </div>
+        </a>
+
+        <a href="blog/custom-home-build-wisconsin.html" class="blog-card reveal-3d delay-2" data-category="construction-tips">
+          <div class="blog-card-img">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6162a59a0f?q=80&w=800&auto=format&fit=crop" alt="Modern home exterior">
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-post-meta">
+              <span class="cat">Construction Tips</span><span class="dot">|</span>
+              <span>July 10, 2026</span>
+            </div>
+            <h3>Building Your Dream Home: 10 Things to Know Before You Start</h3>
+            <p>Essential planning steps, budget considerations, and timeline expectations for homeowners preparing to build a custom residence in Wisconsin.</p>
+            <span class="blog-read-link">Read Article <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
           </div>
         </a>
       </div>
     </div>
   </section>
 
-  <section class="le-cta">
-    <div class="le-cta-bg-wrap">
-      <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=1800&auto=format&fit=crop" alt="Modern building interior at night">
+  <section class="blog-view-all">
+    <div class="container">
+      <button class="blog-view-all-btn" type="button">View All Articles <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
     </div>
-    <div class="le-cta-content">
-      <h2>Let's Build Something Great Together</h2>
-      <p>Whether it's your dream home or a commercial space,<br>we're here to turn your vision into reality.</p>
-      <a href="booking.html" class="le-cta-btn">BOOK A CONSULTATION
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#1D3121" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-      </a>
+  </section>
+
+  <section class="blog-newsletter">
+    <div class="container">
+      <div class="blog-newsletter-wrap reveal-3d">
+        <div class="blog-newsletter-content">
+          <div class="blog-newsletter-icon">
+            <svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 6l10 7 10-7"/></svg>
+          </div>
+          <span class="eyebrow">Stay Updated</span>
+          <h2>Subscribe to Our Newsletter</h2>
+          <p>Get the latest construction insights, project tips, and LeadingEdge updates delivered directly to your inbox.</p>
+        </div>
+        <form class="blog-newsletter-form" action="contact.html" method="get">
+          <input type="email" name="email" placeholder="Enter your email address" required aria-label="Email address">
+          <button type="submit">Subscribe Now</button>
+        </form>
+      </div>
     </div>
   </section>
 </main>
@@ -147,11 +210,7 @@
   </div>
 </footer>
 <script src="assets/3d-effects.js"></script>
-
-
-
-
-
+<script src="assets/blog.js"></script>
 <script src="assets/site-nav.js"></script>
 </body>
 </html>

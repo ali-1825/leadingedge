@@ -8,9 +8,7 @@ function header(prefix, active) {
   const links = [
     ['home', 'index.html', 'HOME'],
     ['about', 'about.html', 'ABOUT US'],
-    ['communities', 'communities.html', 'COMMUNITIES'],
     ['services', 'services.html', 'SERVICES'],
-    ['gallery', 'index.html#services', 'GALLERY'],
     ['contact', 'contact.html', 'CONTACT']
   ];
   const navItems = links
@@ -96,7 +94,6 @@ const navAssetsRoot = navAssets.replace('PREFIX', '');
 const pageActive = {
   'index.html': 'home',
   'about.html': 'about',
-  'communities.html': 'communities',
   'services.html': 'services',
   'contact.html': 'contact',
   'booking.html': 'booking',
@@ -112,6 +109,7 @@ function patchFile(filePath, prefix, active) {
   }
 
   if (html.includes('le-header')) {
+    html = html.replace(/<header class="le-header">[\s\S]*?<\/header>/i, header(prefix, active));
     html = html.replace(/<\/header>\s*<a href="[^"]*booking\.html"[\s\S]*?<\/header>\s*/i, '</header>\n');
   } else {
     html = html.replace(/<header[\s\S]*?<\/header>/i, header(prefix, active));

@@ -47,7 +47,6 @@
   var map = {
     'index.html': 'home',
     'about.html': 'about',
-    'communities.html': 'communities',
     'services.html': 'services',
     'contact.html': 'contact',
     'booking.html': 'booking',

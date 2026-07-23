@@ -1,0 +1,22 @@
+---
+description: Auto-deploy site changes to GitHub and Vercel without asking
+alwaysApply: true
+---
+
+# Auto Deploy (GitHub + Vercel)
+
+After completing any site change in this repo, deploy automatically. Do not ask the user for permission to commit, push, or deploy.
+
+## Workflow
+
+1. Finish the requested change.
+2. Commit relevant files with a clear message (skip secrets and junk like `.env`).
+3. Push to `origin main`: `git push origin main`
+4. Deploy to Vercel production: `npx vercel deploy --prod --yes`
+
+## Rules
+
+- Do not ask "Should I deploy?" — just deploy.
+- Only commit files related to the task; do not add unrelated untracked files unless the user asked.
+- If push or deploy fails, fix and retry once; then report the error briefly.
+- Live URLs: GitHub `https://github.com/ali-1825/leadingedge`, Vercel `https://leadingedge-two.vercel.app`

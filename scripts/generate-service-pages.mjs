@@ -46,26 +46,8 @@ function esc(s) {
     .replace(/"/g, '&quot;');
 }
 
-function relatedCards(current) {
-  return services
-    .filter((s) => s.slug !== current.slug)
-    .slice(0, 3)
-    .map(
-      (s) => `
-    <a href="${s.slug}.html" class="related-card reveal">
-      <div class="related-img"><img src="${s.heroImage}" alt="${esc(s.title)}" loading="lazy"></div>
-      <div class="related-info">
-        <h3>${esc(s.title.replace('Luxury ', '').replace('LeadingEdge ', ''))}</h3>
-        <div class="related-arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
-      </div>
-    </a>`
-    )
-    .join('');
-}
-
 function buildPage(service) {
   const displayTitle = service.title.replace(/^Luxury /, '');
-  const related = relatedCards(service);
 
   return `<!DOCTYPE html>
 <html lang="en">
@@ -161,64 +143,6 @@ function buildPage(service) {
     </div>
   </section>
 
-  <section class="section" id="process">
-    <div class="container">
-      <span class="section-eyebrow reveal">Our Process</span>
-      <h2 class="section-title serif reveal">A Disciplined Path to Excellence</h2>
-      <div class="process-list">
-        ${service.process
-          .map(
-            (step) => `
-        <div class="process-item reveal">
-          <div class="process-num">${step.step}</div>
-          <div>
-            <h3>${esc(step.title)}</h3>
-            <p>${esc(step.description)}</p>
-          </div>
-        </div>`
-          )
-          .join('')}
-      </div>
-    </div>
-  </section>
-
-  <section class="section bg" id="why">
-    <div class="container">
-      <span class="section-eyebrow reveal">Why Choose LeadingEdge</span>
-      <h2 class="section-title serif reveal">The Standard Our Clients Expect</h2>
-      <div class="why-grid">
-        ${service.whyChoose
-          .map(
-            (item) => `
-        <div class="why-item reveal">
-          <div class="icon">${svg('verified')}</div>
-          <div><h4>${esc(item.title)}</h4><p>${esc(item.description)}</p></div>
-        </div>`
-          )
-          .join('')}
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="benefits">
-    <div class="container">
-      <span class="section-eyebrow reveal">Benefits</span>
-      <h2 class="section-title serif reveal">Advantages That Define the Experience</h2>
-      <div class="benefits-grid">
-        ${service.benefits
-          .map(
-            (item, i) => `
-        <article class="benefit-card reveal">
-          <div class="benefit-num">${String(i + 1).padStart(2, '0')}</div>
-          <h4>${esc(item.title)}</h4>
-          <p>${esc(item.description)}</p>
-        </article>`
-          )
-          .join('')}
-      </div>
-    </div>
-  </section>
-
   <section class="section bg" id="faq">
     <div class="container">
       <span class="section-eyebrow reveal" style="text-align:center;display:block;">FAQ</span>
@@ -237,14 +161,6 @@ function buildPage(service) {
           )
           .join('')}
       </div>
-    </div>
-  </section>
-
-  <section class="section" id="related">
-    <div class="container">
-      <span class="section-eyebrow reveal">Related Services</span>
-      <h2 class="section-title serif reveal">Explore More Solutions</h2>
-      <div class="related-grid">${related}</div>
     </div>
   </section>
 

@@ -678,5 +678,165 @@
         "answer": "While our deepest expertise lies in Southeast Wisconsin markets, we accept select consulting engagements in adjacent Midwest markets where our construction and development experience translates effectively. Initial consultations determine geographic fit."
       }
     ]
+  },
+  {
+    "slug": "home-remodeling",
+    "title": "Home Remodeling & Renovations",
+    "metaDescription": "Expert home remodeling and renovation services in Milwaukee and Southeast Wisconsin. Kitchens, bathrooms, basements, additions, and complete home makeovers by LeadingEdge.",
+    "heroImage": "https://images.unsplash.com/photo-1556912173-46c336c7fd55?w=1920&q=80",
+    "overviewImage": "https://images.unsplash.com/photo-1600607687644-c7171b42498f?w=1200&q=80",
+    "ctaImage": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=1200&q=80",
+    "subtitle": "Transform your home with expert remodeling and renovation services — from kitchens and bathrooms to complete makeovers designed for beauty, function, and lasting value.",
+    "overview": [
+      "LeadingEdge delivers expert home remodeling and renovation services across Milwaukee and Southeast Wisconsin — transforming kitchens, bathrooms, basements, and entire residences into spaces that reflect your lifestyle with premium finishes and thoughtful design.",
+      "Whether you are updating a single room or undertaking a whole-home renovation, our licensed team manages every trade under one accountable structure — protecting your budget, minimizing disruption, and ensuring craftsmanship that stands up to daily life for years to come.",
+      "From initial consultation through final walkthrough, we combine transparent communication, disciplined scheduling, and refined finish work so your renovated home feels cohesive, elevated, and built to the standards you expect from a trusted Wisconsin contractor."
+    ],
+    "offer": [
+      {
+        "icon": "format_paint",
+        "title": "Kitchen Remodeling",
+        "description": "Custom layouts, premium cabinetry, stone surfaces, and functional design for the heart of your home. We coordinate plumbing, electrical, and finish trades to deliver kitchens that balance daily usability with elevated aesthetic appeal."
+      },
+      {
+        "icon": "plumbing",
+        "title": "Bathroom Renovation",
+        "description": "Spa-inspired upgrades with elegant fixtures, custom tile work, and thoughtful spatial planning. We address waterproofing, ventilation, and accessibility requirements while creating bathrooms that feel refined and restorative."
+      },
+      {
+        "icon": "terrain",
+        "title": "Basement Finishing",
+        "description": "Transform unused lower levels into comfortable living rooms, home offices, guest suites, or entertainment spaces. We manage moisture mitigation, egress compliance, and finish details that add meaningful square footage and property value."
+      },
+      {
+        "icon": "add_home",
+        "title": "Room Additions",
+        "description": "Seamlessly expand your home with additions that match existing architecture and structural systems. We handle zoning, engineering, and interior transitions so new and original spaces feel intentionally connected from day one."
+      },
+      {
+        "icon": "cottage",
+        "title": "Interior Upgrades",
+        "description": "Elevate every room with new flooring, lighting, millwork, and finish packages sourced from trusted suppliers. Our finish carpenters and installers deliver the cohesive detail that distinguishes a professionally renovated home."
+      },
+      {
+        "icon": "home",
+        "title": "Exterior Renovations",
+        "description": "Enhance curb appeal and protect your investment with siding, roofing, windows, and outdoor living improvements. We coordinate exterior trades efficiently and ensure every elevation complements your home's architectural character."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What types of remodeling projects does LeadingEdge handle?",
+        "answer": "We manage kitchen and bathroom renovations, basement finishing, room additions, whole-home remodels, and exterior upgrades across Milwaukee and Southeast Wisconsin. Project scope ranges from focused room updates to comprehensive transformations of existing residences."
+      },
+      {
+        "question": "How long does a typical kitchen or bathroom remodel take?",
+        "answer": "Timelines depend on scope, material lead times, and permit requirements. Most kitchen remodels require eight to fourteen weeks, while bathroom renovations typically complete in four to eight weeks. We provide a detailed schedule during planning and update it as selections are finalized."
+      },
+      {
+        "question": "Can we live in our home during a renovation?",
+        "answer": "In many cases, yes. We develop phased execution plans that isolate work areas, maintain essential utilities, and minimize dust and disruption. For whole-home renovations, we discuss temporary relocation options and realistic logistics during the consultation."
+      },
+      {
+        "question": "Do you help with design and material selections?",
+        "answer": "We guide layout decisions, fixture selections, and finish packages based on your budget and aesthetic goals. We can work with your designer or recommend trusted partners experienced in residential remodeling aligned with our construction standards."
+      },
+      {
+        "question": "How do you manage remodeling budgets?",
+        "answer": "Every project begins with a detailed scope and line-item budget. Change orders are documented with cost and schedule impact before work proceeds. Contingency reserves are established upfront for unforeseen conditions common in renovation work."
+      },
+      {
+        "question": "Are permits required for remodeling projects in Wisconsin?",
+        "answer": "Most structural, electrical, plumbing, and addition work requires municipal permits. LeadingEdge manages permit applications, inspections, and code compliance on your behalf — ensuring your renovation meets Wisconsin building standards."
+      },
+      {
+        "question": "Do you offer warranties on remodeling work?",
+        "answer": "Yes. LeadingEdge provides a comprehensive workmanship warranty on all renovation projects, alongside manufacturer warranties on fixtures, appliances, and materials. Warranty documentation is delivered at project completion."
+      },
+      {
+        "question": "What areas do you serve for home remodeling?",
+        "answer": "We remodel homes throughout Milwaukee County, Waukesha County, Ozaukee County, and Washington County — including Milwaukee, Brookfield, Mequon, Cedarburg, Wauwatosa, and surrounding Southeast Wisconsin communities."
+      }
+    ]
+  },
+  {
+    "slug": "management-solutions",
+    "title": "Management Solutions",
+    "metaDescription": "Professional construction and project management solutions by LeadingEdge. Planning, budgeting, supervision, and quality control across Milwaukee and Southeast Wisconsin.",
+    "heroImage": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1920&q=80",
+    "overviewImage": "https://images.unsplash.com/photo-1541976590-713941681591?w=1200&q=80",
+    "ctaImage": "https://images.unsplash.com/photo-1590490360182-c33d57733427?w=1200&q=80",
+    "subtitle": "Professional construction and project management that keeps every build on schedule, on budget, and aligned with your quality standards from planning through final delivery.",
+    "overview": [
+      "LeadingEdge provides professional construction and project management solutions across Milwaukee and Southeast Wisconsin — coordinating planning, scheduling, budgeting, quality control, and stakeholder communication for residential and commercial projects.",
+      "Our project managers serve as your single point of accountability — overseeing trades, inspections, and milestones with the discipline required to prevent delays, cost overruns, and quality gaps that plague fragmented construction efforts.",
+      "Whether you are an owner, developer, or investor, our management approach delivers transparent reporting, proactive problem-solving, and results you can trust — backed by a licensed Wisconsin contractor with deep regional construction experience."
+    ],
+    "offer": [
+      {
+        "icon": "assignment",
+        "title": "Project Planning",
+        "description": "Strategic roadmaps that align scope, timeline, resources, and permitting requirements from day one. We develop milestone schedules, identify long-lead items early, and establish clear success criteria before construction begins."
+      },
+      {
+        "icon": "budget",
+        "title": "Budget Management",
+        "description": "Transparent cost tracking, forecasting, and change-order discipline that protect your investment throughout the project lifecycle. Monthly financial reporting keeps stakeholders informed and decisions grounded in current data."
+      },
+      {
+        "icon": "engineering",
+        "title": "Construction Supervision",
+        "description": "Daily on-site oversight ensuring every trade delivers to specification, safety protocols are enforced, and field conditions are resolved before they impact schedule or quality. Our superintendents maintain active presence on every managed project."
+      },
+      {
+        "icon": "verified",
+        "title": "Quality Control",
+        "description": "Rigorous inspection protocols at every project milestone — from foundation and framing through mechanical rough-in and finish work. Deficiencies are documented, corrected, and verified before subsequent phases proceed."
+      },
+      {
+        "icon": "shield",
+        "title": "Risk Management",
+        "description": "Proactive identification and mitigation of schedule delays, cost exposures, compliance issues, and subcontractor performance risks. We address problems early with documented recovery strategies rather than reactive crisis management."
+      },
+      {
+        "icon": "groups",
+        "title": "Client Coordination",
+        "description": "Clear, consistent communication through weekly progress meetings, written reports, and direct access to decision-makers. You stay informed and in control without managing the complexity of multi-trade coordination yourself."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What types of projects benefit from LeadingEdge management solutions?",
+        "answer": "Our management services support custom home builds, commercial renovations, multi-unit residential projects, land development, and complex remodels across Southeast Wisconsin. Any project requiring disciplined trade coordination and transparent oversight is a strong fit."
+      },
+      {
+        "question": "How is project management different from general contracting?",
+        "answer": "General contracting includes hands-on construction execution and trade contracts. Project management focuses on oversight, scheduling, budget tracking, and quality enforcement — often serving owners who hold separate contracts with builders or want independent accountability on capital projects."
+      },
+      {
+        "question": "How often will I receive project updates?",
+        "answer": "We provide weekly progress reports as standard, with daily communication available for active construction phases. Reporting covers schedule status, budget tracking, open issues, and upcoming milestones — tailored to your preferred level of detail."
+      },
+      {
+        "question": "Can LeadingEdge manage a project with my existing contractor?",
+        "answer": "Yes. We frequently serve as an owner's representative or project manager alongside contractor teams you have already engaged — providing independent oversight, change-order validation, and quality verification without replacing your builder."
+      },
+      {
+        "question": "How do you handle budget overruns?",
+        "answer": "We establish detailed baselines during planning and monitor costs against approved budgets continuously. Potential overruns are flagged early with recovery options. All scope changes require documented approval before additional work proceeds."
+      },
+      {
+        "question": "What qualifications do your project managers hold?",
+        "answer": "Our project managers bring decades of combined construction experience across residential and commercial sectors in Wisconsin. LeadingEdge operates under full general contractor licensing with comprehensive insurance coverage."
+      },
+      {
+        "question": "Do you manage permits and inspections?",
+        "answer": "Yes. We coordinate permit applications, schedule municipal inspections, and ensure code compliance throughout construction. Our familiarity with Milwaukee-area building departments helps prevent approval delays that stall project timelines."
+      },
+      {
+        "question": "What areas do you serve for project management?",
+        "answer": "LeadingEdge manages projects throughout Milwaukee County, Waukesha County, Ozaukee County, and Washington County — serving owners, developers, and investors across Southeast Wisconsin's residential and commercial construction markets."
+      }
+    ]
   }
 ]

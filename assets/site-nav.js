@@ -56,6 +56,9 @@
   if (path.indexOf('/services/') !== -1) {
     map[file] = 'services';
   }
+  if (path.indexOf('/blog/') !== -1) {
+    map[file] = 'blog';
+  }
   var active = map[file];
   if (active && nav) {
     nav.querySelectorAll('a[data-nav]').forEach(function (link) {

@@ -150,4 +150,11 @@ if (fs.existsSync(serviceDir)) {
   });
 }
 
+const blogDir = path.join(root, 'blog');
+if (fs.existsSync(blogDir)) {
+  fs.readdirSync(blogDir).filter((f) => f.endsWith('.html')).forEach((f) => {
+    patchFile(path.join(blogDir, f), '../', 'blog');
+  });
+}
+
 console.log('Navigation unified.');

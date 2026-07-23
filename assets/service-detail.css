@@ -1,6 +1,6 @@
 :root{
   --forest:#1D3121;--forest-dark:#142418;--bg:#F9F9F9;--bg-2:#F3F3F1;
-  --ink:#1a1a18;--charcoal:#2d2d2a;--muted:#6b6b63;--line:#e8e8e4;--white:#ffffff;
+  --ink:#1a1a18;--charcoal:#2D2D2D;--muted:#6b6b63;--line:#e8e8e4;--white:#ffffff;
   --sage:#8FA27A;--sage-dark:#7a8f68;--sage-light:#eef2ea;
 }
 *{margin:0;padding:0;box-sizing:border-box;}

@@ -194,7 +194,7 @@ function buildPage(service) {
       </div>
       <div class="footer-col"><h4>COMPANY</h4><ul>
         <li><a href="../about.html">About Us</a></li>
-        <li><a href="../about.html#leadership">Our Team</a></li>
+        <li><a href="../about.html">Our Team</a></li>
         <li><a href="../contact.html">Careers</a></li>
         <li><a href="../about.html">News &amp; Insights</a></li>
       </ul></div>

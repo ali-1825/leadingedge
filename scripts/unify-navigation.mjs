@@ -57,7 +57,7 @@ function footer(prefix) {
       </div>
       <div class="footer-col"><h4>COMPANY</h4><ul>
         <li><a href="${prefix}about.html">About Us</a></li>
-        <li><a href="${prefix}about.html#leadership">Our Team</a></li>
+        <li><a href="${prefix}about.html">Our Team</a></li>
         <li><a href="${prefix}contact.html">Careers</a></li>
         <li><a href="${prefix}about.html">News &amp; Insights</a></li>
       </ul></div>

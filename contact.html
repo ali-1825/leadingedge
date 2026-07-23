@@ -108,31 +108,33 @@
             z-index: 10;
         }
     </style>
+<link rel="stylesheet" href="assets/site-nav.css">
 </head>
 <body class="bg-background text-on-surface font-body-md antialiased overflow-x-hidden has-3d">
-<!-- TopNavBar -->
-<nav class="sticky top-0 w-full z-50 bg-background dark:bg-primary-container border-b border-outline-variant dark:border-primary-container h-20 transition-all duration-300">
-<div class="flex justify-between items-center h-full px-margin-mobile md:px-gutter max-w-container-max mx-auto">
-<a href="index.html" class="flex items-center gap-2">
-<img src="assets/logo.png" alt="LeadingEdge" class="h-[72px] w-auto">
-</a>
-<div class="hidden md:flex gap-8 items-center">
-<a class="font-label-caps text-label-caps text-on-surface-variant dark:text-on-primary-container hover:text-secondary dark:hover:text-secondary-fixed-dim transition-colors duration-300" href="index.html">Home</a>
-<a class="font-label-caps text-label-caps text-on-surface-variant dark:text-on-primary-container hover:text-secondary dark:hover:text-secondary-fixed-dim transition-colors duration-300" href="about.html">About Us</a>
-<a class="font-label-caps text-label-caps text-on-surface-variant dark:text-on-primary-container hover:text-secondary dark:hover:text-secondary-fixed-dim transition-colors duration-300" href="communities.html">Communities</a>
-<a class="font-label-caps text-label-caps text-on-surface-variant dark:text-on-primary-container hover:text-secondary dark:hover:text-secondary-fixed-dim transition-colors duration-300" href="services.html">Services</a>
-<a class="font-label-caps text-label-caps text-on-surface-variant dark:text-on-primary-container hover:text-secondary dark:hover:text-secondary-fixed-dim transition-colors duration-300" href="index.html#gallery">Gallery</a>
-<a class="font-label-caps text-label-caps text-primary dark:text-secondary-fixed border-b-2 border-secondary-fixed pb-1" href="contact.html">Contact</a>
-</div>
-<a href="booking.html" class="bg-primary text-on-primary px-6 py-3 font-label-caps text-label-caps scale-95 transition-transform duration-200 active:scale-90 hidden lg:block">
-                Book Consultation
-            </a>
-<!-- Mobile Menu Toggle -->
-<button class="md:hidden text-primary">
-<span class="material-symbols-outlined">menu</span>
-</button>
-</div>
-</nav>
+<header class="le-header">
+  <div class="nav-wrap">
+    <a href="index.html" class="logo">
+      <img src="assets/logo.png" alt="LeadingEdge" class="logo-img">
+    </a>
+    <nav id="mainNav">
+      <ul>
+        <li><a href="index.html" data-nav="home">HOME</a></li>
+        <li><a href="about.html" data-nav="about">ABOUT US</a></li>
+        <li><a href="communities.html" data-nav="communities">COMMUNITIES</a></li>
+        <li><a href="services.html" data-nav="services">SERVICES</a></li>
+        <li><a href="index.html#services" data-nav="gallery">GALLERY</a></li>
+        <li><a href="contact.html" data-nav="contact" class="active">CONTACT</a></li>
+      </ul>
+    </nav>
+    <a href="booking.html" class="btn btn-dark nav-cta">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M3 10h18M8 2v4M16 2v4"/></svg>
+      BOOK CONSULTATION
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+    </button>
+  </div>
+</header>
 <main>
 <!-- Hero Section -->
 <section class="relative w-full h-[400px] reveal-3d md:h-[500px] overflow-hidden">
@@ -305,54 +307,50 @@
 </section>
 </main>
 <!-- Footer -->
-<footer class="bg-surface-container-low dark:bg-primary border-t border-outline-variant w-full py-section-gap">
-<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-gutter max-w-container-max mx-auto">
-<div class="space-y-6">
-<img src="assets/logo.png" alt="LeadingEdge" class="h-14 w-auto mb-4">
-<p class="font-body-md text-on-surface-variant dark:text-on-primary-container max-w-xs">
-                    Building premium residential and commercial spaces that stand the test of time.
-                </p>
-<div class="flex gap-4">
-<span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-primary" data-icon="facebook">face_nod</span>
-<span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-primary" data-icon="instagram">infrared</span>
-<span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-primary" data-icon="linkedin">dine_in</span>
-</div>
-</div>
-<div>
-<h4 class="font-label-caps text-label-caps text-primary dark:text-primary-fixed mb-6">COMPANY</h4>
-<ul class="space-y-3">
-<li><a class="font-body-md text-on-surface-variant dark:text-on-primary-container hover:text-primary dark:hover:text-inverse-primary transition-colors" href="about.html">About Us</a></li>
-<li><a class="font-body-md text-on-surface-variant dark:text-on-primary-container hover:text-primary dark:hover:text-inverse-primary transition-colors" href="about.html#leadership">Our Team</a></li>
-<li><a class="font-body-md text-on-surface-variant dark:text-on-primary-container hover:text-primary dark:hover:text-inverse-primary transition-colors" href="contact.html">Careers</a></li>
-<li><a class="font-body-md text-on-surface-variant dark:text-on-primary-container hover:text-primary dark:hover:text-inverse-primary transition-colors" href="about.html">News &amp; Insights</a></li>
-</ul>
-</div>
-<div>
-<h4 class="font-label-caps text-label-caps text-primary dark:text-primary-fixed mb-6">SERVICES</h4>
-<ul class="space-y-3">
-<li><a class="font-body-md text-on-surface-variant dark:text-on-primary-container hover:text-primary dark:hover:text-inverse-primary transition-colors" href="services.html#residential">Residential</a></li>
-<li><a class="font-body-md text-on-surface-variant dark:text-on-primary-container hover:text-primary dark:hover:text-inverse-primary transition-colors" href="services.html#commercial">Commercial</a></li>
-<li><a class="font-body-md text-on-surface-variant dark:text-on-primary-container hover:text-primary dark:hover:text-inverse-primary transition-colors" href="communities.html">Communities</a></li>
-<li><a class="font-body-md text-on-surface-variant dark:text-on-primary-container hover:text-primary dark:hover:text-inverse-primary transition-colors" href="services.html">Sustainable Design</a></li>
-</ul>
-</div>
-<div>
-<h4 class="font-label-caps text-label-caps text-primary dark:text-primary-fixed mb-6">RESOURCES</h4>
-<ul class="space-y-3">
-<li><a class="font-body-md text-on-surface-variant dark:text-on-primary-container hover:text-primary dark:hover:text-inverse-primary transition-colors" href="index.html#gallery">Projects</a></li>
-<li><a class="font-body-md text-on-surface-variant dark:text-on-primary-container hover:text-primary dark:hover:text-inverse-primary transition-colors" href="index.html#gallery">Gallery</a></li>
-<li><a class="font-body-md text-on-surface-variant dark:text-on-primary-container hover:text-primary dark:hover:text-inverse-primary transition-colors" href="faq.html">FAQ</a></li>
-<li><a class="font-body-md text-on-surface-variant dark:text-on-primary-container hover:text-primary dark:hover:text-inverse-primary transition-colors" href="contact.html">Contact Us</a></li>
-</ul>
-</div>
-</div>
-<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter mt-20 pt-8 border-t border-outline-variant flex flex-col md:flex-row justify-between gap-4">
-<p class="font-label-caps text-[10px] text-on-surface-variant dark:text-on-primary-container opacity-80">© 2026 LeadingEdge Development LLC. All Rights Reserved.</p>
-<div class="flex gap-6">
-<a class="font-label-caps text-[10px] text-on-surface-variant dark:text-on-primary-container hover:text-primary" href="#">Privacy Policy</a>
-<a class="font-label-caps text-[10px] text-on-surface-variant dark:text-on-primary-container hover:text-primary" href="#">Terms of Use</a>
-</div>
-</div>
+<footer class="le-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <a href="index.html" class="logo">
+          <img src="assets/logo.png" alt="LeadingEdge" class="logo-img">
+        </a>
+        <p>We design and build premium residential and commercial spaces that stand the test of time.</p>
+        <div class="social">
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+          <a href="https://www.instagram.com/leadingedge_dev/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/></svg></a>
+          <a href="https://www.linkedin.com/company/leadingedge-devt/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><circle cx="4" cy="4" r="2"/><path d="M2 9h4v13H2zM9 9h4v2s1-2 4-2 5 2 5 6v7h-4v-6c0-2-1-3-2.5-3S11 11 11 13v9H9z"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M22.5 8.2a3 3 0 00-2.1-2.1C18.7 5.5 12 5.5 12 5.5s-6.7 0-8.4.6A3 3 0 001.5 8.2 31.6 31.6 0 001 12a31.6 31.6 0 00.5 3.8 3 3 0 002.1 2.1c1.7.6 8.4.6 8.4.6s6.7 0 8.4-.6a3 3 0 002.1-2.1A31.6 31.6 0 0023 12a31.6 31.6 0 00-.5-3.8z"/><polygon points="10,9 16,12 10,15" fill="currentColor" stroke="none"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col"><h4>COMPANY</h4><ul>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="about.html#leadership">Our Team</a></li>
+        <li><a href="contact.html">Careers</a></li>
+        <li><a href="about.html">News &amp; Insights</a></li>
+      </ul></div>
+      <div class="footer-col"><h4>SERVICES</h4><ul>
+        <li><a href="services/residential-construction.html">Residential</a></li>
+        <li><a href="services/home-remodeling.html">Home Remodeling</a></li>
+        <li><a href="services/land-development.html">Land Development</a></li>
+        <li><a href="services/business-consulting.html">Business Consulting</a></li>
+      </ul></div>
+      <div class="footer-col"><h4>QUICK LINKS</h4><ul>
+        <li><a href="services.html">Projects</a></li>
+        <li><a href="index.html#services">Services</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul></div>
+      <div class="footer-col"><h4>CONTACT US</h4>
+        <div class="contact-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012 4.2 2 2 0 014 2h3a2 2 0 012 1.7c.1 1 .3 2 .6 3a2 2 0 01-.5 2L8 10a16 16 0 006 6l1.3-1.1a2 2 0 012-.5c1 .3 2 .5 3 .6a2 2 0 011.7 2z"/></svg><span>+1 (414) 630-5297</span></div>
+        <div class="contact-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 6l10 7 10-7"/></svg><span>jay.lorino@leadingedgemgt.com</span></div>
+        <div class="contact-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s7-6.5 7-12a7 7 0 10-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg><span>Milwaukee, WI 53201, USA</span></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2024 LeadingEdge Developments. All Rights Reserved.</span>
+      <div class="links"><a href="#">Privacy Policy</a><a href="#">Terms of Use</a></div>
+    </div>
+  </div>
 </footer>
 <script>
         // Form Interaction
@@ -383,4 +381,6 @@
         });
     </script>
 <script src="assets/3d-effects.js"></script>
+
+<script src="assets/site-nav.js"></script>
 </body></html>

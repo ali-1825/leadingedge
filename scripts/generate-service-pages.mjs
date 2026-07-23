@@ -59,22 +59,23 @@ function buildPage(service) {
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/service-detail.css">
+<link rel="stylesheet" href="../assets/site-nav.css">
 </head>
 <body>
 
-<header>
+<header class="le-header">
   <div class="nav-wrap">
     <a href="../index.html" class="logo">
       <img src="../assets/logo.png" alt="LeadingEdge" class="logo-img">
     </a>
     <nav id="mainNav">
       <ul>
-        <li><a href="../index.html">HOME</a></li>
-        <li><a href="../about.html">ABOUT US</a></li>
-        <li><a href="../communities.html">COMMUNITIES</a></li>
-        <li><a href="../services.html" class="active">SERVICES</a></li>
-        <li><a href="../index.html#services">GALLERY</a></li>
-        <li><a href="../contact.html">CONTACT</a></li>
+        <li><a href="../index.html" data-nav="home">HOME</a></li>
+        <li><a href="../about.html" data-nav="about">ABOUT US</a></li>
+        <li><a href="../communities.html" data-nav="communities">COMMUNITIES</a></li>
+        <li><a href="../services.html" data-nav="services" class="active">SERVICES</a></li>
+        <li><a href="../index.html#services" data-nav="gallery">GALLERY</a></li>
+        <li><a href="../contact.html" data-nav="contact">CONTACT</a></li>
       </ul>
     </nav>
     <a href="../booking.html" class="btn btn-dark nav-cta">
@@ -178,7 +179,7 @@ function buildPage(service) {
   </section>
 </main>
 
-<footer>
+<footer class="le-footer">
   <div class="container">
     <div class="footer-grid">
       <div class="footer-about">
@@ -225,6 +226,7 @@ function buildPage(service) {
 </footer>
 
 <script src="../assets/service-detail.js"></script>
+<script src="../assets/site-nav.js"></script>
 </body>
 </html>`;
 }

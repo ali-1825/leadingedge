@@ -30,35 +30,6 @@
   .serif{font-family:'Playfair Display',serif;}
   .container{max-width:1240px;margin:0 auto;padding:0 40px;}
 
-  /* ── Header ── */
-  header{
-    position:sticky;top:0;z-index:100;
-    background:var(--white);
-    border-bottom:1px solid var(--line);
-  }
-  .nav-wrap{
-    display:grid;
-    grid-template-columns:1fr auto 1fr;
-    align-items:center;
-    padding:20px 40px;
-    max-width:1240px;
-    margin:0 auto;
-  }
-  .logo{display:flex;align-items:center;justify-self:start;}
-  .logo-img{display:block;height:72px;width:auto;}
-  .footer-about .logo-img{height:56px;}
-  nav{justify-self:center;}
-  nav ul{display:flex;gap:32px;list-style:none;}
-  nav a{
-    font-size:12px;font-weight:500;letter-spacing:0.8px;color:var(--ink);
-    position:relative;padding-bottom:6px;transition:color .2s;
-  }
-  nav a.active{color:var(--forest);font-weight:600;}
-  nav a.active::after{
-    content:'';position:absolute;bottom:0;left:0;right:0;height:2px;background:var(--forest);
-  }
-  nav a:hover{color:var(--forest);}
-  .nav-cta{justify-self:end;}
   .btn{
     display:inline-flex;align-items:center;gap:8px;
     padding:12px 22px;border-radius:6px;
@@ -72,7 +43,6 @@
   .btn-outline:hover{background:var(--ink);color:#fff;}
   .btn-white{background:#fff;color:var(--forest);}
   .btn-white:hover{background:var(--bg);}
-  .menu-toggle{display:none;background:none;border:none;cursor:pointer;padding:8px;justify-self:end;}
 
   /* ── Hero ── */
   .hero{
@@ -184,39 +154,7 @@
   .cta h2{font-family:'Playfair Display',serif;font-size:clamp(30px,3.8vw,42px);font-weight:500;margin-bottom:18px;}
   .cta p{font-size:15px;opacity:0.9;margin-bottom:36px;line-height:1.65;}
 
-  /* ── Footer ── */
-  footer{background:var(--bg);padding:72px 0 32px;border-top:1px solid var(--line);}
-  .footer-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr 1.2fr;gap:32px;margin-bottom:52px;}
-  .footer-about p{font-size:13px;color:var(--muted);line-height:1.7;margin:18px 0 22px;max-width:250px;}
-  .social{display:flex;gap:10px;}
-  .social a{
-    width:34px;height:34px;border-radius:50%;background:var(--forest);
-    display:flex;align-items:center;justify-content:center;
-    transition:background .25s;
-  }
-  .social a:hover{background:var(--forest-dark);}
-  .social svg{width:14px;height:14px;stroke:#fff;}
-  .footer-col h4{font-size:11px;font-weight:700;letter-spacing:1.2px;margin-bottom:20px;color:var(--ink);}
-  .footer-col ul{list-style:none;}
-  .footer-col li{margin-bottom:12px;}
-  .footer-col a{font-size:13px;color:var(--muted);transition:color .2s;}
-  .footer-col a:hover{color:var(--forest);}
-  .contact-item{display:flex;gap:10px;margin-bottom:14px;font-size:13px;color:var(--muted);line-height:1.5;}
-  .contact-item svg{width:15px;height:15px;flex-shrink:0;margin-top:2px;color:var(--forest);}
-  .footer-bottom{display:flex;justify-content:space-between;padding-top:28px;border-top:1px solid var(--line);font-size:12px;color:var(--muted);flex-wrap:wrap;gap:12px;}
-  .footer-bottom .links{display:flex;gap:24px;}
-  .footer-bottom a:hover{color:var(--forest);}
-
   @media(max-width:980px){
-    .nav-wrap{grid-template-columns:1fr auto;gap:12px;}
-    nav{grid-column:1/-1;justify-self:stretch;}
-    nav ul{display:none;}
-    nav.open ul{
-      display:flex;flex-direction:column;gap:16px;
-      padding:20px 0 8px;
-    }
-    .nav-cta{display:none;}
-    .menu-toggle{display:block;}
     .why-grid,.footer-grid{grid-template-columns:1fr;}
     .expertise-grid,.service-grid{grid-template-columns:repeat(2,1fr);}
     .expertise-item::after{display:none;}
@@ -225,7 +163,6 @@
   }
   @media(max-width:640px){
     .container{padding:0 20px;}
-    .nav-wrap{padding:16px 20px;}
     .hero-inner{padding:0 20px;}
     .expertise-grid,.service-grid{grid-template-columns:1fr;}
     .expertise-item::after{display:none!important;}
@@ -234,25 +171,25 @@
     .hero-overlay{background:linear-gradient(180deg, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.7) 100%);}
     .why-features{grid-template-columns:1fr;}
     .why-img-wrap img{height:320px;}
-    .logo-img{height:58px;}
   }
 </style>
+<link rel="stylesheet" href="assets/site-nav.css">
 </head>
 <body>
 
-<header>
+<header class="le-header">
   <div class="nav-wrap">
     <a href="index.html" class="logo">
       <img src="assets/logo.png" alt="LeadingEdge" class="logo-img">
     </a>
     <nav id="mainNav">
       <ul>
-        <li><a href="index.html" class="active">HOME</a></li>
-        <li><a href="about.html">ABOUT US</a></li>
-        <li><a href="communities.html">COMMUNITIES</a></li>
-        <li><a href="services.html">SERVICES</a></li>
-        <li><a href="index.html#gallery">GALLERY</a></li>
-        <li><a href="contact.html">CONTACT</a></li>
+        <li><a href="index.html" data-nav="home" class="active">HOME</a></li>
+        <li><a href="about.html" data-nav="about">ABOUT US</a></li>
+        <li><a href="communities.html" data-nav="communities">COMMUNITIES</a></li>
+        <li><a href="services.html" data-nav="services">SERVICES</a></li>
+        <li><a href="index.html#services" data-nav="gallery">GALLERY</a></li>
+        <li><a href="contact.html" data-nav="contact">CONTACT</a></li>
       </ul>
     </nav>
     <a href="booking.html" class="btn btn-dark nav-cta">
@@ -400,7 +337,7 @@
   </div>
 </section>
 
-<footer>
+<footer class="le-footer">
   <div class="container">
     <div class="footer-grid">
       <div class="footer-about">
@@ -410,68 +347,44 @@
         <p>We design and build premium residential and commercial spaces that stand the test of time.</p>
         <div class="social">
           <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
-          <a href="https://www.instagram.com/leadingedge_dev/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+          <a href="https://www.instagram.com/leadingedge_dev/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/></svg></a>
           <a href="https://www.linkedin.com/company/leadingedge-devt/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><circle cx="4" cy="4" r="2"/><path d="M2 9h4v13H2zM9 9h4v2s1-2 4-2 5 2 5 6v7h-4v-6c0-2-1-3-2.5-3S11 11 11 13v9H9z"/></svg></a>
           <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M22.5 8.2a3 3 0 00-2.1-2.1C18.7 5.5 12 5.5 12 5.5s-6.7 0-8.4.6A3 3 0 001.5 8.2 31.6 31.6 0 001 12a31.6 31.6 0 00.5 3.8 3 3 0 002.1 2.1c1.7.6 8.4.6 8.4.6s6.7 0 8.4-.6a3 3 0 002.1-2.1A31.6 31.6 0 0023 12a31.6 31.6 0 00-.5-3.8z"/><polygon points="10,9 16,12 10,15" fill="currentColor" stroke="none"/></svg></a>
         </div>
       </div>
-      <div class="footer-col">
-        <h4>COMPANY</h4>
-        <ul>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="about.html#leadership">Our Team</a></li>
-          <li><a href="contact.html">Careers</a></li>
-          <li><a href="about.html">News &amp; Insights</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>SERVICES</h4>
-        <ul>
-          <li><a href="services/residential-construction.html">Residential</a></li>
-          <li><a href="services/land-development.html">Land Development</a></li>
-          <li><a href="services/general-contracting.html">Project Management</a></li>
-          <li><a href="services/business-consulting.html">Business Consulting</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>QUICK LINKS</h4>
-        <ul>
-          <li><a href="services.html">Projects</a></li>
-          <li><a href="index.html#services">Services</a></li>
-          <li><a href="faq.html">FAQ</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>CONTACT US</h4>
-        <div class="contact-item">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012 4.2 2 2 0 014 2h3a2 2 0 012 1.7c.1 1 .3 2 .6 3a2 2 0 01-.5 2L8 10a16 16 0 006 6l1.3-1.1a2 2 0 012-.5c1 .3 2 .5 3 .6a2 2 0 011.7 2z"/></svg>
-          <span>+1 (414) 630-5297</span>
-        </div>
-        <div class="contact-item">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 6l10 7 10-7"/></svg>
-          <span>jay.lorino@leadingedgemgt.com</span>
-        </div>
-        <div class="contact-item">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s7-6.5 7-12a7 7 0 10-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>
-          <span>Milwaukee, WI 53201, USA</span>
-        </div>
+      <div class="footer-col"><h4>COMPANY</h4><ul>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="about.html#leadership">Our Team</a></li>
+        <li><a href="contact.html">Careers</a></li>
+        <li><a href="about.html">News &amp; Insights</a></li>
+      </ul></div>
+      <div class="footer-col"><h4>SERVICES</h4><ul>
+        <li><a href="services/residential-construction.html">Residential</a></li>
+        <li><a href="services/home-remodeling.html">Home Remodeling</a></li>
+        <li><a href="services/land-development.html">Land Development</a></li>
+        <li><a href="services/business-consulting.html">Business Consulting</a></li>
+      </ul></div>
+      <div class="footer-col"><h4>QUICK LINKS</h4><ul>
+        <li><a href="services.html">Projects</a></li>
+        <li><a href="index.html#services">Services</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul></div>
+      <div class="footer-col"><h4>CONTACT US</h4>
+        <div class="contact-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012 4.2 2 2 0 014 2h3a2 2 0 012 1.7c.1 1 .3 2 .6 3a2 2 0 01-.5 2L8 10a16 16 0 006 6l1.3-1.1a2 2 0 012-.5c1 .3 2 .5 3 .6a2 2 0 011.7 2z"/></svg><span>+1 (414) 630-5297</span></div>
+        <div class="contact-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 6l10 7 10-7"/></svg><span>jay.lorino@leadingedgemgt.com</span></div>
+        <div class="contact-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s7-6.5 7-12a7 7 0 10-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg><span>Milwaukee, WI 53201, USA</span></div>
       </div>
     </div>
     <div class="footer-bottom">
       <span>&copy; 2024 LeadingEdge Developments. All Rights Reserved.</span>
-      <div class="links">
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terms of Use</a>
-      </div>
+      <div class="links"><a href="#">Privacy Policy</a><a href="#">Terms of Use</a></div>
     </div>
   </div>
 </footer>
 
-<script>
-  document.getElementById('menuToggle').addEventListener('click', function() {
-    document.getElementById('mainNav').classList.toggle('open');
-  });
-</script>
+
+
+<script src="assets/site-nav.js"></script>
 </body>
 </html>

@@ -6,23 +6,23 @@
 <title>LeadingEdge | Building Tomorrows</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/3d-effects.css">
 <style>
   :root{
-    --forest: #213324;
-    --forest-dark: #142720;
-    --cream: #f7f5f0;
-    --cream-2: #efece4;
+    --forest: #1D3121;
+    --forest-dark: #142418;
+    --bg: #F9F9F9;
+    --bg-2: #F3F3F1;
     --ink: #1a1a18;
     --muted: #6b6b63;
-    --line: #e2ded2;
+    --line: #e8e8e4;
     --white: #ffffff;
   }
   *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
   body{
     font-family:'Inter',sans-serif;
     color:var(--ink);
-    background:var(--cream);
+    background:var(--white);
     -webkit-font-smoothing:antialiased;
   }
   a{text-decoration:none;color:inherit;}
@@ -30,212 +30,215 @@
   .serif{font-family:'Playfair Display',serif;}
   .container{max-width:1240px;margin:0 auto;padding:0 40px;}
 
+  /* ── Header ── */
   header{
     position:sticky;top:0;z-index:100;
-    background:rgba(247,245,240,0.88);
-    backdrop-filter:blur(12px);
+    background:var(--white);
     border-bottom:1px solid var(--line);
-    transition:all .35s ease;
   }
   .nav-wrap{
-    display:flex;align-items:center;justify-content:space-between;
-    padding:18px 40px;max-width:1240px;margin:0 auto;
+    display:grid;
+    grid-template-columns:1fr auto 1fr;
+    align-items:center;
+    padding:20px 40px;
+    max-width:1240px;
+    margin:0 auto;
   }
-  .logo{display:flex;align-items:center;gap:12px;}
+  .logo{display:flex;align-items:center;gap:12px;justify-self:start;}
   .logo-mark{
-    width:38px;height:38px;border-radius:8px;
-    background:var(--forest);
-    display:flex;align-items:center;justify-content:center;
-    box-shadow:0 4px 14px rgba(33,51,36,0.35);
-    transform:translateZ(10px);
+    width:36px;height:36px;
+    display:flex;align-items:flex-end;justify-content:center;gap:3px;
   }
-  .logo-mark svg{width:20px;height:20px;}
-  .logo-text .name{font-size:15px;font-weight:700;letter-spacing:1px;line-height:1.1;}
-  .logo-text .tag{font-size:9px;letter-spacing:1.5px;color:var(--muted);}
-  nav ul{display:flex;gap:34px;list-style:none;}
+  .logo-mark span{
+    display:block;width:5px;background:var(--ink);border-radius:1px;
+  }
+  .logo-mark span:nth-child(1){height:14px;}
+  .logo-mark span:nth-child(2){height:22px;}
+  .logo-mark span:nth-child(3){height:18px;}
+  .logo-mark span:nth-child(4){height:28px;}
+  .logo-mark span:nth-child(5){height:16px;}
+  .logo-text .name{font-size:14px;font-weight:700;letter-spacing:1.2px;line-height:1.1;}
+  .logo-text .tag{font-size:8.5px;letter-spacing:1.8px;color:var(--muted);margin-top:2px;}
+  nav{justify-self:center;}
+  nav ul{display:flex;gap:32px;list-style:none;}
   nav a{
-    font-size:13px;letter-spacing:0.5px;color:var(--ink);
-    position:relative;padding-bottom:4px;transition:color .2s;
+    font-size:12px;font-weight:500;letter-spacing:0.8px;color:var(--ink);
+    position:relative;padding-bottom:6px;transition:color .2s;
   }
   nav a.active{color:var(--forest);font-weight:600;}
   nav a.active::after{
-    content:'';position:absolute;bottom:-2px;left:0;right:0;height:2px;background:var(--forest);
+    content:'';position:absolute;bottom:0;left:0;right:0;height:2px;background:var(--forest);
   }
   nav a:hover{color:var(--forest);}
+  .nav-cta{justify-self:end;}
   .btn{
     display:inline-flex;align-items:center;gap:8px;
     padding:12px 22px;border-radius:6px;
-    font-size:12.5px;font-weight:600;letter-spacing:0.5px;
+    font-size:11.5px;font-weight:600;letter-spacing:0.6px;
     cursor:pointer;border:1px solid transparent;
+    transition:background .2s, color .2s, border-color .2s;
   }
   .btn-dark{background:var(--forest);color:#fff;}
   .btn-dark:hover{background:var(--forest-dark);}
-  .btn-outline{background:transparent;border:1px solid var(--ink);color:var(--ink);}
+  .btn-outline{background:var(--white);border:1px solid var(--ink);color:var(--ink);}
   .btn-outline:hover{background:var(--ink);color:#fff;}
   .btn-white{background:#fff;color:var(--forest);}
-  .btn-white:hover{background:var(--cream-2);}
-  .menu-toggle{display:none;background:none;border:none;cursor:pointer;padding:8px;}
+  .btn-white:hover{background:var(--bg);}
+  .menu-toggle{display:none;background:none;border:none;cursor:pointer;padding:8px;justify-self:end;}
 
+  /* ── Hero ── */
   .hero{
-    position:relative;height:82vh;min-height:580px;max-height:760px;
-    overflow:hidden;perspective:1000px;
+    position:relative;height:85vh;min-height:600px;max-height:780px;
+    overflow:hidden;
   }
-  .hero-bg-wrap{position:absolute;inset:0;overflow:hidden;}
-  .hero img{width:100%;height:110%;object-fit:cover;transform:scale(1.05);}
+  .hero-bg-wrap{position:absolute;inset:0;}
+  .hero img{width:100%;height:100%;object-fit:cover;object-position:center;}
   .hero-overlay{
     position:absolute;inset:0;z-index:1;
-    background:linear-gradient(105deg, rgba(247,245,240,0.97) 0%, rgba(247,245,240,0.9) 32%, rgba(247,245,240,0.2) 58%, transparent 72%);
+    background:linear-gradient(90deg, rgba(255,255,255,0.92) 0%, rgba(255,255,255,0.75) 28%, rgba(255,255,255,0.15) 50%, transparent 65%);
   }
   .hero-content{position:absolute;inset:0;z-index:2;display:flex;align-items:center;}
-  .hero-inner{max-width:560px;padding:0 40px;}
-  .eyebrow{font-size:11.5px;font-weight:700;letter-spacing:2px;color:var(--forest);margin-bottom:18px;display:block;}
-  .hero h1{font-size:clamp(38px,5vw,54px);line-height:1.08;font-weight:500;color:var(--ink);margin-bottom:22px;}
+  .hero-inner{max-width:540px;padding:0 40px;}
+  .eyebrow{font-size:11px;font-weight:600;letter-spacing:2.2px;color:var(--forest);margin-bottom:20px;display:block;}
+  .hero h1{font-size:clamp(40px,5.2vw,56px);line-height:1.1;font-weight:500;color:var(--ink);margin-bottom:22px;}
   .hero h1 em{font-style:italic;color:var(--forest);font-weight:400;}
-  .hero p{font-size:16px;line-height:1.6;color:var(--muted);max-width:420px;margin-bottom:32px;}
+  .hero p{font-size:15.5px;line-height:1.65;color:var(--muted);max-width:400px;margin-bottom:34px;}
   .hero-btns{display:flex;flex-wrap:wrap;gap:14px;}
 
-  .expertise{padding:100px 0 80px;text-align:center;}
-  .section-eyebrow{font-size:11.5px;font-weight:700;letter-spacing:2px;color:var(--forest);display:block;margin-bottom:12px;}
-  .section-title{font-size:clamp(28px,3.5vw,36px);font-weight:500;margin-bottom:50px;}
+  /* ── Expertise ── */
+  .expertise{padding:96px 0 88px;text-align:center;background:var(--bg);}
+  .section-eyebrow{font-size:11px;font-weight:600;letter-spacing:2.2px;color:var(--forest);display:block;margin-bottom:14px;}
+  .section-title{font-size:clamp(30px,3.5vw,38px);font-weight:500;margin-bottom:56px;color:var(--ink);}
   .expertise-grid{
-    display:grid;grid-template-columns:repeat(4,1fr);gap:0;
-    background:var(--white);border:1px solid var(--line);border-radius:14px;
-    overflow:hidden;box-shadow:0 20px 60px rgba(33,51,36,0.08);
-    transform-style:preserve-3d;
+    display:grid;grid-template-columns:repeat(4,1fr);gap:40px;
   }
-  .expertise-item{padding:44px 28px;border-right:1px solid var(--line);position:relative;}
-  .expertise-item:last-child{border-right:none;}
-  .expertise-icon{width:44px;height:44px;margin:0 auto 20px;color:var(--forest);}
+  .expertise-item{padding:0 16px;}
+  .expertise-icon{width:40px;height:40px;margin:0 auto 22px;color:var(--forest);}
   .expertise-icon svg{width:100%;height:100%;}
-  .expertise-item h3{font-family:'Playfair Display',serif;font-size:20px;font-weight:500;margin-bottom:10px;}
-  .expertise-item p{font-size:13.5px;color:var(--muted);line-height:1.6;}
+  .expertise-item h3{font-family:'Playfair Display',serif;font-size:19px;font-weight:500;margin-bottom:10px;}
+  .expertise-item p{font-size:13.5px;color:var(--muted);line-height:1.65;}
 
-  .projects{padding:80px 0;}
-  .projects-head{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:40px;flex-wrap:wrap;gap:16px;}
-  .projects-head h2{font-size:clamp(28px,3.5vw,36px);font-weight:500;}
+  /* ── Projects ── */
+  .projects{padding:88px 0 96px;background:var(--white);}
+  .projects-head{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:44px;flex-wrap:wrap;gap:16px;}
+  .projects-head h2{font-size:clamp(30px,3.5vw,38px);font-weight:500;}
+  .projects-head h2 em{font-style:italic;color:var(--forest);font-weight:400;}
   .view-all{
-    font-size:12.5px;font-weight:600;letter-spacing:0.5px;
+    font-size:12px;font-weight:600;letter-spacing:0.5px;
     display:flex;align-items:center;gap:8px;color:var(--ink);
-    border-bottom:1px solid var(--ink);padding-bottom:2px;transition:gap .2s;
+    transition:gap .2s;
   }
-  .view-all:hover{gap:12px;}
-  .project-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;}
+  .view-all:hover{gap:12px;color:var(--forest);}
+  .project-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;}
   .project-card{
-    background:var(--white);border-radius:14px;overflow:hidden;border:1px solid var(--line);
-    position:relative;transform-style:preserve-3d;
+    background:var(--white);border-radius:12px;overflow:hidden;
+    box-shadow:0 4px 24px rgba(0,0,0,0.06);
+    transition:box-shadow .3s, transform .3s;
   }
-  .project-img{height:240px;overflow:hidden;}
-  .project-img img{width:100%;height:100%;object-fit:cover;transition:transform .6s cubic-bezier(0.16,1,0.3,1);}
-  .project-card:hover .project-img img{transform:scale(1.08);}
-  .project-info{padding:22px 24px;display:flex;justify-content:space-between;align-items:center;background:var(--white);}
-  .project-info h3{font-family:'Playfair Display',serif;font-size:19px;font-weight:500;margin-bottom:4px;}
+  .project-card:hover{box-shadow:0 12px 40px rgba(0,0,0,0.1);transform:translateY(-4px);}
+  .project-img{height:250px;overflow:hidden;border-radius:12px 12px 0 0;}
+  .project-img img{width:100%;height:100%;object-fit:cover;transition:transform .6s ease;}
+  .project-card:hover .project-img img{transform:scale(1.05);}
+  .project-info{padding:22px 24px 24px;display:flex;justify-content:space-between;align-items:center;}
+  .project-info h3{font-family:'Playfair Display',serif;font-size:18px;font-weight:500;margin-bottom:4px;}
   .project-info span{font-size:12.5px;color:var(--muted);}
   .arrow-circle{
-    width:36px;height:36px;border-radius:50%;border:1px solid var(--line);
+    width:34px;height:34px;border-radius:50%;border:1px solid var(--line);
     display:flex;align-items:center;justify-content:center;flex-shrink:0;
-    transition:all .3s;box-shadow:0 2px 8px rgba(0,0,0,0.04);
+    transition:all .3s;
   }
-  .project-card:hover .arrow-circle{background:var(--forest);border-color:var(--forest);transform:translateX(4px);}
+  .project-card:hover .arrow-circle{background:var(--forest);border-color:var(--forest);}
   .project-card:hover .arrow-circle svg{stroke:#fff;}
 
-  .why{background:var(--cream-2);padding:90px 0;}
-  .why-grid{display:grid;grid-template-columns:0.85fr 1.15fr;gap:60px;align-items:center;}
-  .why-img-wrap{position:relative;perspective:800px;}
+  /* ── Why Choose Us ── */
+  .why{background:var(--bg);padding:96px 0;}
+  .why-grid{display:grid;grid-template-columns:0.9fr 1.1fr;gap:64px;align-items:center;}
+  .why-img-wrap{position:relative;}
   .why-img-wrap img{
-    border-radius:14px;width:100%;height:420px;object-fit:cover;
-    box-shadow:0 30px 60px rgba(33,51,36,0.15);
-    transform:rotateY(-2deg) rotateX(2deg);
-    transition:transform .5s ease;
+    border-radius:12px;width:100%;height:440px;object-fit:cover;
+    display:block;
   }
-  .why-img-wrap:hover img{transform:rotateY(0) rotateX(0) scale(1.02);}
   .why-badge{
-    position:absolute;bottom:28px;right:-24px;
-    background:var(--forest);color:#fff;padding:28px 30px;border-radius:10px;
-    width:160px;box-shadow:0 20px 40px rgba(33,51,36,0.4);
-    z-index:2;
+    position:absolute;bottom:32px;right:-20px;
+    background:var(--forest);color:#fff;padding:28px 32px;border-radius:8px;
+    min-width:150px;
+    box-shadow:0 16px 40px rgba(29,49,33,0.35);
   }
-  .why-badge .num{font-family:'Playfair Display',serif;font-size:36px;font-weight:600;margin-bottom:4px;}
-  .why-badge .lbl{font-size:12.5px;line-height:1.4;opacity:0.9;}
-  .why h2{font-size:clamp(28px,3.5vw,36px);font-weight:500;margin-bottom:34px;}
+  .why-badge .num{font-family:'Playfair Display',serif;font-size:38px;font-weight:600;line-height:1;margin-bottom:6px;}
+  .why-badge .lbl{font-size:12px;line-height:1.45;opacity:0.92;}
+  .why h2{font-size:clamp(30px,3.5vw,38px);font-weight:500;margin-bottom:40px;line-height:1.15;}
   .why h2 em{font-style:italic;color:var(--forest);font-weight:400;}
-  .why-features{display:grid;grid-template-columns:repeat(2,1fr);gap:34px 30px;}
-  .why-feature{
-    padding:20px;border-radius:10px;background:rgba(255,255,255,0.5);
-    border:1px solid transparent;transition:all .3s;
-  }
-  .why-feature:hover{
-    background:var(--white);border-color:var(--line);
-    box-shadow:0 12px 30px rgba(33,51,36,0.08);
-    transform:translateY(-4px);
-  }
-  .why-feature .f-icon{width:30px;height:30px;color:var(--forest);margin-bottom:14px;}
+  .why-features{display:grid;grid-template-columns:repeat(2,1fr);gap:36px 40px;}
+  .why-feature .f-icon{width:28px;height:28px;color:var(--forest);margin-bottom:14px;}
   .why-feature .f-icon svg{width:100%;height:100%;}
-  .why-feature h4{font-family:'Playfair Display',serif;font-size:16.5px;font-weight:500;margin-bottom:8px;}
-  .why-feature p{font-size:13px;color:var(--muted);line-height:1.6;}
+  .why-feature h4{font-family:'Playfair Display',serif;font-size:16px;font-weight:500;margin-bottom:8px;}
+  .why-feature p{font-size:13px;color:var(--muted);line-height:1.65;}
 
-  .cta{position:relative;padding:110px 0;text-align:center;color:#fff;overflow:hidden;}
-  .cta-bg-wrap{position:absolute;inset:0;overflow:hidden;}
-  .cta img{position:absolute;inset:0;width:100%;height:115%;object-fit:cover;z-index:0;}
-  .cta::before{content:'';position:absolute;inset:0;background:rgba(15,25,20,0.75);z-index:1;}
+  /* ── CTA ── */
+  .cta{position:relative;padding:120px 0;text-align:center;color:#fff;overflow:hidden;}
+  .cta-bg-wrap{position:absolute;inset:0;}
+  .cta img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;}
+  .cta::before{content:'';position:absolute;inset:0;background:rgba(15,25,20,0.72);z-index:1;}
   .cta-content{position:relative;z-index:2;}
-  .cta h2{font-family:'Playfair Display',serif;font-size:clamp(28px,3.5vw,38px);font-weight:500;margin-bottom:16px;}
-  .cta p{font-size:15px;opacity:0.88;margin-bottom:32px;line-height:1.6;}
+  .cta h2{font-family:'Playfair Display',serif;font-size:clamp(30px,3.8vw,42px);font-weight:500;margin-bottom:18px;}
+  .cta p{font-size:15px;opacity:0.9;margin-bottom:36px;line-height:1.65;}
 
-  footer{background:var(--cream);padding:70px 0 30px;border-top:1px solid var(--line);}
-  .footer-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr 1.2fr;gap:30px;margin-bottom:50px;}
-  .footer-about p{font-size:13.5px;color:var(--muted);line-height:1.7;margin:16px 0 20px;max-width:240px;}
-  .social{display:flex;gap:12px;}
+  /* ── Footer ── */
+  footer{background:var(--bg);padding:72px 0 32px;border-top:1px solid var(--line);}
+  .footer-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr 1.2fr;gap:32px;margin-bottom:52px;}
+  .footer-about p{font-size:13px;color:var(--muted);line-height:1.7;margin:18px 0 22px;max-width:250px;}
+  .social{display:flex;gap:10px;}
   .social a{
-    width:34px;height:34px;border-radius:50%;border:1px solid var(--line);
+    width:34px;height:34px;border-radius:50%;background:var(--forest);
     display:flex;align-items:center;justify-content:center;
-    transition:all .25s;
+    transition:background .25s;
   }
-  .social a:hover{background:var(--forest);border-color:var(--forest);}
-  .social a:hover svg{stroke:#fff;}
-  .social svg{width:14px;height:14px;}
-  .footer-col h4{font-family:'Playfair Display',serif;font-size:14.5px;font-weight:600;margin-bottom:18px;}
+  .social a:hover{background:var(--forest-dark);}
+  .social svg{width:14px;height:14px;stroke:#fff;}
+  .footer-col h4{font-size:11px;font-weight:700;letter-spacing:1.2px;margin-bottom:20px;color:var(--ink);}
   .footer-col ul{list-style:none;}
   .footer-col li{margin-bottom:12px;}
-  .footer-col a{font-size:13.5px;color:var(--muted);transition:color .2s;}
+  .footer-col a{font-size:13px;color:var(--muted);transition:color .2s;}
   .footer-col a:hover{color:var(--forest);}
-  .contact-item{display:flex;gap:10px;margin-bottom:14px;font-size:13.5px;color:var(--muted);}
+  .contact-item{display:flex;gap:10px;margin-bottom:14px;font-size:13px;color:var(--muted);line-height:1.5;}
   .contact-item svg{width:15px;height:15px;flex-shrink:0;margin-top:2px;color:var(--forest);}
-  .footer-bottom{display:flex;justify-content:space-between;padding-top:26px;border-top:1px solid var(--line);font-size:12.5px;color:var(--muted);flex-wrap:wrap;gap:12px;}
-  .footer-bottom .links{display:flex;gap:20px;}
+  .footer-bottom{display:flex;justify-content:space-between;padding-top:28px;border-top:1px solid var(--line);font-size:12px;color:var(--muted);flex-wrap:wrap;gap:12px;}
+  .footer-bottom .links{display:flex;gap:24px;}
+  .footer-bottom a:hover{color:var(--forest);}
 
   @media(max-width:980px){
+    .nav-wrap{grid-template-columns:1fr auto;gap:12px;}
+    nav{grid-column:1/-1;justify-self:stretch;}
     nav ul{display:none;}
     nav.open ul{
       display:flex;flex-direction:column;gap:16px;
-      position:absolute;top:72px;left:0;right:0;
-      background:var(--cream);padding:24px 40px;border-bottom:1px solid var(--line);
+      padding:20px 0 8px;
     }
+    .nav-cta{display:none;}
     .menu-toggle{display:block;}
     .why-grid,.footer-grid{grid-template-columns:1fr;}
     .expertise-grid,.project-grid{grid-template-columns:repeat(2,1fr);}
-    .expertise-item{border-right:none;border-bottom:1px solid var(--line);}
-    .why-badge{position:static;margin-top:-40px;margin-left:20px;width:fit-content;}
-    .why-img-wrap img{transform:none;}
+    .why-badge{right:16px;bottom:16px;}
   }
   @media(max-width:640px){
     .container{padding:0 20px;}
     .nav-wrap{padding:16px 20px;}
     .hero-inner{padding:0 20px;}
     .expertise-grid,.project-grid{grid-template-columns:1fr;}
-    .hero{height:auto;min-height:520px;padding:80px 0 60px;}
-    .hero-overlay{background:rgba(247,245,240,0.94);}
+    .hero{height:auto;min-height:540px;padding:80px 0 60px;}
+    .hero-overlay{background:linear-gradient(180deg, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.7) 100%);}
     .why-features{grid-template-columns:1fr;}
-    .nav-wrap .btn-dark{display:none;}
+    .why-img-wrap img{height:320px;}
   }
 </style>
 </head>
-<body class="has-3d">
+<body>
 
-<header class="glass-nav">
+<header>
   <div class="nav-wrap">
     <a href="index.html" class="logo">
-      <div class="logo-mark">
-        <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6M9 10h.01M15 10h.01M9 14h.01M15 14h.01"/></svg>
+      <div class="logo-mark" aria-hidden="true">
+        <span></span><span></span><span></span><span></span><span></span>
       </div>
       <div class="logo-text">
         <div class="name">LEADINGEDGE</div>
@@ -252,7 +255,7 @@
         <li><a href="contact.html">CONTACT</a></li>
       </ul>
     </nav>
-    <a href="booking.html" class="btn btn-dark btn-3d">
+    <a href="booking.html" class="btn btn-dark nav-cta">
       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M3 10h18M8 2v4M16 2v4"/></svg>
       BOOK CONSULTATION
     </a>
@@ -262,79 +265,81 @@
   </div>
 </header>
 
-<section class="hero parallax-wrap">
+<section class="hero">
   <div class="hero-bg-wrap">
-    <img class="parallax-bg" data-parallax="0.4" src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1800&auto=format&fit=crop" alt="Modern luxury villa exterior">
+    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1800&auto=format&fit=crop" alt="Modern luxury villa exterior at dusk">
   </div>
   <div class="hero-overlay"></div>
   <div class="hero-content">
     <div class="hero-inner">
-      <span class="eyebrow stagger-item">BUILDING LEGACIES</span>
-      <h1 class="serif stagger-item">Crafting Spaces.<br><em>Elevating Lives.</em></h1>
-      <p class="stagger-item">We design and build premium residential and commercial spaces that stand the test of time throughout Southeast Wisconsin.</p>
-      <div class="hero-btns stagger-item">
-        <a href="index.html#gallery" class="btn btn-dark btn-3d">EXPLORE PROJECTS
+      <span class="eyebrow">BUILDING LEGACIES</span>
+      <h1 class="serif">Crafting Spaces.<br><em>Elevating Lives.</em></h1>
+      <p>We design and build premium residential and commercial spaces that stand the test of time.</p>
+      <div class="hero-btns">
+        <a href="index.html#gallery" class="btn btn-dark">EXPLORE PROJECTS
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
         </a>
-        <a href="services.html" class="btn btn-outline btn-3d">OUR SERVICES</a>
+        <a href="services.html" class="btn btn-outline">OUR SERVICES</a>
       </div>
     </div>
   </div>
 </section>
 
-<section class="expertise container depth-section">
-  <span class="section-eyebrow reveal-3d">OUR EXPERTISE</span>
-  <h2 class="section-title serif reveal-3d delay-1">End-to-End Excellence</h2>
-  <div class="expertise-grid reveal-3d delay-2">
-    <div class="expertise-item tilt-card">
-      <div class="expertise-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 12l9-9 9 9M5 10v10h14V10"/></svg></div>
-      <h3>Residential</h3>
-      <p>Luxury homes designed for comfort and elegance.</p>
-    </div>
-    <div class="expertise-item tilt-card">
-      <div class="expertise-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 21V7l6-4 6 4v14M14 21V11l6-3v13M8 9h.01M8 13h.01M8 17h.01"/></svg></div>
-      <h3>Commercial</h3>
-      <p>Modern commercial spaces for a growing future.</p>
-    </div>
-    <div class="expertise-item tilt-card">
-      <div class="expertise-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 21l4-8 3 4 3-6 6 10H4z"/></svg></div>
-      <h3>Communities</h3>
-      <p>Master-planned communities built around you.</p>
-    </div>
-    <div class="expertise-item tilt-card">
-      <div class="expertise-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 8C8 10 5 13 5 20h2c1-6 4-9 10-10zM11 20c0-3 2-6 6-9"/></svg></div>
-      <h3>Sustainable</h3>
-      <p>Eco-friendly solutions for a better tomorrow.</p>
+<section class="expertise">
+  <div class="container">
+    <span class="section-eyebrow">OUR EXPERTISE</span>
+    <h2 class="section-title serif">End-to-End Excellence</h2>
+    <div class="expertise-grid">
+      <div class="expertise-item">
+        <div class="expertise-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 12l9-9 9 9M5 10v10h14V10"/></svg></div>
+        <h3>Residential</h3>
+        <p>Luxury homes designed for comfort and elegance.</p>
+      </div>
+      <div class="expertise-item">
+        <div class="expertise-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 21V7l6-4 6 4v14M14 21V11l6-3v13M8 9h.01M8 13h.01M8 17h.01"/></svg></div>
+        <h3>Commercial</h3>
+        <p>Modern commercial spaces for a growing future.</p>
+      </div>
+      <div class="expertise-item">
+        <div class="expertise-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 21l4-8 3 4 3-6 6 10H4z"/><path d="M4 21h16"/></svg></div>
+        <h3>Communities</h3>
+        <p>Master-planned communities built around you.</p>
+      </div>
+      <div class="expertise-item">
+        <div class="expertise-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 8C8 10 5 13 5 20h2c1-6 4-9 10-10zM11 20c0-3 2-6 6-9"/></svg></div>
+        <h3>Sustainable</h3>
+        <p>Eco-friendly solutions for a better tomorrow.</p>
+      </div>
     </div>
   </div>
 </section>
 
 <section class="projects container" id="gallery">
-  <div class="projects-head reveal-3d">
+  <div class="projects-head">
     <div>
       <span class="section-eyebrow">FEATURED PROJECTS</span>
-      <h2 class="serif">Spaces That <em style="font-style:italic;color:var(--forest);">Inspire</em></h2>
+      <h2 class="serif">Spaces That <em>Inspire</em></h2>
     </div>
     <a href="index.html#gallery" class="view-all">VIEW ALL PROJECTS
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
     </a>
   </div>
   <div class="project-grid">
-    <article class="project-card tilt-card reveal-3d delay-1">
+    <article class="project-card">
       <div class="project-img"><img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=900&auto=format&fit=crop" alt="Hillside Villa"></div>
       <div class="project-info">
         <div><h3>Hillside Villa</h3><span>Residential</span></div>
         <div class="arrow-circle"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
       </div>
     </article>
-    <article class="project-card tilt-card reveal-3d delay-2">
+    <article class="project-card">
       <div class="project-img"><img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?q=80&w=900&auto=format&fit=crop" alt="Maple Grove"></div>
       <div class="project-info">
         <div><h3>Maple Grove</h3><span>Residential</span></div>
         <div class="arrow-circle"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
       </div>
     </article>
-    <article class="project-card tilt-card reveal-3d delay-3">
+    <article class="project-card">
       <div class="project-img"><img src="https://images.unsplash.com/photo-1600047509358-9dc75507daeb?q=80&w=900&auto=format&fit=crop" alt="Evergreen Heights"></div>
       <div class="project-info">
         <div><h3>Evergreen Heights</h3><span>Community</span></div>
@@ -344,35 +349,35 @@
   </div>
 </section>
 
-<section class="why depth-section" id="about">
+<section class="why" id="about">
   <div class="container why-grid">
-    <div class="why-img-wrap reveal-3d">
-      <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=900&auto=format&fit=crop" alt="Luxury interior living room">
-      <div class="why-badge float-3d">
+    <div class="why-img-wrap">
+      <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=900&auto=format&fit=crop" alt="Luxury outdoor patio">
+      <div class="why-badge">
         <div class="num serif">20+</div>
         <div class="lbl">Years of Excellence</div>
       </div>
     </div>
     <div>
-      <span class="section-eyebrow reveal-3d">WHY CHOOSE US</span>
-      <h2 class="serif reveal-3d delay-1">Built on Trust.<br><em>Focused on You.</em></h2>
+      <span class="section-eyebrow">WHY CHOOSE US</span>
+      <h2 class="serif">Built on Trust.<br><em>Focused on You.</em></h2>
       <div class="why-features">
-        <div class="why-feature reveal-3d delay-1">
+        <div class="why-feature">
           <div class="f-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2l8 3v6c0 5-3.5 8.5-8 11-4.5-2.5-8-6-8-11V5l8-3z"/></svg></div>
           <h4>Quality Assurance</h4>
           <p>We use premium materials and the best practices on every build.</p>
         </div>
-        <div class="why-feature reveal-3d delay-2">
+        <div class="why-feature">
           <div class="f-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6M15 14.5c2.5 0 4.5 2 4.5 4.5"/></svg></div>
           <h4>Expert Team</h4>
           <p>Experienced professionals delivering outstanding results.</p>
         </div>
-        <div class="why-feature reveal-3d delay-3">
+        <div class="why-feature">
           <div class="f-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
           <h4>On-Time Delivery</h4>
           <p>We value your time and deliver as promised.</p>
         </div>
-        <div class="why-feature reveal-3d delay-4">
+        <div class="why-feature">
           <div class="f-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M11 13l2-2 3 3M2 12l5-5 3 2 5-5M14 3h5v5"/></svg></div>
           <h4>Client Commitment</h4>
           <p>We build relationships that last beyond projects.</p>
@@ -382,15 +387,15 @@
   </div>
 </section>
 
-<section class="cta parallax-wrap" id="contact">
+<section class="cta" id="contact">
   <div class="cta-bg-wrap">
-    <img class="parallax-bg" data-parallax="0.25" src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=1800&auto=format&fit=crop" alt="Modern home at night">
+    <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=1800&auto=format&fit=crop" alt="Modern building interior at night">
   </div>
-  <div class="container cta-content reveal-3d">
+  <div class="container cta-content">
     <h2>Let's Build Something Great Together</h2>
     <p>Whether it's your dream home or a commercial space,<br>we're here to turn your vision into reality.</p>
-    <a href="booking.html" class="btn btn-white btn-3d">BOOK A CONSULTATION
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#213324" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    <a href="booking.html" class="btn btn-white">BOOK A CONSULTATION
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#1D3121" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
     </a>
   </div>
 </section>
@@ -398,24 +403,26 @@
 <footer>
   <div class="container">
     <div class="footer-grid">
-      <div class="footer-about reveal-3d">
+      <div class="footer-about">
         <a href="index.html" class="logo">
-          <div class="logo-mark">
-            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6M9 10h.01M15 10h.01M9 14h.01M15 14h.01"/></svg>
+          <div class="logo-mark" aria-hidden="true">
+            <span></span><span></span><span></span><span></span><span></span>
           </div>
           <div class="logo-text">
             <div class="name">LEADINGEDGE</div>
             <div class="tag">BUILDING TOMORROWS</div>
           </div>
         </a>
-        <p>Wisconsin-licensed general contractor delivering residential construction, remodeling, and land development throughout Southeast Wisconsin.</p>
+        <p>We design and build premium residential and commercial spaces that stand the test of time.</p>
         <div class="social">
-          <a href="https://www.linkedin.com/company/leadingedge-devt/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="1.5"><circle cx="4" cy="4" r="2"/><path d="M2 9h4v13H2zM9 9h4v2s1-2 4-2 5 2 5 6v7h-4v-6c0-2-1-3-2.5-3S11 11 11 13v9H9z"/></svg></a>
-          <a href="https://www.instagram.com/leadingedge_dev/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+          <a href="https://www.instagram.com/leadingedge_dev/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+          <a href="https://www.linkedin.com/company/leadingedge-devt/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><circle cx="4" cy="4" r="2"/><path d="M2 9h4v13H2zM9 9h4v2s1-2 4-2 5 2 5 6v7h-4v-6c0-2-1-3-2.5-3S11 11 11 13v9H9z"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M22.5 8.2a3 3 0 00-2.1-2.1C18.7 5.5 12 5.5 12 5.5s-6.7 0-8.4.6A3 3 0 001.5 8.2 31.6 31.6 0 001 12a31.6 31.6 0 00.5 3.8 3 3 0 002.1 2.1c1.7.6 8.4.6 8.4.6s6.7 0 8.4-.6a3 3 0 002.1-2.1A31.6 31.6 0 0023 12a31.6 31.6 0 00-.5-3.8z"/><polygon points="10,9 16,12 10,15" fill="currentColor" stroke="none"/></svg></a>
         </div>
       </div>
-      <div class="footer-col reveal-3d delay-1">
-        <h4>Company</h4>
+      <div class="footer-col">
+        <h4>COMPANY</h4>
         <ul>
           <li><a href="about.html">About Us</a></li>
           <li><a href="about.html#leadership">Our Team</a></li>
@@ -423,8 +430,8 @@
           <li><a href="about.html">News &amp; Insights</a></li>
         </ul>
       </div>
-      <div class="footer-col reveal-3d delay-2">
-        <h4>Services</h4>
+      <div class="footer-col">
+        <h4>SERVICES</h4>
         <ul>
           <li><a href="services.html#residential">Residential</a></li>
           <li><a href="services.html#residential">Commercial</a></li>
@@ -432,8 +439,8 @@
           <li><a href="services.html">Sustainable Design</a></li>
         </ul>
       </div>
-      <div class="footer-col reveal-3d delay-3">
-        <h4>Quick Links</h4>
+      <div class="footer-col">
+        <h4>QUICK LINKS</h4>
         <ul>
           <li><a href="index.html#gallery">Projects</a></li>
           <li><a href="index.html#gallery">Gallery</a></li>
@@ -441,8 +448,8 @@
           <li><a href="contact.html">Contact Us</a></li>
         </ul>
       </div>
-      <div class="footer-col reveal-3d delay-4">
-        <h4>Contact Us</h4>
+      <div class="footer-col">
+        <h4>CONTACT US</h4>
         <div class="contact-item">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012 4.2 2 2 0 014 2h3a2 2 0 012 1.7c.1 1 .3 2 .6 3a2 2 0 01-.5 2L8 10a16 16 0 006 6l1.3-1.1a2 2 0 012-.5c1 .3 2 .5 3 .6a2 2 0 011.7 2z"/></svg>
           <span>+1 (414) 630-5297</span>
@@ -458,7 +465,7 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© 2026 LeadingEdge Development LLC. All Rights Reserved.</span>
+      <span>&copy; 2024 LeadingEdge Developments. All Rights Reserved.</span>
       <div class="links">
         <a href="#">Privacy Policy</a>
         <a href="#">Terms of Use</a>
@@ -467,7 +474,6 @@
   </div>
 </footer>
 
-<script src="assets/3d-effects.js"></script>
 <script>
   document.getElementById('menuToggle').addEventListener('click', function() {
     document.getElementById('mainNav').classList.toggle('open');

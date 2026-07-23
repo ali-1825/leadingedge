@@ -1,0 +1,690 @@
+[
+  {
+    "slug": "residential-construction",
+    "title": "Luxury Residential Construction",
+    "metaDescription": "LeadingEdge builds custom luxury homes across Milwaukee and Southeast Wisconsin with refined craftsmanship, transparent timelines, and enduring quality.",
+    "heroImage": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1920&q=80",
+    "overviewImage": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200&q=80",
+    "ctaImage": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=1200&q=80",
+    "subtitle": "From Lake Country estates to urban infill residences, we craft homes that reflect your vision with architectural precision and uncompromising finish quality.",
+    "overview": [
+      "LeadingEdge Development LLC specializes in luxury residential construction throughout Milwaukee, Waukesha County, and the broader Southeast Wisconsin corridor. We partner with discerning homeowners who expect more than standard builder-grade results — clients who value thoughtful design integration, superior materials, and a construction experience defined by clarity rather than compromise.",
+      "Every residence we build begins with a deep understanding of how you live. Whether you are constructing a waterfront retreat on Pewaukee Lake, a contemporary home in the Third Ward, or a classic estate in Brookfield, our team translates lifestyle priorities into spatial decisions that feel intuitive, elegant, and enduring.",
+      "Our residential division manages the full spectrum of custom home building — from ground-up construction and major additions to whole-home renovations and structural reconfigurations. We coordinate architects, engineers, interior designers, and specialty trades under a single accountable project structure, eliminating the fragmentation that often undermines high-end builds.",
+      "Wisconsin's climate demands construction practices that account for freeze-thaw cycles, lake-effect moisture, and seasonal scheduling realities. LeadingEdge builds with regional expertise — specifying insulation systems, foundation details, and exterior assemblies engineered for long-term performance in our environment.",
+      "The result is a home that feels refined from the first walkthrough and continues to impress for decades. We measure success not only by completion dates and budget adherence, but by the quiet confidence our clients feel when they turn the key and know every detail was handled with intention."
+    ],
+    "offer": [
+      {
+        "icon": "home",
+        "title": "Custom Home Building",
+        "description": "We construct architecturally distinctive residences tailored to your site, lifestyle, and aesthetic preferences. From foundation to final fixture, every phase is managed in-house with rigorous quality checkpoints and transparent milestone reporting."
+      },
+      {
+        "icon": "blueprint",
+        "title": "Architectural Collaboration",
+        "description": "Our team works seamlessly with your architect or recommends trusted design partners experienced in luxury residential work. We provide constructability feedback early, preventing costly redesigns and ensuring the finished home matches the original vision."
+      },
+      {
+        "icon": "add_home",
+        "title": "Additions & Expansions",
+        "description": "Expand your living space with additions that integrate naturally with existing architecture and structure. We handle zoning considerations, structural engineering, and interior transitions so new and original spaces feel like they were always meant to coexist."
+      },
+      {
+        "icon": "format_paint",
+        "title": "Whole-Home Renovations",
+        "description": "Transform dated residences into contemporary luxury homes through comprehensive renovations that address layout, systems, finishes, and exterior presence. We manage occupied-home logistics with discretion and minimize disruption through phased execution planning."
+      },
+      {
+        "icon": "cottage",
+        "title": "Luxury Finishes & Millwork",
+        "description": "Elevate every room with custom cabinetry, premium flooring, stone surfaces, and artisan millwork sourced from vetted suppliers. Our finish carpenters and specialty installers deliver the level of detail that distinguishes a custom home from a production build."
+      },
+      {
+        "icon": "eco",
+        "title": "Energy-Efficient Systems",
+        "description": "Integrate high-performance HVAC, insulation, windows, and smart home technology that reduce operating costs without sacrificing comfort. We specify systems appropriate for Wisconsin winters while maintaining the refined aesthetic expected in luxury construction."
+      }
+    ],
+    "process": [
+      {
+        "step": "01",
+        "title": "Consultation",
+        "description": "We begin with a private consultation at our Milwaukee office or your property to understand your vision, timeline, budget parameters, and site conditions. This conversation establishes mutual expectations and allows us to assess feasibility, permitting requirements, and the scope of design collaboration needed before any commitments are made."
+      },
+      {
+        "step": "02",
+        "title": "Planning",
+        "description": "Our project managers develop a comprehensive plan covering budget breakdowns, milestone schedules, permit strategy, and subcontractor coordination. We align architectural drawings with realistic construction sequencing, identify long-lead materials early, and present a transparent roadmap that gives you confidence in every upcoming decision."
+      },
+      {
+        "step": "03",
+        "title": "Design & Preparation",
+        "description": "During this phase, final selections are confirmed, engineering is completed, and site preparation begins. We finalize interior specifications, coordinate utility connections, and establish quality standards documents that guide every trade on site. Material samples and mock-ups are reviewed to ensure finishes meet your expectations before installation."
+      },
+      {
+        "step": "04",
+        "title": "Execution",
+        "description": "Construction proceeds through defined phases — foundation, framing, mechanical rough-in, insulation, drywall, and finish work — with weekly progress updates and on-site walkthroughs at key milestones. Our superintendents maintain daily oversight, enforce safety protocols, and resolve field conditions proactively to protect schedule and quality."
+      },
+      {
+        "step": "05",
+        "title": "Final Inspection & Delivery",
+        "description": "Before handover, we conduct a thorough punch-list walkthrough, coordinate municipal inspections, and verify that every system operates as specified. You receive comprehensive documentation including warranties, maintenance guides, and as-built records. We remain available post-delivery to address questions and ensure your transition into the home is seamless."
+      }
+    ],
+    "whyChoose": [
+      {
+        "title": "Licensed General Contractor",
+        "description": "LeadingEdge holds full Wisconsin general contractor licensing and maintains comprehensive insurance coverage. Your investment is protected by a credentialed team accountable to state standards and our own elevated quality benchmarks."
+      },
+      {
+        "title": "Quality Craftsmanship",
+        "description": "Our finish standards reflect decades of luxury residential experience across Southeast Wisconsin. Every joint, seam, and surface is inspected against specifications that exceed typical residential tolerances."
+      },
+      {
+        "title": "Experienced Project Managers",
+        "description": "Dedicated project managers oversee your build from consultation through delivery, serving as your single point of contact and ensuring trades, schedules, and budgets remain aligned throughout."
+      },
+      {
+        "title": "Transparent Communication",
+        "description": "You receive regular progress reports, budget updates, and direct access to decision-makers — never left wondering where your project stands or what comes next."
+      },
+      {
+        "title": "On-Time Delivery",
+        "description": "We build realistic schedules grounded in Wisconsin weather patterns and material lead times, then manage aggressively to meet committed milestone dates without sacrificing quality."
+      },
+      {
+        "title": "Customer-First Approach",
+        "description": "Your priorities guide every major decision. We listen carefully, present options clearly, and adapt our process to accommodate the way you prefer to engage with your build."
+      },
+      {
+        "title": "Reliable Results",
+        "description": "Our portfolio of completed luxury homes across Milwaukee and surrounding communities speaks to consistent outcomes — homes that perform beautifully, hold their value, and exceed client expectations."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Single-Source Accountability",
+        "description": "One contract, one project manager, one team responsible for your entire build. This unified structure eliminates the blame-shifting and coordination gaps common in multi-vendor residential projects."
+      },
+      {
+        "title": "Site-Specific Engineering",
+        "description": "Every foundation, drainage plan, and structural detail is engineered for your specific lot conditions — whether lakeshore, hillside, or urban infill. We never apply one-size-fits-all solutions to custom construction."
+      },
+      {
+        "title": "Premium Material Procurement",
+        "description": "Our established relationships with regional and national suppliers provide access to exclusive finishes, fixtures, and building products. We manage ordering, delivery, and storage to protect material integrity on site."
+      },
+      {
+        "title": "Design Continuity",
+        "description": "Architectural intent is preserved from drawing through installation. Our superintendents understand design language and enforce details that maintain visual coherence across every room and elevation."
+      },
+      {
+        "title": "Warranty & Post-Build Support",
+        "description": "Comprehensive warranty coverage and responsive post-completion support give you lasting confidence. We stand behind our work long after the final inspection is signed."
+      },
+      {
+        "title": "Neighborhood Integration",
+        "description": "We understand Milwaukee-area municipalities, HOA requirements, and architectural review processes. Our team navigates approvals efficiently while respecting community character and regulatory standards."
+      },
+      {
+        "title": "Value Retention",
+        "description": "Luxury homes built with proper systems, quality materials, and precise craftsmanship retain and appreciate value more reliably than hastily executed alternatives. Your home is an asset built to endure."
+      },
+      {
+        "title": "Stress-Free Experience",
+        "description": "Custom home building should feel exciting, not overwhelming. Our structured process, proactive communication, and experienced leadership remove uncertainty so you can focus on the vision taking shape."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What areas do you serve for custom home construction?",
+        "answer": "LeadingEdge builds luxury residences throughout Milwaukee County, Waukesha County, Ozaukee County, and Washington County. We regularly work in communities including Milwaukee, Brookfield, Mequon, Cedarburg, Lake Geneva, and surrounding Southeast Wisconsin markets."
+      },
+      {
+        "question": "How long does a typical custom home build take?",
+        "answer": "Timeline varies based on size, complexity, and design finalization, but most custom luxury homes require twelve to eighteen months from permit approval to certificate of occupancy. We provide a detailed schedule during planning and update it as the project progresses."
+      },
+      {
+        "question": "Do I need to have an architect before contacting LeadingEdge?",
+        "answer": "Not necessarily. Some clients arrive with completed architectural plans, while others need design support from the beginning. We can work with your existing architect or connect you with design professionals experienced in luxury residential projects aligned with our construction standards."
+      },
+      {
+        "question": "How do you handle budget management during construction?",
+        "answer": "We establish a detailed budget during planning with line-item transparency and contingency reserves for unforeseen conditions. Change orders are documented promptly with cost and schedule impact clearly explained before any work proceeds."
+      },
+      {
+        "question": "Can you build on challenging or waterfront sites?",
+        "answer": "Yes. We have extensive experience with lakeshore properties, sloped lots, and infill sites with access constraints. Our engineering partners and site preparation specialists address soil conditions, shoreline setbacks, and environmental requirements specific to Wisconsin regulations."
+      },
+      {
+        "question": "What level of involvement can I expect during the build?",
+        "answer": "Your involvement is entirely flexible. Some clients prefer weekly walkthroughs and active selection participation, while others delegate decisions to our team within pre-established parameters. We adapt our communication cadence to match your preference."
+      },
+      {
+        "question": "Do you offer warranties on custom homes?",
+        "answer": "Every LeadingEdge custom home includes a comprehensive workmanship warranty alongside manufacturer warranties on systems, appliances, and materials. We provide all warranty documentation at delivery and remain responsive to service requests after move-in."
+      },
+      {
+        "question": "Can LeadingEdge manage interior design and landscaping?",
+        "answer": "While our core focus is construction, we coordinate closely with interior designers and landscape architects you select — or recommend trusted partners — to ensure exterior hardscaping, grading, and interior finish schedules align with the construction timeline."
+      }
+    ]
+  },
+  {
+    "slug": "land-development",
+    "title": "Land Development & Site Preparation",
+    "metaDescription": "LeadingEdge land development across Southeast Wisconsin — site planning, grading, utilities, and infrastructure for residential and mixed-use parcels.",
+    "heroImage": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=1920&q=80",
+    "overviewImage": "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=1200&q=80",
+    "ctaImage": "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=1200&q=80",
+    "subtitle": "We transform raw acreage into build-ready parcels through disciplined planning, civil engineering coordination, and infrastructure execution across Southeast Wisconsin.",
+    "overview": [
+      "Land development is the foundation upon which every successful construction project rests. LeadingEdge Development LLC provides end-to-end land development services for private landowners, investors, and developers seeking to unlock the full potential of property across Milwaukee and Southeast Wisconsin.",
+      "Our approach begins with strategic assessment — analyzing topography, soil composition, drainage patterns, zoning constraints, and market positioning before a single machine breaks ground. This diligence prevents costly mid-project corrections and ensures your development aligns with both regulatory requirements and long-term investment objectives.",
+      "From suburban subdivision preparation in Waukesha County to commercial pad sites in the Milwaukee metro, we manage grading, utility installation, stormwater management, road construction, and erosion control with precision. Our civil engineering partnerships and municipal relationships streamline permitting across Wisconsin's diverse jurisdictional landscape.",
+      "Sustainable development practices are embedded in our methodology. We design stormwater systems that meet Wisconsin Department of Natural Resources standards, implement erosion controls that protect adjacent properties and waterways, and plan infrastructure that serves future phases without redundant rework.",
+      "Whether you hold a single infill lot or a multi-acre parcel poised for phased development, LeadingEdge delivers site conditions that allow builders to proceed with confidence — level pads, connected utilities, approved access, and documentation that satisfies lender and municipality requirements alike."
+    ],
+    "offer": [
+      {
+        "icon": "landscape",
+        "title": "Site Analysis & Feasibility",
+        "description": "We evaluate your property's development potential through topographic surveys, soil testing, zoning review, and utility availability assessment. Our feasibility reports provide clear guidance on what can be built, what approvals are required, and what investment level the project demands."
+      },
+      {
+        "icon": "architecture",
+        "title": "Master Planning & Layout",
+        "description": "Collaborating with civil engineers and planners, we develop site layouts that optimize lot yield, preserve natural features, and meet municipal design standards. Every plan balances economic efficiency with community compatibility and environmental responsibility."
+      },
+      {
+        "icon": "terrain",
+        "title": "Earthwork & Grading",
+        "description": "Precision grading transforms uneven terrain into build-ready pads with proper drainage slopes and compaction standards. Our equipment operators and survey teams work to engineered specifications, ensuring foundations sit on stable, properly prepared ground."
+      },
+      {
+        "icon": "plumbing",
+        "title": "Utility Infrastructure",
+        "description": "We install or extend water, sewer, gas, electric, and telecommunications infrastructure to serve individual lots or entire developments. Coordination with utility providers and compliance with Wisconsin Public Service Commission requirements is managed entirely through our team."
+      },
+      {
+        "icon": "water_drop",
+        "title": "Stormwater Management",
+        "description": "Engineer and construct detention ponds, bioswales, permeable systems, and conveyance infrastructure that meet Wisconsin stormwater standards. Our designs protect downstream properties while satisfying municipal and WDNR review processes."
+      },
+      {
+        "icon": "add_road",
+        "title": "Road & Access Construction",
+        "description": "Build private drives, subdivision roads, and access improvements that meet Wisconsin Department of Transportation and local municipal specifications. We handle base course installation, paving, curb and gutter, and signage to deliver fully functional access."
+      }
+    ],
+    "process": [
+      {
+        "step": "01",
+        "title": "Consultation",
+        "description": "We meet on-site to walk your property, review any existing surveys or plats, and discuss your development goals — whether preparing a single lot, subdividing acreage, or creating a multi-phase community. This initial assessment identifies regulatory pathways, potential constraints, and the professional team required for your project."
+      },
+      {
+        "step": "02",
+        "title": "Planning",
+        "description": "Our team coordinates with civil engineers, surveyors, and environmental consultants to develop a comprehensive development plan. This includes preliminary plat design, utility routing, stormwater calculations, cost estimates, and a permitting schedule aligned with your target construction timeline."
+      },
+      {
+        "step": "03",
+        "title": "Design & Preparation",
+        "description": "Final engineering drawings are submitted for municipal and WDNR approval while we prepare erosion control plans, traffic management strategies, and construction logistics. Material procurement and subcontractor mobilization are scheduled to begin immediately upon permit issuance."
+      },
+      {
+        "step": "04",
+        "title": "Execution",
+        "description": "Earthwork, utility installation, stormwater construction, and road building proceed in sequenced phases with continuous survey verification. Our site superintendents monitor compaction testing, pipe installation standards, and erosion control compliance throughout active construction."
+      },
+      {
+        "step": "05",
+        "title": "Final Inspection & Delivery",
+        "description": "Upon completion, we coordinate final inspections with municipalities and utility providers, obtain certificates of occupancy or acceptance where applicable, and deliver as-built documentation. Your parcels are certified build-ready with all infrastructure tested, connected, and approved."
+      }
+    ],
+    "whyChoose": [
+      {
+        "title": "Licensed General Contractor",
+        "description": "Our Wisconsin-licensed team carries the credentials and insurance required for complex site work, giving landowners and investors confidence that development activities meet state regulatory standards."
+      },
+      {
+        "title": "Quality Craftsmanship",
+        "description": "Infrastructure built to specification performs for decades. We enforce compaction standards, pipe installation tolerances, and grading accuracy that prevent the settlement and drainage failures common in under-engineered developments."
+      },
+      {
+        "title": "Experienced Project Managers",
+        "description": "Land development projects involve dozens of stakeholders and regulatory touchpoints. Our project managers navigate this complexity daily, keeping approvals, contractors, and schedules synchronized."
+      },
+      {
+        "title": "Transparent Communication",
+        "description": "Development timelines can span months. We provide consistent updates on permitting status, construction progress, and budget tracking so you always understand where your project stands."
+      },
+      {
+        "title": "On-Time Delivery",
+        "description": "Weather windows and seasonal restrictions in Wisconsin demand disciplined scheduling. We plan around freeze periods, establish realistic milestones, and execute aggressively to deliver build-ready sites on committed dates."
+      },
+      {
+        "title": "Customer-First Approach",
+        "description": "Whether you are a first-time landowner or a seasoned developer, we tailor our engagement to your experience level and investment strategy, ensuring you feel informed and supported at every stage."
+      },
+      {
+        "title": "Reliable Results",
+        "description": "Our completed developments across Southeast Wisconsin demonstrate consistent infrastructure quality and regulatory approval — parcels that builders accept without hesitation and municipalities approve without revision."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Maximized Land Value",
+        "description": "Strategic planning and efficient infrastructure design increase the developable yield and market appeal of your property. We identify opportunities to optimize lot layout and minimize unnecessary earthwork costs."
+      },
+      {
+        "title": "Regulatory Navigation",
+        "description": "Wisconsin land development involves municipal zoning, county land division, WDNR stormwater review, and utility coordination. Our established relationships and procedural expertise accelerate approvals that stall less experienced operators."
+      },
+      {
+        "title": "Integrated Engineering",
+        "description": "Civil engineering, surveying, and construction execution operate under unified leadership. Design decisions are informed by field realities, and field work adheres strictly to engineered specifications."
+      },
+      {
+        "title": "Environmental Compliance",
+        "description": "Proper erosion control, stormwater management, and wetland buffer respect protect you from regulatory penalties and community opposition. We build developments that neighbors and municipalities support."
+      },
+      {
+        "title": "Builder-Ready Deliverables",
+        "description": "Finished parcels include connected utilities, approved access, graded pads, and documentation that satisfies builder and lender requirements. Your development moves directly into vertical construction without delay."
+      },
+      {
+        "title": "Phased Development Capability",
+        "description": "For larger parcels, we structure infrastructure to support phased lot release — allowing you to bring portions to market while continuing development on remaining acreage without rework or service interruptions."
+      },
+      {
+        "title": "Cost Predictability",
+        "description": "Detailed estimating during planning, competitive subcontractor bidding, and disciplined change-order management keep development costs aligned with projections. Surprises are minimized through upfront site investigation."
+      },
+      {
+        "title": "Long-Term Infrastructure Performance",
+        "description": "Roads, utilities, and drainage systems built to specification require minimal maintenance and perform reliably through Wisconsin's demanding seasonal cycles. Your development retains value and functionality for generations."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What types of land development projects does LeadingEdge handle?",
+        "answer": "We manage residential subdivisions, commercial pad development, multi-lot land divisions, single-lot preparation, and mixed-use site infrastructure across Southeast Wisconsin. Project scale ranges from individual buildable parcels to multi-acre phased communities."
+      },
+      {
+        "question": "How long does the land development process typically take?",
+        "answer": "Timelines depend on project size, permitting complexity, and seasonal conditions. Simple lot preparations may complete in two to four months, while full subdivisions with municipal plat approval can require twelve to twenty-four months. We provide realistic schedules during the planning phase."
+      },
+      {
+        "question": "Do I need to own the land before starting development planning?",
+        "answer": "Not necessarily. We frequently consult during due diligence periods to assess development feasibility before purchase. Early involvement helps you make informed acquisition decisions and avoid properties with insurmountable regulatory or physical constraints."
+      },
+      {
+        "question": "Who handles the permitting and regulatory approvals?",
+        "answer": "LeadingEdge manages the full permitting process, coordinating submissions to municipalities, counties, WDNR, and utility providers. We prepare required documentation, respond to reviewer comments, and maintain approval schedules on your behalf."
+      },
+      {
+        "question": "Can you develop land with environmental constraints like wetlands or slopes?",
+        "answer": "Yes, though constraints require additional engineering and regulatory coordination. We work with environmental consultants to design around sensitive areas, obtain necessary permits, and implement mitigation measures that satisfy Wisconsin environmental standards."
+      },
+      {
+        "question": "What is the difference between land development and general contracting?",
+        "answer": "Land development prepares raw or underutilized property — grading, utilities, roads, and stormwater — making it ready for construction. General contracting builds the structures on prepared sites. LeadingEdge offers both services for seamless project continuity."
+      },
+      {
+        "question": "How are development costs structured and billed?",
+        "answer": "We typically provide fixed-price or cost-plus proposals based on completed engineering. Payment schedules align with project milestones — permitting, earthwork, utilities, and final acceptance — with transparent reporting throughout."
+      },
+      {
+        "question": "Will my development meet requirements for future builders?",
+        "answer": "Absolutely. We construct infrastructure to standards that any reputable builder or municipality will accept. Deliverables include as-built surveys, utility locates, compaction reports, and approval documentation that satisfy lender and builder due diligence requirements."
+      }
+    ]
+  },
+  {
+    "slug": "general-contracting",
+    "title": "General Contracting Services",
+    "metaDescription": "LeadingEdge general contracting in Milwaukee — disciplined project leadership, trade coordination, and premium results for commercial and residential builds.",
+    "heroImage": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1920&q=80",
+    "overviewImage": "https://images.unsplash.com/photo-1541976590-713941681591?w=1200&q=80",
+    "ctaImage": "https://images.unsplash.com/photo-1590490360182-c33d57733427?w=1200&q=80",
+    "subtitle": "We lead complex construction projects with disciplined oversight, vetted trade partners, and an unwavering commitment to schedule, budget, and finish quality.",
+    "overview": [
+      "General contracting is where vision meets execution — and where most construction projects succeed or falter. LeadingEdge Development LLC serves as the accountable leader for residential, commercial, and mixed-use projects across Milwaukee and Southeast Wisconsin, coordinating every trade, inspection, and delivery under one disciplined management structure.",
+      "Our general contracting clients include property owners with completed architectural plans, developers seeking a reliable build partner, and businesses expanding or renovating commercial facilities. We assume full responsibility for construction execution while keeping you informed and in control of every significant decision.",
+      "What distinguishes LeadingEdge is the caliber of our trade network and the rigor of our site management. We prequalify subcontractors for craftsmanship, reliability, and safety compliance — then manage them with daily superintendent oversight, documented quality checkpoints, and enforceable schedule accountability.",
+      "Wisconsin construction presents unique demands: seasonal weather constraints, union jurisdiction considerations in certain municipalities, and a regulatory environment that varies significantly between Milwaukee, suburban counties, and rural townships. Our team navigates these realities with regional experience that prevents delays and cost overruns.",
+      "Whether constructing a commercial tenant improvement in downtown Milwaukee, managing a multi-unit residential build, or executing a design-build partnership, LeadingEdge delivers projects that meet specification, pass inspection, and reflect the professional standards your stakeholders expect."
+    ],
+    "offer": [
+      {
+        "icon": "construction",
+        "title": "Commercial Construction",
+        "description": "Build and renovate office spaces, retail environments, restaurants, and light industrial facilities with minimal operational disruption. We coordinate after-hours work, phased occupancy, and tenant requirements to keep your business moving forward during construction."
+      },
+      {
+        "icon": "apartment",
+        "title": "Multi-Unit Residential",
+        "description": "Manage construction of condominiums, townhome communities, and apartment buildings with the scheduling precision multi-unit projects demand. We coordinate repetitive floor plans efficiently while maintaining unit-by-unit quality standards."
+      },
+      {
+        "icon": "handshake",
+        "title": "Design-Build Partnerships",
+        "description": "When speed and single-source accountability matter, our design-build approach integrates planning and construction under one contract. We collaborate with design partners to deliver cohesive projects with compressed timelines and reduced coordination overhead."
+      },
+      {
+        "icon": "build",
+        "title": "Tenant Improvements",
+        "description": "Transform commercial shells into branded, functional spaces tailored to your operations. From medical offices in Wauwatosa to boutique retail in the Third Ward, we manage MEP modifications, finish installations, and code compliance efficiently."
+      },
+      {
+        "icon": "shield",
+        "title": "Preconstruction Services",
+        "description": "Before breaking ground, we provide detailed estimating, value engineering, schedule development, and constructability review. These services identify cost-saving opportunities and schedule risks while designs are still adjustable."
+      },
+      {
+        "icon": "groups",
+        "title": "Trade Coordination & Management",
+        "description": "Our superintendents orchestrate dozens of specialty trades — mechanical, electrical, plumbing, structural, and finish — with sequenced scheduling that prevents conflicts, rework, and idle time on site."
+      }
+    ],
+    "process": [
+      {
+        "step": "01",
+        "title": "Consultation",
+        "description": "We review your project documents, visit the site, and discuss scope, timeline expectations, and contractual preferences. This meeting establishes whether LeadingEdge is the right fit and identifies any preconstruction services needed before formal proposal development."
+      },
+      {
+        "step": "02",
+        "title": "Planning",
+        "description": "Our estimators and project managers develop comprehensive bids or negotiated proposals covering scope, schedule, budget, and subcontractor strategy. We present alternatives for material selections and phasing options that align with your financial and operational priorities."
+      },
+      {
+        "step": "03",
+        "title": "Design & Preparation",
+        "description": "Upon contract execution, we finalize subcontractor agreements, submit permit applications, and establish the project site with safety protocols and logistics planning. Long-lead material orders are placed, and baseline schedules are distributed to all stakeholders."
+      },
+      {
+        "step": "04",
+        "title": "Execution",
+        "description": "Construction proceeds under daily superintendent supervision with weekly owner meetings and monthly financial reporting. We manage RFIs, change orders, inspections, and trade coordination proactively — resolving field conditions before they impact schedule or budget."
+      },
+      {
+        "step": "05",
+        "title": "Final Inspection & Delivery",
+        "description": "We complete punch-list resolution, coordinate final inspections and certificate of occupancy, and deliver closeout documentation including warranties, operating manuals, and as-built drawings. Your facility is ready for occupancy on the committed date."
+      }
+    ],
+    "whyChoose": [
+      {
+        "title": "Licensed General Contractor",
+        "description": "LeadingEdge operates under full Wisconsin general contractor licensing with comprehensive liability and workers compensation coverage, meeting the credentialing requirements of lenders, municipalities, and institutional clients."
+      },
+      {
+        "title": "Quality Craftsmanship",
+        "description": "We hold every trade accountable to specification through inspection protocols, mock-up approvals, and superintendent oversight that catches deficiencies before they become costly corrections."
+      },
+      {
+        "title": "Experienced Project Managers",
+        "description": "Our project managers bring decades of combined experience across commercial and residential sectors. They anticipate challenges, manage stakeholder expectations, and maintain project momentum through every phase."
+      },
+      {
+        "title": "Transparent Communication",
+        "description": "Regular owner meetings, written progress reports, and open access to project financials ensure you never operate in the dark. Questions receive prompt, honest answers from decision-makers."
+      },
+      {
+        "title": "On-Time Delivery",
+        "description": "Schedule management is a core competency. We use milestone tracking, lookahead scheduling, and accountability measures that keep trades aligned and delivery dates achievable."
+      },
+      {
+        "title": "Customer-First Approach",
+        "description": "Your project's success defines ours. We prioritize your operational needs, budget constraints, and quality expectations above convenience — adapting our management style to serve your interests."
+      },
+      {
+        "title": "Reliable Results",
+        "description": "Repeat clients and developer partnerships across Southeast Wisconsin reflect our track record of delivering projects that meet specification, stay within budget parameters, and open on schedule."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Risk Transfer & Accountability",
+        "description": "As general contractor, LeadingEdge assumes responsibility for subcontractor performance, schedule adherence, and workmanship quality. You hold one entity accountable rather than managing a fragmented network of individual trades."
+      },
+      {
+        "title": "Competitive Subcontractor Pricing",
+        "description": "Our volume relationships and competitive bid processes leverage multiple qualified subcontractors for each trade, ensuring market-competitive pricing without sacrificing quality or reliability."
+      },
+      {
+        "title": "Safety Leadership",
+        "description": "Documented safety programs, daily toolbox talks, and OSHA-compliant site conditions protect workers, your property, and your liability exposure throughout construction."
+      },
+      {
+        "title": "Change Order Discipline",
+        "description": "Scope changes are inevitable, but cost surprises should not be. We document, price, and obtain approval for all changes before work proceeds — maintaining budget integrity and trust."
+      },
+      {
+        "title": "Municipal Inspection Coordination",
+        "description": "Our familiarity with Milwaukee-area building departments and inspection protocols ensures smooth permit processing and inspection scheduling that prevents construction delays."
+      },
+      {
+        "title": "Technology-Enabled Reporting",
+        "description": "Digital project management tools provide real-time visibility into schedule status, RFIs, submittals, and financial tracking. Stakeholders access current project data whenever needed."
+      },
+      {
+        "title": "Scalable Team Resources",
+        "description": "From boutique tenant improvements to multi-million-dollar commercial builds, we scale superintendent and management resources to match project complexity without losing oversight quality."
+      },
+      {
+        "title": "Clean Project Closeout",
+        "description": "Comprehensive closeout packages — warranties, lien releases, training documentation, and as-built records — delivered promptly so occupancy and financial close proceed without administrative delays."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What project sizes does LeadingEdge accept as general contractor?",
+        "answer": "We manage projects ranging from focused tenant improvements starting around $100,000 to multi-million-dollar commercial and residential builds. Project fit depends on scope complexity, timeline, and alignment with our expertise rather than size alone."
+      },
+      {
+        "question": "Do you work with owner-provided architects and engineers?",
+        "answer": "Yes. Most of our general contracting engagements involve plans prepared by the owner's design team. We participate in preconstruction review to identify constructability issues and coordinate closely with designers throughout construction."
+      },
+      {
+        "question": "How are subcontractors selected for my project?",
+        "answer": "We maintain a prequalified roster of subcontractors vetted for quality, safety, financial stability, and reliability. For each project, we solicit competitive bids from qualified trades and recommend selections based on scope fit, pricing, and availability."
+      },
+      {
+        "question": "What contract types do you offer?",
+        "answer": "LeadingEdge works under fixed-price, cost-plus, and negotiated contract structures depending on project scope definition and client preference. We explain the advantages and risks of each approach during proposal development."
+      },
+      {
+        "question": "Can you manage occupied building renovations?",
+        "answer": "Absolutely. We specialize in phased renovations that maintain operational continuity — coordinating after-hours work, temporary barriers, dust control, and communication plans that minimize disruption to tenants, employees, and customers."
+      },
+      {
+        "question": "How do you handle project delays caused by weather or unforeseen conditions?",
+        "answer": "Our schedules include weather contingency and we monitor conditions proactively. When unforeseen site conditions arise, we document impacts immediately, propose recovery strategies, and communicate revised timelines with full transparency."
+      },
+      {
+        "question": "Is LeadingEdge bonded for commercial projects?",
+        "answer": "Yes. We maintain bonding capacity appropriate for commercial and institutional projects. Bonding requirements are addressed during prequalification and included in proposal documentation as needed."
+      }
+    ]
+  },
+  {
+    "slug": "business-consulting",
+    "title": "Business Consulting for Construction",
+    "metaDescription": "LeadingEdge business consulting helps Wisconsin developers and contractors optimize operations, manage projects, and execute growth strategies with confidence.",
+    "heroImage": "https://images.unsplash.com/photo-1454165804603-c66757ddc2ee?w=1920&q=80",
+    "overviewImage": "https://images.unsplash.com/photo-1553877522-43269d4ea984?w=1200&q=80",
+    "ctaImage": "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1200&q=80",
+    "subtitle": "Strategic guidance for developers, property owners, and construction enterprises seeking operational excellence, project clarity, and sustainable growth across Wisconsin.",
+    "overview": [
+      "Construction success depends on more than what happens on site — it requires strategic planning, operational discipline, and informed decision-making at every organizational level. LeadingEdge Development LLC offers business consulting services designed for developers, property owners, contractors, and investors navigating the complexities of the Wisconsin construction market.",
+      "Our consulting practice draws on decades of hands-on experience building, developing, and managing projects across Milwaukee and Southeast Wisconsin. We translate that operational knowledge into actionable strategies that improve profitability, reduce risk, and accelerate project delivery for our clients.",
+      "Whether you are evaluating a land acquisition in Ozaukee County, restructuring a development company's project management workflow, or seeking independent oversight on a major capital project, LeadingEdge provides the analytical rigor and industry perspective needed to make confident decisions.",
+      "We serve clients at every stage — from entrepreneurs launching their first development venture to established firms scaling operations across multiple concurrent projects. Our engagements are tailored to your specific challenges rather than delivered through generic templates disconnected from your reality.",
+      "Consulting with LeadingEdge means partnering with practitioners who understand construction from the inside — not theorists advising from the sidelines. Our recommendations are grounded in field-tested processes, Wisconsin regulatory knowledge, and relationships across the region's design, banking, and municipal communities."
+    ],
+    "offer": [
+      {
+        "icon": "analytics",
+        "title": "Project Feasibility Analysis",
+        "description": "Evaluate development proposals with comprehensive financial modeling, market analysis, and risk assessment. We deliver clear go/no-go recommendations supported by data on construction costs, absorption rates, and return projections specific to Southeast Wisconsin markets."
+      },
+      {
+        "icon": "account_tree",
+        "title": "Operational Strategy",
+        "description": "Optimize your construction or development company's workflows, organizational structure, and technology stack. We identify inefficiencies in estimating, project management, and field operations — then implement improvements that increase throughput and margin."
+      },
+      {
+        "icon": "monitoring",
+        "title": "Owner's Representative Services",
+        "description": "Serve as your independent advocate on capital projects, reviewing contractor performance, validating change orders, monitoring schedule adherence, and ensuring build quality aligns with your investment standards and contractual requirements."
+      },
+      {
+        "icon": "request_quote",
+        "title": "Cost Estimating & Budget Review",
+        "description": "Provide independent cost validation for development budgets, contractor bids, and change order proposals. Our estimating expertise — rooted in current Wisconsin market pricing — protects you from overruns caused by inaccurate projections or scope gaps."
+      },
+      {
+        "icon": "school",
+        "title": "Process Improvement",
+        "description": "Design and implement standardized project management processes, safety programs, quality control protocols, and communication frameworks. Structured operations reduce variability and produce more predictable project outcomes across your portfolio."
+      },
+      {
+        "icon": "trending_up",
+        "title": "Growth & Market Strategy",
+        "description": "Advise on market entry, service line expansion, partnership structures, and acquisition opportunities within the Wisconsin construction and development sector. We help you grow deliberately with strategies matched to your capabilities and capital."
+      }
+    ],
+    "process": [
+      {
+        "step": "01",
+        "title": "Consultation",
+        "description": "We conduct an initial discovery session to understand your business challenges, project portfolio, organizational structure, and consulting objectives. This conversation determines engagement scope and identifies the data, access, and stakeholder involvement required for meaningful analysis."
+      },
+      {
+        "step": "02",
+        "title": "Planning",
+        "description": "Our team develops a structured engagement plan with defined deliverables, timelines, and success metrics. Whether the assignment spans two weeks or six months, you receive a clear roadmap outlining milestones, information requirements, and expected outcomes at each phase."
+      },
+      {
+        "step": "03",
+        "title": "Design & Preparation",
+        "description": "We gather project documentation, financial records, operational data, and stakeholder input necessary for thorough analysis. Interview protocols, assessment frameworks, and reporting templates are customized to your industry segment and organizational context."
+      },
+      {
+        "step": "04",
+        "title": "Execution",
+        "description": "Analysis, site visits, process audits, and strategic workshops proceed according to the engagement plan. Interim findings are shared at agreed intervals, allowing course corrections and ensuring recommendations evolve with your input rather than arriving as surprises."
+      },
+      {
+        "step": "05",
+        "title": "Final Inspection & Delivery",
+        "description": "We deliver comprehensive reports, actionable recommendations, and implementation roadmaps tailored to your decision-making needs. Follow-up sessions ensure your team understands findings and is equipped to execute recommended changes with confidence."
+      }
+    ],
+    "whyChoose": [
+      {
+        "title": "Licensed General Contractor",
+        "description": "Our consulting advice comes from a licensed construction firm with active project experience — not detached advisors lacking current market grounding. Recommendations reflect real-world buildability and regulatory realities."
+      },
+      {
+        "title": "Quality Craftsmanship",
+        "description": "The same standards of precision we apply on construction sites guide our consulting deliverables. Analysis is thorough, documentation is polished, and recommendations are specific enough to act upon immediately."
+      },
+      {
+        "title": "Experienced Project Managers",
+        "description": "Our consultants are seasoned project managers who have led complex developments and commercial builds across Wisconsin. They bring practical wisdom that textbooks and generic frameworks cannot replicate."
+      },
+      {
+        "title": "Transparent Communication",
+        "description": "Consulting relationships require trust. We share findings openly — including uncomfortable truths — and explain our reasoning clearly so you can make informed decisions with full visibility."
+      },
+      {
+        "title": "On-Time Delivery",
+        "description": "Engagement timelines are treated with the same discipline as construction schedules. Deliverables arrive on committed dates, keeping your strategic planning and investment decisions on track."
+      },
+      {
+        "title": "Customer-First Approach",
+        "description": "We structure engagements around your priorities and constraints — not our preferred methodology. Flexible scope, responsive communication, and practical recommendations designed for your organization's capacity to implement."
+      },
+      {
+        "title": "Reliable Results",
+        "description": "Clients who engage LeadingEdge consulting report improved project outcomes, stronger operational performance, and greater confidence in capital allocation decisions across their Wisconsin portfolios."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Independent Perspective",
+        "description": "An objective outside view identifies blind spots, inefficiencies, and risks that internal teams accustomed to existing processes may overlook. Our independence ensures recommendations serve your interests without vendor or contractor bias."
+      },
+      {
+        "title": "Wisconsin Market Intelligence",
+        "description": "Deep familiarity with Southeast Wisconsin construction costs, labor markets, municipal processes, and development trends informs every analysis. Generic national data is supplemented with local intelligence that affects your bottom line."
+      },
+      {
+        "title": "Risk Mitigation",
+        "description": "Early identification of feasibility issues, contractual gaps, and operational vulnerabilities prevents costly mistakes. Consulting investment routinely returns multiples of its cost through avoided overruns and improved decision quality."
+      },
+      {
+        "title": "Accelerated Decision-Making",
+        "description": "Structured analysis and clear recommendations compress the time between question and action. You move forward with conviction rather than prolonged uncertainty that delays projects and erodes opportunity."
+      },
+      {
+        "title": "Scalable Frameworks",
+        "description": "Process improvements and management systems we implement are designed to scale with your growth — supporting one project today and ten projects tomorrow without proportional overhead increases."
+      },
+      {
+        "title": "Stakeholder Alignment",
+        "description": "Facilitated workshops and independent reporting help align partners, investors, and internal teams around shared priorities and realistic expectations — reducing conflict during project execution."
+      },
+      {
+        "title": "Capital Efficiency",
+        "description": "Better feasibility analysis, budget validation, and operational efficiency directly improve return on invested capital. We help you deploy resources where they generate the highest risk-adjusted returns."
+      },
+      {
+        "title": "Implementation Support",
+        "description": "Recommendations without implementation support often stall. We offer ongoing advisory engagement to guide execution, troubleshoot obstacles, and measure results against defined success criteria."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Who typically engages LeadingEdge for business consulting?",
+        "answer": "Our consulting clients include real estate developers, property investors, construction company owners, institutional property managers, and first-time land developers across Milwaukee and Southeast Wisconsin seeking expert guidance on projects and operations."
+      },
+      {
+        "question": "How is consulting different from hiring LeadingEdge as general contractor?",
+        "answer": "General contracting involves hands-on construction management and trade coordination. Consulting provides strategic analysis, independent oversight, and operational advisory without LeadingEdge serving as the builder — though many clients engage us for both services sequentially."
+      },
+      {
+        "question": "Can you review a project before I purchase land or commit capital?",
+        "answer": "Due diligence consulting is one of our most valuable services. We assess zoning, development feasibility, estimated costs, and market positioning before you commit — potentially saving significant capital by identifying unworkable deals early."
+      },
+      {
+        "question": "What does an owner's representative engagement include?",
+        "answer": "As owner's rep, we attend project meetings, review submittals and change orders, monitor schedule and quality, validate billing, and report directly to you. We serve as your expert eyes and voice throughout construction without replacing the general contractor."
+      },
+      {
+        "question": "How long do consulting engagements typically last?",
+        "answer": "Engagement duration varies by scope. Focused feasibility studies may complete in two to four weeks, while operational transformation projects span several months. We define timelines clearly during planning and adapt as findings evolve."
+      },
+      {
+        "question": "Do you sign non-disclosure agreements for consulting work?",
+        "answer": "Yes. We routinely execute NDAs before accessing proprietary financial data, project documents, and strategic plans. Confidentiality is fundamental to the trust required in advisory relationships."
+      },
+      {
+        "question": "Can consulting help my construction company improve profitability?",
+        "answer": "Operational consulting targets estimating accuracy, project management efficiency, subcontractor management, and overhead optimization — areas where disciplined improvement directly impacts margin. We benchmark your operations against industry best practices and implement measurable changes."
+      },
+      {
+        "question": "Is consulting available for projects outside Wisconsin?",
+        "answer": "While our deepest expertise lies in Southeast Wisconsin markets, we accept select consulting engagements in adjacent Midwest markets where our construction and development experience translates effectively. Initial consultations determine geographic fit."
+      }
+    ]
+  }
+]

@@ -93,18 +93,9 @@ function footer(prefix) {
 const navAssets = `<link rel="stylesheet" href="PREFIXassets/site-nav.css">`;
 const navAssetsServices = navAssets.replace('PREFIX', '../');
 const navAssetsRoot = navAssets.replace('PREFIX', '');
-
-const pageActive = {
-  'index.html': 'home',
-  'about.html': 'about',
-  'blog.html': 'blog',
-  'services.html': 'services',
-  'contact.html': 'contact',
-  'booking.html': 'booking',
-  'faq.html': 'faq',
-  'privacy-policy.html': '',
-  'terms-of-use.html': ''
-};
+const effectsCss = `<link rel="stylesheet" href="PREFIXassets/3d-effects.css">`;
+const effectsCssServices = effectsCss.replace('PREFIX', '../');
+const effectsCssRoot = effectsCss.replace('PREFIX', '');
 
 function patchFile(filePath, prefix, active) {
   let html = fs.readFileSync(filePath, 'utf8');
@@ -112,6 +103,11 @@ function patchFile(filePath, prefix, active) {
   if (!html.includes('site-nav.css')) {
     const link = prefix === '../' ? navAssetsServices : navAssetsRoot;
     html = html.replace('</head>', link + '\n</head>');
+  }
+
+  if (!html.includes('3d-effects.css')) {
+    const fx = prefix === '../' ? effectsCssServices : effectsCssRoot;
+    html = html.replace('</head>', fx + '\n</head>');
   }
 
   if (html.includes('le-header')) {
@@ -126,9 +122,13 @@ function patchFile(filePath, prefix, active) {
   html = html.replace(/<footer[\s\S]*?<\/footer>/i, footer(prefix));
 
   html = html.replace(/<script>\s*document\.getElementById\('menuToggle'\)[\s\S]*?<\/script>/g, '');
-  html = html.replace(/<script src="(\.\.\/)?assets\/site-nav\.js"><\/script>/g, '');
+  html = html.replace(/<script src="(\.\.\/)?assets\/3d-effects\.js"><\/script>\n?/g, '');
+  html = html.replace(/<script src="(\.\.\/)?assets\/site-nav\.js"><\/script>\n?/g, '');
 
-  const scripts = [`<script src="${prefix}assets/site-nav.js"></script>`];
+  const scripts = [
+    `<script src="${prefix}assets/3d-effects.js"></script>`,
+    `<script src="${prefix}assets/site-nav.js"></script>`
+  ];
   if (filePath.includes(`${path.sep}services${path.sep}`) || html.includes('service-detail')) {
     scripts.unshift(`<script src="${prefix}assets/service-detail.js"></script>`);
   }
@@ -137,6 +137,18 @@ function patchFile(filePath, prefix, active) {
   fs.writeFileSync(filePath, html, 'utf8');
   console.log('Patched:', filePath);
 }
+
+const pageActive = {
+  'index.html': 'home',
+  'about.html': 'about',
+  'blog.html': 'blog',
+  'services.html': 'services',
+  'contact.html': 'contact',
+  'booking.html': 'booking',
+  'faq.html': 'faq',
+  'privacy-policy.html': '',
+  'terms-of-use.html': ''
+};
 
 const rootPages = ['index.html', 'about.html', 'blog.html', 'communities.html', 'services.html', 'contact.html', 'booking.html', 'faq.html', 'privacy-policy.html', 'terms-of-use.html'];
 rootPages.forEach((f) => {

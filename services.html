@@ -1,385 +1,572 @@
 <!DOCTYPE html>
-
-<html class="scroll-smooth" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Services | LeadingEdge Development</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&amp;family=Playfair+Display:ital,wght@0,600;0,700;1,600&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            "colors": {
-                    "on-surface": "#1c1b1b",
-                    "surface-container-high": "#ebe7e7",
-                    "inverse-surface": "#313030",
-                    "background": "#fcf9f8",
-                    "surface-variant": "#e5e2e1",
-                    "secondary-fixed-dim": "#e9c176",
-                    "on-primary": "#ffffff",
-                    "tertiary": "#161815",
-                    "on-error": "#ffffff",
-                    "surface-container": "#f0edec",
-                    "on-secondary": "#ffffff",
-                    "on-tertiary-fixed-variant": "#464744",
-                    "surface-tint": "#4d6453",
-                    "surface-container-highest": "#e5e2e1",
-                    "on-secondary-container": "#785a1a",
-                    "surface-bright": "#fcf9f8",
-                    "primary-fixed-dim": "#b4cdb8",
-                    "tertiary-fixed-dim": "#c7c7c2",
-                    "on-tertiary-container": "#93938f",
-                    "surface-container-low": "#f6f3f2",
-                    "primary": "#061b0e",
-                    "outline-variant": "#c3c8c1",
-                    "primary-fixed": "#d0e9d4",
-                    "primary-container": "#1b3022",
-                    "secondary-container": "#fed488",
-                    "on-surface-variant": "#434843",
-                    "on-secondary-fixed-variant": "#5d4201",
-                    "on-secondary-fixed": "#261900",
-                    "inverse-primary": "#b4cdb8",
-                    "tertiary-fixed": "#e3e3de",
-                    "error": "#ba1a1a",
-                    "outline": "#737973",
-                    "secondary-fixed": "#ffdea5",
-                    "on-primary-fixed": "#0b2013",
-                    "on-background": "#1c1b1b",
-                    "tertiary-container": "#2b2c29",
-                    "surface-dim": "#dcd9d9",
-                    "surface-container-lowest": "#ffffff",
-                    "on-error-container": "#93000a",
-                    "surface": "#fcf9f8",
-                    "inverse-on-surface": "#f3f0ef",
-                    "on-tertiary-fixed": "#1b1c19",
-                    "on-primary-fixed-variant": "#364c3c",
-                    "error-container": "#ffdad6",
-                    "on-tertiary": "#ffffff",
-                    "on-primary-container": "#819986",
-                    "secondary": "#775a19"
-            },
-            "borderRadius": {
-                    "DEFAULT": "0.25rem",
-                    "lg": "0.5rem",
-                    "xl": "0.75rem",
-                    "full": "9999px"
-            },
-            "spacing": {
-                    "section-gap": "120px",
-                    "margin-mobile": "20px",
-                    "gutter": "24px",
-                    "container-max": "1280px",
-                    "base": "8px"
-            },
-            "fontFamily": {
-                    "label-caps": ["Montserrat"],
-                    "display-lg-mobile": ["Playfair Display"],
-                    "headline-md": ["Playfair Display"],
-                    "body-lg": ["Montserrat"],
-                    "hindi-body": ["Montserrat"],
-                    "display-lg": ["Playfair Display"],
-                    "body-md": ["Montserrat"]
-            },
-            "fontSize": {
-                    "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "600"}],
-                    "display-lg-mobile": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
-                    "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
-                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
-                    "hindi-body": ["18px", {"lineHeight": "32px", "fontWeight": "400"}],
-                    "display-lg": ["64px", {"lineHeight": "76px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
-                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}]
-            }
-          },
-        },
-      }
-    </script>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Services | LeadingEdge Development LLC</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
 <style>
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
-        }
-        .active-nav-underline {
-            position: relative;
-        }
-        .active-nav-underline::after {
-            content: '';
-            position: absolute;
-            bottom: -4px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 24px;
-            height: 2px;
-            background-color: #775a19;
-        }
-    </style>
+  :root {
+    --gold: #c9a227;
+    --gold-light: #e8d48a;
+    --dark: #1a1a1a;
+    --dark-2: #111111;
+    --text: #2a2a2a;
+    --muted: #666666;
+    --line: #e5e5e5;
+    --white: #ffffff;
+    --cream: #fafafa;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--text);
+    background: var(--white);
+    -webkit-font-smoothing: antialiased;
+  }
+  a { text-decoration: none; color: inherit; }
+  img { display: block; max-width: 100%; }
+  .serif { font-family: 'Playfair Display', serif; }
+  .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+  .material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+    vertical-align: middle;
+  }
+
+  /* HEADER */
+  header {
+    position: sticky; top: 0; z-index: 100;
+    background: rgba(255,255,255,0.96);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--line);
+  }
+  .nav-wrap {
+    display: flex; align-items: center; justify-content: space-between;
+    height: 72px; max-width: 1200px; margin: 0 auto; padding: 0 24px;
+  }
+  .logo { display: flex; align-items: center; gap: 10px; }
+  .logo-mark {
+    width: 36px; height: 36px; background: var(--dark);
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 700; font-size: 11px; color: var(--gold); letter-spacing: 0.5px;
+  }
+  .logo-text .name { font-size: 13px; font-weight: 700; letter-spacing: 1px; line-height: 1.2; }
+  .logo-text .tag { font-size: 8px; letter-spacing: 1.2px; color: var(--muted); }
+  nav ul { display: flex; gap: 28px; list-style: none; }
+  nav a {
+    font-size: 11px; font-weight: 600; letter-spacing: 0.08em;
+    text-transform: uppercase; color: var(--text); transition: color .2s;
+  }
+  nav a:hover { color: var(--gold); }
+  nav a.active { color: var(--gold); border-bottom: 2px solid var(--gold); padding-bottom: 4px; }
+  .btn {
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 12px 20px; font-size: 11px; font-weight: 600;
+    letter-spacing: 0.06em; text-transform: uppercase;
+    border: none; cursor: pointer; transition: all .2s;
+  }
+  .btn-dark { background: var(--dark); color: var(--white); }
+  .btn-dark:hover { background: #333; }
+  .btn-outline { background: var(--white); border: 1px solid var(--dark); color: var(--dark); }
+  .btn-outline:hover { background: var(--dark); color: var(--white); }
+  .btn-gold { background: var(--gold); color: var(--white); }
+  .btn-gold:hover { background: #b8921f; }
+  .btn-outline-white { background: transparent; border: 1px solid rgba(255,255,255,0.6); color: var(--white); }
+  .btn-outline-white:hover { background: rgba(255,255,255,0.1); }
+  .mobile-toggle { display: none; background: none; border: none; font-size: 28px; cursor: pointer; }
+
+  /* HERO */
+  .hero {
+    padding: 60px 0 80px;
+    background: var(--white);
+    overflow: hidden;
+  }
+  .hero-grid {
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 40px; align-items: center;
+    max-width: 1200px; margin: 0 auto; padding: 0 24px;
+  }
+  .hero-eyebrow {
+    font-size: 11px; font-weight: 600; letter-spacing: 0.15em;
+    color: var(--gold); text-transform: uppercase; margin-bottom: 16px;
+  }
+  .hero h1 {
+    font-size: clamp(32px, 4vw, 48px); line-height: 1.15;
+    font-weight: 500; margin-bottom: 20px; color: var(--dark);
+  }
+  .hero p {
+    font-size: 15px; line-height: 1.7; color: var(--muted);
+    max-width: 480px; margin-bottom: 32px;
+  }
+  .hero-btns { display: flex; flex-wrap: wrap; gap: 12px; }
+  .hero-image-wrap {
+    position: relative; height: 420px;
+  }
+  .hero-image {
+    width: 100%; height: 100%; object-fit: cover;
+    clip-path: polygon(8% 0, 100% 0, 92% 100%, 0 100%);
+    box-shadow: 0 20px 60px rgba(0,0,0,0.12);
+  }
+
+  /* SECTION COMMON */
+  .section-eyebrow {
+    font-size: 11px; font-weight: 600; letter-spacing: 0.15em;
+    color: var(--gold); text-transform: uppercase;
+    text-align: center; margin-bottom: 12px;
+  }
+  .section-title {
+    font-size: clamp(28px, 3vw, 36px); font-weight: 500;
+    text-align: center; margin-bottom: 48px; color: var(--dark);
+  }
+
+  /* SERVICES GRID */
+  .services-section { padding: 80px 0; background: var(--cream); }
+  .services-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;
+  }
+  .service-card {
+    background: var(--white); border: 1px solid var(--line);
+    padding: 32px 28px; position: relative;
+    transition: box-shadow .3s, transform .3s;
+    min-height: 220px;
+  }
+  .service-card:hover {
+    box-shadow: 0 12px 40px rgba(0,0,0,0.08);
+    transform: translateY(-4px);
+  }
+  .service-icon {
+    width: 44px; height: 44px; border: 1px solid var(--line);
+    display: flex; align-items: center; justify-content: center;
+    margin-bottom: 20px; color: var(--dark);
+  }
+  .service-icon .material-symbols-outlined { font-size: 22px; }
+  .service-card h3 {
+    font-size: 15px; font-weight: 700; margin-bottom: 12px;
+    letter-spacing: 0.02em; color: var(--dark);
+  }
+  .service-card p {
+    font-size: 13px; line-height: 1.65; color: var(--muted);
+    padding-right: 24px;
+  }
+  .service-arrow {
+    position: absolute; bottom: 24px; right: 24px;
+    color: var(--gold); font-size: 18px;
+  }
+
+  /* WHY CHOOSE */
+  .why-section { padding: 80px 0; }
+  .why-grid {
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 60px; align-items: center;
+  }
+  .why-image {
+    width: 100%; height: 400px; object-fit: cover;
+    border: 1px solid var(--line);
+  }
+  .why-eyebrow {
+    font-size: 11px; font-weight: 600; letter-spacing: 0.15em;
+    color: var(--gold); text-transform: uppercase; margin-bottom: 12px;
+  }
+  .why-grid h2 {
+    font-size: clamp(28px, 3vw, 36px); font-weight: 500;
+    margin-bottom: 32px; color: var(--dark);
+  }
+  .why-list { list-style: none; }
+  .why-list li {
+    display: flex; align-items: center; gap: 14px;
+    padding: 14px 0; border-bottom: 1px solid var(--line);
+    font-size: 14px; font-weight: 500; color: var(--dark);
+  }
+  .why-check {
+    width: 28px; height: 28px; border-radius: 50%;
+    background: var(--gold); color: var(--white);
+    display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+  }
+  .why-check .material-symbols-outlined { font-size: 16px; font-variation-settings: 'FILL' 1; }
+
+  /* PROCESS */
+  .process-section { padding: 80px 0; background: var(--cream); }
+  .process-timeline {
+    display: grid; grid-template-columns: repeat(5, 1fr);
+    gap: 20px; position: relative; margin-top: 20px;
+  }
+  .process-timeline::before {
+    content: ''; position: absolute; top: 52px; left: 10%; right: 10%;
+    height: 2px; background: linear-gradient(90deg, var(--gold-light), var(--gold), var(--gold-light));
+    z-index: 0;
+  }
+  .process-step { text-align: center; position: relative; z-index: 1; }
+  .process-num {
+    width: 44px; height: 44px; border-radius: 50%;
+    background: var(--dark); color: var(--white);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 13px; font-weight: 700; margin: 0 auto 16px;
+    border: 3px solid var(--cream);
+  }
+  .process-icon {
+    width: 40px; height: 40px; margin: 0 auto 12px;
+    display: flex; align-items: center; justify-content: center;
+    color: var(--gold);
+  }
+  .process-step h4 {
+    font-size: 13px; font-weight: 700; margin-bottom: 8px;
+    letter-spacing: 0.02em; color: var(--dark);
+  }
+  .process-step p {
+    font-size: 12px; line-height: 1.6; color: var(--muted);
+    max-width: 180px; margin: 0 auto;
+  }
+
+  /* CTA */
+  .cta-section {
+    position: relative; padding: 80px 0;
+    background: var(--dark); color: var(--white); overflow: hidden;
+  }
+  .cta-section::before {
+    content: ''; position: absolute; inset: 0;
+    background: url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1800&auto=format&fit=crop') center/cover;
+    opacity: 0.15;
+  }
+  .cta-grid {
+    position: relative; z-index: 1;
+    display: grid; grid-template-columns: 1.2fr 1fr;
+    gap: 40px; align-items: center;
+    max-width: 1200px; margin: 0 auto; padding: 0 24px;
+  }
+  .cta-grid h2 {
+    font-size: clamp(28px, 3vw, 38px); font-weight: 500;
+    margin-bottom: 16px; line-height: 1.2;
+  }
+  .cta-grid p { font-size: 14px; line-height: 1.7; opacity: 0.85; margin-bottom: 28px; }
+  .cta-btns { display: flex; flex-wrap: wrap; gap: 12px; justify-content: flex-end; }
+
+  /* FOOTER */
+  footer {
+    background: var(--dark-2); color: rgba(255,255,255,0.75);
+    padding: 70px 0 30px;
+  }
+  .footer-grid {
+    display: grid; grid-template-columns: 1.4fr 1fr 1fr 1.2fr;
+    gap: 40px; margin-bottom: 50px;
+  }
+  .footer-logo .name { font-size: 13px; font-weight: 700; letter-spacing: 1px; color: var(--white); }
+  .footer-logo .tag { font-size: 8px; letter-spacing: 1.2px; opacity: 0.6; margin-top: 2px; }
+  .footer-about { font-size: 13px; line-height: 1.7; margin: 16px 0 20px; max-width: 260px; }
+  .social { display: flex; gap: 10px; }
+  .social a {
+    width: 34px; height: 34px; border-radius: 50%;
+    border: 1px solid rgba(255,255,255,0.25);
+    display: flex; align-items: center; justify-content: center;
+    transition: border-color .2s, background .2s;
+  }
+  .social a:hover { border-color: var(--gold); background: rgba(201,162,39,0.15); }
+  .social svg { width: 14px; height: 14px; fill: currentColor; }
+  .footer-col h4 {
+    font-size: 11px; font-weight: 700; letter-spacing: 0.12em;
+    text-transform: uppercase; color: var(--white); margin-bottom: 20px;
+  }
+  .footer-col ul { list-style: none; }
+  .footer-col li { margin-bottom: 12px; }
+  .footer-col a { font-size: 13px; transition: color .2s; }
+  .footer-col a:hover { color: var(--gold); }
+  .footer-col a.active { color: var(--gold); }
+  .contact-item {
+    display: flex; gap: 10px; margin-bottom: 14px;
+    font-size: 13px; align-items: flex-start;
+  }
+  .contact-item .material-symbols-outlined { font-size: 18px; color: var(--gold); flex-shrink: 0; }
+  .footer-bottom {
+    display: flex; justify-content: space-between; align-items: center;
+    padding-top: 24px; border-top: 1px solid rgba(255,255,255,0.1);
+    font-size: 12px;
+  }
+  .footer-bottom .links { display: flex; gap: 20px; }
+  .footer-bottom a:hover { color: var(--gold); }
+
+  @media (max-width: 980px) {
+    nav ul { display: none; }
+    .mobile-toggle { display: block; }
+    nav.open ul {
+      display: flex; flex-direction: column; gap: 16px;
+      position: absolute; top: 72px; left: 0; right: 0;
+      background: var(--white); padding: 24px; border-bottom: 1px solid var(--line);
+    }
+    .hero-grid, .why-grid, .cta-grid { grid-template-columns: 1fr; }
+    .hero-image-wrap { height: 300px; order: -1; }
+    .services-grid { grid-template-columns: repeat(2, 1fr); }
+    .process-timeline { grid-template-columns: 1fr; gap: 32px; }
+    .process-timeline::before { display: none; }
+    .footer-grid { grid-template-columns: 1fr 1fr; }
+    .cta-btns { justify-content: flex-start; }
+  }
+  @media (max-width: 640px) {
+    .services-grid { grid-template-columns: 1fr; }
+    .footer-grid { grid-template-columns: 1fr; }
+    .footer-bottom { flex-direction: column; gap: 12px; text-align: center; }
+    .nav-wrap .btn-dark { display: none; }
+  }
+</style>
 </head>
-<body class="bg-background text-on-surface selection:bg-secondary-fixed selection:text-on-secondary-fixed">
-<!-- TopNavBar -->
-<header class="sticky top-0 w-full z-50 bg-background dark:bg-primary-container border-b border-outline-variant dark:border-primary-container">
-<div class="flex justify-between items-center h-20 px-margin-mobile md:px-gutter max-w-container-max mx-auto">
-<div class="flex items-center gap-2">
-<a href="index.html" class="font-display-lg text-body-lg font-bold tracking-tighter text-primary dark:text-primary-fixed">LEADINGEDGE</a>
-</div>
-<nav class="hidden md:flex items-center gap-8">
-<a class="font-label-caps text-label-caps text-on-surface-variant dark:text-on-primary-container hover:text-secondary dark:hover:text-secondary-fixed-dim transition-colors duration-300" href="index.html">Home</a>
-<a class="font-label-caps text-label-caps text-on-surface-variant dark:text-on-primary-container hover:text-secondary dark:hover:text-secondary-fixed-dim transition-colors duration-300" href="about.html">About Us</a>
-<a class="font-label-caps text-label-caps text-on-surface-variant dark:text-on-primary-container hover:text-secondary dark:hover:text-secondary-fixed-dim transition-colors duration-300" href="communities.html">Communities</a>
-<a class="font-label-caps text-label-caps text-primary dark:text-secondary-fixed border-b-2 border-secondary-fixed pb-1" href="services.html">Services</a>
-<a class="font-label-caps text-label-caps text-on-surface-variant dark:text-on-primary-container hover:text-secondary dark:hover:text-secondary-fixed-dim transition-colors duration-300" href="index.html#gallery">Gallery</a>
-<a class="font-label-caps text-label-caps text-on-surface-variant dark:text-on-primary-container hover:text-secondary dark:hover:text-secondary-fixed-dim transition-colors duration-300" href="contact.html">Contact</a>
-</nav>
-<a href="booking.html" class="bg-primary text-on-primary px-6 py-3 font-label-caps text-label-caps scale-95 transition-transform duration-200 hover:opacity-90 flex items-center gap-2">
-<span class="material-symbols-outlined text-[18px]">calendar_today</span>
-                Book Consultation
-            </a>
-</div>
+<body>
+
+<header>
+  <div class="nav-wrap">
+    <a href="index.html" class="logo">
+      <div class="logo-mark">LE</div>
+      <div class="logo-text">
+        <div class="name">LEADINGEDGE</div>
+        <div class="tag">DEVELOPMENT LLC</div>
+      </div>
+    </a>
+    <nav id="mainNav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html" class="active">Services</a></li>
+        <li><a href="index.html#gallery">Projects</a></li>
+        <li><a href="faq.html">Testimonials</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <a href="booking.html" class="btn btn-dark">
+      Get A Quote
+      <span class="material-symbols-outlined" style="font-size:16px">arrow_forward</span>
+    </a>
+    <button class="mobile-toggle" id="menuToggle" aria-label="Menu">
+      <span class="material-symbols-outlined">menu</span>
+    </button>
+  </div>
 </header>
+
 <main>
-<!-- Hero Section -->
-<section class="relative h-[614px] flex items-center overflow-hidden">
-<div class="absolute inset-0 z-0">
-<div class="absolute inset-0 bg-primary/40 z-10"></div>
-<div class="w-full h-full bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=1800&auto=format&fit=crop')"></div>
-</div>
-<div class="relative z-20 max-w-container-max mx-auto px-margin-mobile md:px-gutter w-full">
-<div class="max-w-2xl">
-<span class="font-label-caps text-label-caps text-secondary-fixed block mb-4">OUR SERVICES</span>
-<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-on-primary mb-6">Construction. Remodeling. <span class="italic">Project Management.</span></h1>
-<p class="font-body-lg text-body-lg text-surface-variant max-w-lg">Wisconsin-licensed general contracting focused on residential construction, remodeling, and land development throughout Southeast Wisconsin.</p>
-</div>
-</div>
-</section>
-<!-- Service Section: Residential -->
-<section class="py-section-gap max-w-container-max mx-auto px-margin-mobile md:px-gutter" id="residential">
-<div class="grid grid-cols-1 lg:grid-cols-2 gap-section-gap items-center">
-<div class="order-2 lg:order-1">
-<span class="font-label-caps text-label-caps text-secondary block mb-4 uppercase">01 — Construction &amp; Remodeling</span>
-<h2 class="font-headline-md text-headline-md mb-8">Build and Remodel with <span class="italic">Integrity</span>.</h2>
-<p class="font-body-md text-body-md text-on-surface-variant mb-10 leading-relaxed">
-                        Through LeadingEdge Development LLC, we deliver full-scale residential construction and remodeling—from foundations to roofing and everything in between. We partner with homeowners who value clear communication, dependable timelines, and high-quality craftsmanship.
-                    </p>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter mb-12">
-<div class="p-6 border border-outline-variant hover:border-secondary transition-colors duration-300">
-<span class="material-symbols-outlined text-secondary mb-4 text-3xl">home_work</span>
-<h4 class="font-label-caps text-label-caps mb-2">NEW HOME BUILDS</h4>
-<p class="font-body-md text-sm text-on-surface-variant">Custom residential construction with skilled craftsmanship across planning, site work, and finishes.</p>
-</div>
-<div class="p-6 border border-outline-variant hover:border-secondary transition-colors duration-300">
-<span class="material-symbols-outlined text-secondary mb-4 text-3xl">home_repair_service</span>
-<h4 class="font-label-caps text-label-caps mb-2">REMODELING</h4>
-<p class="font-body-md text-sm text-on-surface-variant">Renovations and updates that bring existing homes closer to new-construction quality and performance.</p>
-</div>
-</div>
-<a href="contact.html" class="border border-primary text-primary px-8 py-4 font-label-caps text-label-caps hover:bg-primary hover:text-on-primary transition-all duration-300 flex items-center gap-3 inline-flex">
-                        START A PROJECT
-                        <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
-</a>
-</div>
-<div class="order-1 lg:order-2 relative">
-<div class="aspect-[4/5] bg-cover bg-center border border-outline-variant" style="background-image: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=900&auto=format&fit=crop')"></div>
-<div class="absolute -bottom-10 -left-10 bg-primary-container p-8 hidden md:block border-l-4 border-secondary">
-<span class="block font-headline-md text-display-lg-mobile text-secondary-fixed mb-1">WI</span>
-<span class="font-label-caps text-label-caps text-on-primary-container">LICENSED GENERAL CONTRACTOR</span>
-</div>
-</div>
-</div>
-</section>
-<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter">
-<div class="h-px bg-outline-variant"></div>
-</div>
-<!-- Land Development -->
-<section class="py-section-gap max-w-container-max mx-auto px-margin-mobile md:px-gutter" id="land">
-<div class="grid grid-cols-1 lg:grid-cols-2 gap-section-gap items-center">
-<div class="relative">
-<div class="aspect-[16/10] bg-cover bg-center border border-outline-variant" style="background-image: url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1200&auto=format&fit=crop')"></div>
-</div>
-<div class="lg:pl-12">
-<span class="font-label-caps text-label-caps text-secondary block mb-4 uppercase">02 — Land Development</span>
-<h2 class="font-headline-md text-headline-md mb-8">From Site Work to <span class="italic">Full Builds</span>.</h2>
-<p class="font-body-md text-body-md text-on-surface-variant mb-10 leading-relaxed">
-                        We provide land development and site work as part of a complete construction approach—helping projects move efficiently from early planning through delivery across Southeast Wisconsin.
-                    </p>
-<ul class="space-y-6 mb-12">
-<li class="flex items-start gap-4">
-<span class="material-symbols-outlined text-secondary mt-1">check_circle</span>
-<div>
-<h4 class="font-label-caps text-label-caps text-primary">SITE PLANNING &amp; WORK</h4>
-<p class="font-body-md text-sm text-on-surface-variant">Practical coordination from initial planning through groundwork and build readiness.</p>
-</div>
-</li>
-<li class="flex items-start gap-4">
-<span class="material-symbols-outlined text-secondary mt-1">check_circle</span>
-<div>
-<h4 class="font-label-caps text-label-caps text-primary">LONG-TERM VALUE</h4>
-<p class="font-body-md text-sm text-on-surface-variant">As both builder and investor, we approach projects with quality, sustainability, and lasting value in mind.</p>
-</div>
-</li>
-</ul>
-<a href="booking.html" class="bg-primary text-on-primary px-8 py-4 font-label-caps text-label-caps hover:opacity-90 transition-all duration-300 flex items-center gap-3 inline-flex">
-                        BOOK A CONSULTATION
-                        <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
-</a>
-</div>
-</div>
-</section>
-<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter">
-<div class="h-px bg-outline-variant"></div>
-</div>
-<!-- Project Management -->
-<section class="py-section-gap max-w-container-max mx-auto px-margin-mobile md:px-gutter" id="management">
-<div class="grid grid-cols-1 lg:grid-cols-2 gap-section-gap items-center">
-<div class="order-2 lg:order-1">
-<span class="font-label-caps text-label-caps text-secondary block mb-4 uppercase">03 — Project Management</span>
-<h2 class="font-headline-md text-headline-md mb-8">Coordinated from Start to <span class="italic">Finish</span>.</h2>
-<p class="font-body-md text-body-md text-on-surface-variant mb-10 leading-relaxed">
-                        LeadingEdge Management Solutions LLC provides project management services so each job runs efficiently—from planning through completion—with a focus on coordination, cost control, and client experience. We leverage trusted trade partners to deliver consistent, professional results.
-                    </p>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
-<div class="p-6 border border-outline-variant">
-<h4 class="font-label-caps text-label-caps mb-2">COORDINATION</h4>
-<p class="font-body-md text-sm text-on-surface-variant">Clear timelines and communication across every phase of the job.</p>
-</div>
-<div class="p-6 border border-outline-variant">
-<h4 class="font-label-caps text-label-caps mb-2">COST CONTROL</h4>
-<p class="font-body-md text-sm text-on-surface-variant">Practical oversight that keeps projects organized and aligned with client goals.</p>
-</div>
-</div>
-</div>
-<div class="order-1 lg:order-2 relative">
-<div class="aspect-[4/5] bg-cover bg-center border border-outline-variant" style="background-image: url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=900&auto=format&fit=crop')"></div>
-</div>
-</div>
-</section>
-<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter">
-<div class="h-px bg-outline-variant"></div>
-</div>
-<!-- Consulting -->
-<section class="py-section-gap max-w-container-max mx-auto px-margin-mobile md:px-gutter" id="consulting">
-<div class="grid grid-cols-1 lg:grid-cols-2 gap-section-gap items-center">
-<div class="relative">
-<div class="aspect-[16/10] bg-cover bg-center border border-outline-variant" style="background-image: url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1200&auto=format&fit=crop')"></div>
-</div>
-<div class="lg:pl-12">
-<span class="font-label-caps text-label-caps text-secondary block mb-4 uppercase">04 — Consulting &amp; Strategy</span>
-<h2 class="font-headline-md text-headline-md mb-8">Guidance for Partners &amp; <span class="italic">Businesses</span>.</h2>
-<p class="font-body-md text-body-md text-on-surface-variant mb-10 leading-relaxed">
-                        Beyond our own builds, we offer consulting and project management support to partners and businesses seeking help with planning, strategy, processes, and operational efficiency—bringing a practical, results-driven approach to organizational performance.
-                    </p>
-<ul class="space-y-6 mb-12">
-<li class="flex items-start gap-4">
-<span class="material-symbols-outlined text-secondary mt-1">check_circle</span>
-<div>
-<h4 class="font-label-caps text-label-caps text-primary">BUSINESS STRATEGY &amp; PLANNING</h4>
-<p class="font-body-md text-sm text-on-surface-variant">Experienced guidance to strengthen how teams operate and deliver.</p>
-</div>
-</li>
-<li class="flex items-start gap-4">
-<span class="material-symbols-outlined text-secondary mt-1">check_circle</span>
-<div>
-<h4 class="font-label-caps text-label-caps text-primary">REAL ESTATE INVESTMENT</h4>
-<p class="font-body-md text-sm text-on-surface-variant">Through LeadingEdge Equity Partners LLC, we pursue residential and commercial opportunities with a long-term mindset.</p>
-</div>
-</li>
-</ul>
-<a href="contact.html" class="bg-primary text-on-primary px-8 py-4 font-label-caps text-label-caps hover:opacity-90 transition-all duration-300 flex items-center gap-3 inline-flex">
-                        GET IN TOUCH
-                        <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
-</a>
-</div>
-</div>
-</section>
-<!-- CTA Section -->
-<section class="bg-primary-container py-section-gap relative overflow-hidden">
-<div class="relative z-10 max-w-container-max mx-auto px-margin-mobile md:px-gutter text-center">
-<h2 class="font-headline-md text-headline-md text-on-primary mb-6">Ready to Start Your <span class="italic text-secondary-fixed">Next Project</span>?</h2>
-<p class="font-body-lg text-body-lg text-on-primary-container max-w-2xl mx-auto mb-10">
-                    Contact LeadingEdge Development to discuss residential construction, remodeling, land development, or project management support in Southeast Wisconsin.
-                </p>
-<div class="flex flex-col sm:flex-row gap-4 justify-center">
-<a href="booking.html" class="bg-secondary-fixed text-on-secondary-fixed px-10 py-5 font-label-caps text-label-caps hover:bg-secondary-fixed-dim transition-colors duration-300">
-                        BOOK A CONSULTATION
-                    </a>
-<a href="contact.html" class="border border-on-primary-container text-on-primary px-10 py-5 font-label-caps text-label-caps hover:bg-on-primary-container hover:text-primary transition-colors duration-300">
-                        GET IN TOUCH
-                    </a>
-</div>
-</div>
-</section>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-grid">
+      <div>
+        <span class="hero-eyebrow">Our Services</span>
+        <h1 class="serif">Professional Construction &amp; Management Services</h1>
+        <p>LeadingEdge delivers residential construction, remodeling, land development, and professional project management solutions with quality craftsmanship, clear communication, and dependable execution throughout Southeast Wisconsin.</p>
+        <div class="hero-btns">
+          <a href="booking.html" class="btn btn-dark">
+            Request Consultation
+            <span class="material-symbols-outlined" style="font-size:16px">arrow_forward</span>
+          </a>
+          <a href="index.html#gallery" class="btn btn-outline">
+            View Projects
+            <span class="material-symbols-outlined" style="font-size:16px">arrow_forward</span>
+          </a>
+        </div>
+      </div>
+      <div class="hero-image-wrap">
+        <img class="hero-image" src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop" alt="Modern luxury home">
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Grid -->
+  <section class="services-section">
+    <div class="container">
+      <span class="section-eyebrow">What We Offer</span>
+      <h2 class="section-title serif">Comprehensive Solutions for Every Project</h2>
+      <div class="services-grid">
+        <article class="service-card" id="residential">
+          <div class="service-icon"><span class="material-symbols-outlined">home_work</span></div>
+          <h3>Residential Construction</h3>
+          <p>Build custom homes with exceptional craftsmanship, durable materials, and attention to every detail from foundation to final finish.</p>
+          <span class="service-arrow material-symbols-outlined">arrow_forward</span>
+        </article>
+        <article class="service-card">
+          <div class="service-icon"><span class="material-symbols-outlined">home_repair_service</span></div>
+          <h3>Home Remodeling &amp; Renovations</h3>
+          <p>Transform existing homes with modern renovations that improve comfort, functionality, and long-term value.</p>
+          <span class="service-arrow material-symbols-outlined">arrow_forward</span>
+        </article>
+        <article class="service-card" id="land">
+          <div class="service-icon"><span class="material-symbols-outlined">construction</span></div>
+          <h3>Land Development</h3>
+          <p>Complete land preparation, grading, infrastructure planning, and site development for successful residential projects.</p>
+          <span class="service-arrow material-symbols-outlined">arrow_forward</span>
+        </article>
+        <article class="service-card" id="management">
+          <div class="service-icon"><span class="material-symbols-outlined">assignment</span></div>
+          <h3>General Contracting &amp; Project Management</h3>
+          <p>Manage every phase of construction with efficient scheduling, quality control, budgeting, and contractor coordination.</p>
+          <span class="service-arrow material-symbols-outlined">arrow_forward</span>
+        </article>
+        <article class="service-card" id="consulting">
+          <div class="service-icon"><span class="material-symbols-outlined">business_center</span></div>
+          <h3>Business Consulting</h3>
+          <p>Provide strategic consulting and planning services that help businesses improve organization, project execution, and long-term growth.</p>
+          <span class="service-arrow material-symbols-outlined">arrow_forward</span>
+        </article>
+        <article class="service-card">
+          <div class="service-icon"><span class="material-symbols-outlined">groups</span></div>
+          <h3>Management Solutions</h3>
+          <p>Support clients with project planning, operational strategy, process improvement, and execution management.</p>
+          <span class="service-arrow material-symbols-outlined">arrow_forward</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section class="why-section">
+    <div class="container">
+      <div class="why-grid">
+        <img class="why-image" src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=1200&auto=format&fit=crop" alt="Construction site with crane">
+        <div>
+          <span class="why-eyebrow">Why Choose LeadingEdge</span>
+          <h2 class="serif">Why Clients Choose LeadingEdge</h2>
+          <ul class="why-list">
+            <li><span class="why-check"><span class="material-symbols-outlined">check</span></span> Licensed General Contractor</li>
+            <li><span class="why-check"><span class="material-symbols-outlined">check</span></span> Quality Craftsmanship</li>
+            <li><span class="why-check"><span class="material-symbols-outlined">check</span></span> Transparent Communication</li>
+            <li><span class="why-check"><span class="material-symbols-outlined">check</span></span> On-Time Project Delivery</li>
+            <li><span class="why-check"><span class="material-symbols-outlined">check</span></span> Experienced Project Management</li>
+            <li><span class="why-check"><span class="material-symbols-outlined">check</span></span> Customer-Focused Approach</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Process -->
+  <section class="process-section">
+    <div class="container">
+      <span class="section-eyebrow">Our Process</span>
+      <h2 class="section-title serif">Our Construction Process</h2>
+      <div class="process-timeline">
+        <div class="process-step">
+          <div class="process-num">01</div>
+          <div class="process-icon"><span class="material-symbols-outlined">groups</span></div>
+          <h4>Consultation</h4>
+          <p>We meet with you to understand your vision, goals, and requirements.</p>
+        </div>
+        <div class="process-step">
+          <div class="process-num">02</div>
+          <div class="process-icon"><span class="material-symbols-outlined">checklist</span></div>
+          <h4>Planning</h4>
+          <p>We create a detailed plan, budget, and timeline tailored to your project.</p>
+        </div>
+        <div class="process-step">
+          <div class="process-num">03</div>
+          <div class="process-icon"><span class="material-symbols-outlined">design_services</span></div>
+          <h4>Design &amp; Preparation</h4>
+          <p>Finalizing designs and preparing the site for a smooth construction.</p>
+        </div>
+        <div class="process-step">
+          <div class="process-num">04</div>
+          <div class="process-icon"><span class="material-symbols-outlined">engineering</span></div>
+          <h4>Construction</h4>
+          <p>Our team brings the plan to life with quality craftsmanship.</p>
+        </div>
+        <div class="process-step">
+          <div class="process-num">05</div>
+          <div class="process-icon"><span class="material-symbols-outlined">verified</span></div>
+          <h4>Final Inspection</h4>
+          <p>We ensure every detail meets our standards and your expectations.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="cta-grid">
+      <div>
+        <h2 class="serif">Ready to Start Your Next Project?</h2>
+        <p>Whether you're planning a new build, renovation, or land development project, LeadingEdge is ready to help you move forward with confidence.</p>
+      </div>
+      <div class="cta-btns">
+        <a href="booking.html" class="btn btn-gold">
+          Request A Consultation
+          <span class="material-symbols-outlined" style="font-size:16px">arrow_forward</span>
+        </a>
+        <a href="contact.html" class="btn btn-outline-white">
+          Contact Us
+          <span class="material-symbols-outlined" style="font-size:16px">arrow_forward</span>
+        </a>
+      </div>
+    </div>
+  </section>
 </main>
-<!-- Footer -->
-<footer class="bg-surface-container-low dark:bg-primary border-t border-outline-variant w-full py-section-gap">
-<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-gutter max-w-container-max mx-auto">
-<div class="md:col-span-1">
-<span class="font-display-lg text-body-lg font-bold text-primary dark:text-primary-fixed block mb-6">LEADINGEDGE</span>
-<p class="font-body-md text-sm text-on-surface-variant dark:text-on-primary-container mb-6 pr-4">
-                    Construction, builder, remodeler, and project management services throughout Southeast Wisconsin.
-                </p>
-<div class="flex gap-4">
-<a class="w-10 h-10 border border-outline-variant flex items-center justify-center text-primary dark:text-on-primary-container hover:border-secondary transition-colors" href="https://www.linkedin.com/company/leadingedge-devt/" target="_blank" rel="noopener">
-<span class="material-symbols-outlined text-[20px]">link</span>
-</a>
-<a class="w-10 h-10 border border-outline-variant flex items-center justify-center text-primary dark:text-on-primary-container hover:border-secondary transition-colors" href="https://www.instagram.com/leadingedge_dev/" target="_blank" rel="noopener">
-<span class="material-symbols-outlined text-[20px]">photo_camera</span>
-</a>
-</div>
-</div>
-<div>
-<h4 class="font-label-caps text-label-caps text-primary dark:text-primary-fixed mb-6">COMPANY</h4>
-<ul class="space-y-4">
-<li><a class="font-body-md text-sm text-on-surface-variant dark:text-on-primary-container hover:text-primary transition-colors" href="about.html">About Us</a></li>
-<li><a class="font-body-md text-sm text-on-surface-variant dark:text-on-primary-container hover:text-primary transition-colors" href="about.html#leadership">Our Team</a></li>
-<li><a class="font-body-md text-sm text-on-surface-variant dark:text-on-primary-container hover:text-primary transition-colors" href="contact.html">Careers</a></li>
-<li><a class="font-body-md text-sm text-on-surface-variant dark:text-on-primary-container hover:text-primary transition-colors" href="about.html">News &amp; Insights</a></li>
-</ul>
-</div>
-<div>
-<h4 class="font-label-caps text-label-caps text-primary dark:text-primary-fixed mb-6">SERVICES</h4>
-<ul class="space-y-4">
-<li><a class="font-body-md text-sm text-on-surface-variant dark:text-on-primary-container hover:text-primary transition-colors" href="services.html#residential">Construction &amp; Remodeling</a></li>
-<li><a class="font-body-md text-sm text-on-surface-variant dark:text-on-primary-container hover:text-primary transition-colors" href="services.html#management">Project Management</a></li>
-<li><a class="font-body-md text-sm text-on-surface-variant dark:text-on-primary-container hover:text-primary transition-colors" href="services.html#land">Land Development</a></li>
-<li><a class="font-body-md text-sm text-on-surface-variant dark:text-on-primary-container hover:text-primary transition-colors" href="services.html#consulting">Consulting</a></li>
-</ul>
-</div>
-<div>
-<h4 class="font-label-caps text-label-caps text-primary dark:text-primary-fixed mb-6">CONTACT US</h4>
-<ul class="space-y-4">
-<li class="flex items-center gap-3 font-body-md text-sm text-on-surface-variant dark:text-on-primary-container">
-<span class="material-symbols-outlined text-[18px]">phone</span>
-                        +1 (414) 630-5297
-                    </li>
-<li class="flex items-center gap-3 font-body-md text-sm text-on-surface-variant dark:text-on-primary-container">
-<span class="material-symbols-outlined text-[18px]">mail</span>
-                        jay.lorino@leadingedgemgt.com
-                    </li>
-<li class="flex items-start gap-3 font-body-md text-sm text-on-surface-variant dark:text-on-primary-container">
-<span class="material-symbols-outlined text-[18px]">location_on</span>
-                        Milwaukee, WI 53201, USA
-                    </li>
-</ul>
-</div>
-</div>
-<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter mt-16 pt-8 border-t border-outline-variant/30 flex flex-col md:flex-row justify-between items-center gap-4">
-<span class="font-label-caps text-[10px] text-on-surface-variant/60">© 2026 LeadingEdge Development LLC. All Rights Reserved.</span>
-<div class="flex gap-8">
-<a class="font-label-caps text-[10px] text-on-surface-variant/60 hover:text-primary transition-colors" href="#">Privacy Policy</a>
-<a class="font-label-caps text-[10px] text-on-surface-variant/60 hover:text-primary transition-colors" href="#">Terms of Use</a>
-</div>
-</div>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <div class="footer-logo">
+          <div class="logo" style="margin-bottom:4px">
+            <div class="logo-mark">LE</div>
+            <div class="logo-text">
+              <div class="name">LEADINGEDGE</div>
+              <div class="tag">DEVELOPMENT LLC</div>
+            </div>
+          </div>
+        </div>
+        <p>Building better homes, stronger businesses, and lasting relationships through quality construction and professional project management.</p>
+        <div class="social">
+          <a href="https://www.linkedin.com/company/leadingedge-devt/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/leadingedge_dev/" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html" class="active">Services</a></li>
+          <li><a href="index.html#gallery">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Our Services</h4>
+        <ul>
+          <li><a href="#residential">Residential Construction</a></li>
+          <li><a href="#residential">Home Remodeling</a></li>
+          <li><a href="#land">Land Development</a></li>
+          <li><a href="#management">Project Management</a></li>
+          <li><a href="#consulting">Business Consulting</a></li>
+          <li><a href="#consulting">Management Solutions</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <div class="contact-item">
+          <span class="material-symbols-outlined">call</span>
+          <span>+1 (414) 630-5297</span>
+        </div>
+        <div class="contact-item">
+          <span class="material-symbols-outlined">mail</span>
+          <span>jay.lorino@leadingedgemgt.com</span>
+        </div>
+        <div class="contact-item">
+          <span class="material-symbols-outlined">location_on</span>
+          <span>Milwaukee, WI 53201, USA</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 LeadingEdge Development LLC. All Rights Reserved.</span>
+      <div class="links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
+  </div>
 </footer>
+
 <script>
-        // Micro-interaction for service cards
-        document.querySelectorAll('.border-outline-variant').forEach(card => {
-            card.addEventListener('mouseenter', () => {
-                card.classList.add('scale-[1.02]');
-                card.style.transition = 'all 0.4s cubic-bezier(0.16, 1, 0.3, 1)';
-            });
-            card.addEventListener('mouseleave', () => {
-                card.classList.remove('scale-[1.02]');
-            });
-        });
-    </script>
-</body></html>
+  document.getElementById('menuToggle').addEventListener('click', function() {
+    document.getElementById('mainNav').classList.toggle('open');
+  });
+</script>
+</body>
+</html>

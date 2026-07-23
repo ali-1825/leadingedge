@@ -7,15 +7,13 @@
   var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   var conn = navigator.connection;
   var saveData = conn && conn.saveData;
-  var slow = conn && /2g|slow-2g|3g/.test(conn.effectiveType || '');
+  var slow = conn && /2g|slow-2g/.test(conn.effectiveType || '');
 
   if (reduced || saveData || slow) {
     video.removeAttribute('autoplay');
     video.preload = 'none';
     return;
   }
-
-  video.preload = 'metadata';
 
   function startVideo() {
     var playAttempt = video.play();
@@ -24,19 +22,19 @@
     }
   }
 
-  function loadAndPlay() {
-    if (video.readyState >= 2) {
+  function beginLoad() {
+    video.preload = 'auto';
+    video.addEventListener('canplay', startVideo, { once: true });
+    if (video.readyState >= 3) {
       startVideo();
     } else {
-      video.addEventListener('loadeddata', startVideo, { once: true });
-      if (video.preload === 'metadata') video.preload = 'auto';
       video.load();
     }
   }
 
-  if ('requestIdleCallback' in window) {
-    requestIdleCallback(loadAndPlay, { timeout: 2000 });
+  if (document.readyState === 'complete') {
+    beginLoad();
   } else {
-    window.addEventListener('load', loadAndPlay, { once: true });
+    window.addEventListener('load', beginLoad, { once: true });
   }
 })();

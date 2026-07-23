@@ -8,6 +8,7 @@ function header(prefix, active) {
   const links = [
     ['home', 'index.html', 'HOME'],
     ['about', 'about.html', 'ABOUT US'],
+    ['blog', 'blog.html', 'BLOG'],
     ['services', 'services.html', 'SERVICES'],
     ['faq', 'faq.html', 'FAQ'],
     ['contact', 'contact.html', 'CONTACT']
@@ -95,7 +96,7 @@ const navAssetsRoot = navAssets.replace('PREFIX', '');
 const pageActive = {
   'index.html': 'home',
   'about.html': 'about',
-  'blog.html': '',
+  'blog.html': 'blog',
   'services.html': 'services',
   'contact.html': 'contact',
   'booking.html': 'booking',

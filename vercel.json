@@ -3,7 +3,7 @@
   "trailingSlash": false,
   "headers": [
     {
-      "source": "/istockphoto-1812885521-640_adpp_is.mp4",
+      "source": "/istockphoto-1812885521-640_adpp_is%20(1).mp4",
       "headers": [
         { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" },
         { "key": "Content-Type", "value": "video/mp4" }

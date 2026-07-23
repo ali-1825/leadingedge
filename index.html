@@ -130,37 +130,38 @@
   .expertise-item h3{font-family:'Playfair Display',serif;font-size:18px;font-weight:500;margin-bottom:10px;color:var(--ink);}
   .expertise-item p{font-size:13px;color:var(--muted);line-height:1.65;max-width:210px;margin:0 auto;}
 
-  /* ── Projects ── */
-  .projects{padding:88px 0 96px;background:var(--white);}
-  .projects-head{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:44px;flex-wrap:wrap;gap:16px;}
-  .projects-head h2{font-size:clamp(30px,3.5vw,38px);font-weight:500;}
-  .projects-head h2 em{font-style:italic;color:var(--forest);font-weight:400;}
+  /* ── Services ── */
+  .services{padding:88px 0 96px;background:var(--white);}
+  .services-head{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:44px;flex-wrap:wrap;gap:16px;}
+  .services-head h2{font-size:clamp(30px,3.5vw,38px);font-weight:500;}
+  .services-head h2 em{font-style:italic;color:var(--forest);font-weight:400;}
   .view-all{
     font-size:12px;font-weight:600;letter-spacing:0.5px;
     display:flex;align-items:center;gap:8px;color:var(--ink);
     transition:gap .2s;
   }
   .view-all:hover{gap:12px;color:var(--forest);}
-  .project-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;}
-  .project-card{
+  .service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;}
+  .service-card{
+    display:block;color:inherit;
     background:var(--white);border-radius:12px;overflow:hidden;
     box-shadow:0 4px 24px rgba(0,0,0,0.06);
     transition:box-shadow .3s, transform .3s;
   }
-  .project-card:hover{box-shadow:0 12px 40px rgba(0,0,0,0.1);transform:translateY(-4px);}
-  .project-img{height:250px;overflow:hidden;border-radius:12px 12px 0 0;}
-  .project-img img{width:100%;height:100%;object-fit:cover;transition:transform .6s ease;}
-  .project-card:hover .project-img img{transform:scale(1.05);}
-  .project-info{padding:22px 24px 24px;display:flex;justify-content:space-between;align-items:center;}
-  .project-info h3{font-family:'Playfair Display',serif;font-size:18px;font-weight:500;margin-bottom:4px;}
-  .project-info span{font-size:12.5px;color:var(--muted);}
+  .service-card:hover{box-shadow:0 12px 40px rgba(0,0,0,0.1);transform:translateY(-4px);}
+  .service-img{height:250px;overflow:hidden;border-radius:12px 12px 0 0;}
+  .service-img img{width:100%;height:100%;object-fit:cover;transition:transform .6s ease;}
+  .service-card:hover .service-img img{transform:scale(1.05);}
+  .service-info{padding:22px 24px 24px;display:flex;justify-content:space-between;align-items:center;}
+  .service-info h3{font-family:'Playfair Display',serif;font-size:18px;font-weight:500;margin-bottom:4px;}
+  .service-info span{font-size:12.5px;color:var(--muted);}
   .arrow-circle{
     width:34px;height:34px;border-radius:50%;border:1px solid var(--line);
     display:flex;align-items:center;justify-content:center;flex-shrink:0;
     transition:all .3s;
   }
-  .project-card:hover .arrow-circle{background:var(--forest);border-color:var(--forest);}
-  .project-card:hover .arrow-circle svg{stroke:#fff;}
+  .service-card:hover .arrow-circle{background:var(--forest);border-color:var(--forest);}
+  .service-card:hover .arrow-circle svg{stroke:#fff;}
 
   /* ── Why Choose Us ── */
   .why{background:var(--bg);padding:96px 0;}
@@ -229,7 +230,7 @@
     .nav-cta{display:none;}
     .menu-toggle{display:block;}
     .why-grid,.footer-grid{grid-template-columns:1fr;}
-    .expertise-grid,.project-grid{grid-template-columns:repeat(2,1fr);}
+    .expertise-grid,.service-grid{grid-template-columns:repeat(2,1fr);}
     .expertise-item::after{display:none;}
     .expertise-item:nth-child(odd)::after{display:block;}
     .why-badge{right:16px;bottom:16px;}
@@ -238,7 +239,7 @@
     .container{padding:0 20px;}
     .nav-wrap{padding:16px 20px;}
     .hero-inner{padding:0 20px;}
-    .expertise-grid,.project-grid{grid-template-columns:1fr;}
+    .expertise-grid,.service-grid{grid-template-columns:1fr;}
     .expertise-item::after{display:none!important;}
     .expertise-item:not(:last-child){border-bottom:1px solid var(--line);}
     .hero{height:auto;min-height:540px;padding:80px 0 60px;}
@@ -292,7 +293,7 @@
       <h1 class="serif">Crafting Spaces.<br><em>Elevating Lives.</em></h1>
       <p>We design and build premium residential and commercial spaces that stand the test of time.</p>
       <div class="hero-btns">
-        <a href="index.html#gallery" class="btn btn-dark">EXPLORE PROJECTS
+        <a href="index.html#services" class="btn btn-dark">EXPLORE SERVICES
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
         </a>
         <a href="services.html" class="btn btn-outline">OUR SERVICES</a>
@@ -330,38 +331,38 @@
   </div>
 </section>
 
-<section class="projects container" id="gallery">
-  <div class="projects-head">
+<section class="services container" id="services">
+  <div class="services-head">
     <div>
-      <span class="section-eyebrow">FEATURED PROJECTS</span>
-      <h2 class="serif">Spaces That <em>Inspire</em></h2>
+      <span class="section-eyebrow">OUR SERVICES</span>
+      <h2 class="serif">Solutions That <em>Deliver</em></h2>
     </div>
-    <a href="index.html#gallery" class="view-all">VIEW ALL PROJECTS
+    <a href="services.html" class="view-all">VIEW ALL SERVICES
       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
     </a>
   </div>
-  <div class="project-grid">
-    <article class="project-card">
-      <div class="project-img"><img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=900&auto=format&fit=crop" alt="Hillside Villa"></div>
-      <div class="project-info">
-        <div><h3>Hillside Villa</h3><span>Residential</span></div>
+  <div class="service-grid">
+    <a href="services.html#residential" class="service-card">
+      <div class="service-img"><img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=900&auto=format&fit=crop" alt="Residential Construction"></div>
+      <div class="service-info">
+        <div><h3>Residential Construction</h3><span>Custom Homes &amp; Builds</span></div>
         <div class="arrow-circle"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
       </div>
-    </article>
-    <article class="project-card">
-      <div class="project-img"><img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?q=80&w=900&auto=format&fit=crop" alt="Maple Grove"></div>
-      <div class="project-info">
-        <div><h3>Maple Grove</h3><span>Residential</span></div>
+    </a>
+    <a href="services.html#land" class="service-card">
+      <div class="service-img"><img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=900&auto=format&fit=crop" alt="Land Development"></div>
+      <div class="service-info">
+        <div><h3>Land Development</h3><span>Site Preparation</span></div>
         <div class="arrow-circle"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
       </div>
-    </article>
-    <article class="project-card">
-      <div class="project-img"><img src="https://images.unsplash.com/photo-1600047509358-9dc75507daeb?q=80&w=900&auto=format&fit=crop" alt="Evergreen Heights"></div>
-      <div class="project-info">
-        <div><h3>Evergreen Heights</h3><span>Community</span></div>
+    </a>
+    <a href="services.html#consulting" class="service-card">
+      <div class="service-img"><img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=900&auto=format&fit=crop" alt="Business Consulting"></div>
+      <div class="service-info">
+        <div><h3>Business Consulting</h3><span>Strategic Planning</span></div>
         <div class="arrow-circle"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
       </div>
-    </article>
+    </a>
   </div>
 </section>
 
@@ -458,8 +459,8 @@
       <div class="footer-col">
         <h4>QUICK LINKS</h4>
         <ul>
-          <li><a href="index.html#gallery">Projects</a></li>
-          <li><a href="index.html#gallery">Gallery</a></li>
+          <li><a href="services.html">Projects</a></li>
+          <li><a href="index.html#services">Services</a></li>
           <li><a href="faq.html">FAQ</a></li>
           <li><a href="contact.html">Contact Us</a></li>
         </ul>

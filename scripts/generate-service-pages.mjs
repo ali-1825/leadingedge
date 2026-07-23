@@ -73,6 +73,7 @@ function buildPage(service) {
         <li><a href="../index.html" data-nav="home">HOME</a></li>
         <li><a href="../about.html" data-nav="about">ABOUT US</a></li>
         <li><a href="../services.html" data-nav="services" class="active">SERVICES</a></li>
+        <li><a href="../faq.html" data-nav="faq">FAQ</a></li>
         <li><a href="../contact.html" data-nav="contact">CONTACT</a></li>
       </ul>
     </nav>

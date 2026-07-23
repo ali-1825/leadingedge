@@ -9,6 +9,7 @@ function header(prefix, active) {
     ['home', 'index.html', 'HOME'],
     ['about', 'about.html', 'ABOUT US'],
     ['services', 'services.html', 'SERVICES'],
+    ['faq', 'faq.html', 'FAQ'],
     ['contact', 'contact.html', 'CONTACT']
   ];
   const navItems = links

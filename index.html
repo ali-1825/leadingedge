@@ -44,21 +44,9 @@
     max-width:1240px;
     margin:0 auto;
   }
-  .logo{display:flex;align-items:center;gap:12px;justify-self:start;}
-  .logo-mark{
-    width:36px;height:36px;
-    display:flex;align-items:flex-end;justify-content:center;gap:3px;
-  }
-  .logo-mark span{
-    display:block;width:5px;background:var(--ink);border-radius:1px;
-  }
-  .logo-mark span:nth-child(1){height:14px;}
-  .logo-mark span:nth-child(2){height:22px;}
-  .logo-mark span:nth-child(3){height:18px;}
-  .logo-mark span:nth-child(4){height:28px;}
-  .logo-mark span:nth-child(5){height:16px;}
-  .logo-text .name{font-size:14px;font-weight:700;letter-spacing:1.2px;line-height:1.1;}
-  .logo-text .tag{font-size:8.5px;letter-spacing:1.8px;color:var(--muted);margin-top:2px;}
+  .logo{display:flex;align-items:center;justify-self:start;}
+  .logo-img{display:block;height:72px;width:auto;}
+  .footer-about .logo-img{height:56px;}
   nav{justify-self:center;}
   nav ul{display:flex;gap:32px;list-style:none;}
   nav a{
@@ -254,13 +242,7 @@
 <header>
   <div class="nav-wrap">
     <a href="index.html" class="logo">
-      <div class="logo-mark" aria-hidden="true">
-        <span></span><span></span><span></span><span></span><span></span>
-      </div>
-      <div class="logo-text">
-        <div class="name">LEADINGEDGE</div>
-        <div class="tag">BUILDING TOMORROWS</div>
-      </div>
+      <img src="assets/logo.png" alt="LeadingEdge — Building Tomorrow, Today" class="logo-img">
     </a>
     <nav id="mainNav">
       <ul>
@@ -422,13 +404,7 @@
     <div class="footer-grid">
       <div class="footer-about">
         <a href="index.html" class="logo">
-          <div class="logo-mark" aria-hidden="true">
-            <span></span><span></span><span></span><span></span><span></span>
-          </div>
-          <div class="logo-text">
-            <div class="name">LEADINGEDGE</div>
-            <div class="tag">BUILDING TOMORROWS</div>
-          </div>
+          <img src="assets/logo.png" alt="LeadingEdge — Building Tomorrow, Today" class="logo-img">
         </a>
         <p>We design and build premium residential and commercial spaces that stand the test of time.</p>
         <div class="social">

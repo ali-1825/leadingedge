@@ -47,14 +47,9 @@
     display: flex; align-items: center; justify-content: space-between;
     height: 72px; max-width: 1200px; margin: 0 auto; padding: 0 24px;
   }
-  .logo { display: flex; align-items: center; gap: 10px; }
-  .logo-mark {
-    width: 36px; height: 36px; background: var(--dark);
-    display: flex; align-items: center; justify-content: center;
-    font-weight: 700; font-size: 11px; color: var(--gold); letter-spacing: 0.5px;
-  }
-  .logo-text .name { font-size: 13px; font-weight: 700; letter-spacing: 1px; line-height: 1.2; }
-  .logo-text .tag { font-size: 8px; letter-spacing: 1.2px; color: var(--muted); }
+  .logo { display: flex; align-items: center; }
+  .logo-img { display: block; height: 72px; width: auto; }
+  .footer-about .logo-img { height: 56px; }
   nav ul { display: flex; gap: 28px; list-style: none; }
   nav a {
     font-size: 11px; font-weight: 600; letter-spacing: 0.08em;
@@ -316,11 +311,7 @@
 <header class="glass-nav">
   <div class="nav-wrap">
     <a href="index.html" class="logo">
-      <div class="logo-mark">LE</div>
-      <div class="logo-text">
-        <div class="name">LEADINGEDGE</div>
-        <div class="tag">DEVELOPMENT LLC</div>
-      </div>
+      <img src="assets/logo.png" alt="LeadingEdge — Building Tomorrow, Today" class="logo-img">
     </a>
     <nav id="mainNav">
       <ul>
@@ -498,13 +489,9 @@
     <div class="footer-grid">
       <div class="footer-about">
         <div class="footer-logo">
-          <div class="logo" style="margin-bottom:4px">
-            <div class="logo-mark">LE</div>
-            <div class="logo-text">
-              <div class="name">LEADINGEDGE</div>
-              <div class="tag">DEVELOPMENT LLC</div>
-            </div>
-          </div>
+          <a href="index.html" class="logo" style="margin-bottom:4px">
+            <img src="assets/logo.png" alt="LeadingEdge — Building Tomorrow, Today" class="logo-img">
+          </a>
         </div>
         <p>Building better homes, stronger businesses, and lasting relationships through quality construction and professional project management.</p>
         <div class="social">

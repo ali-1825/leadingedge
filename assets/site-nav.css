@@ -89,15 +89,23 @@ body.nav-open{overflow:hidden;}
 .le-footer .footer-bottom a:hover{color:var(--forest);}
 @media(max-width:980px){
   .le-header .nav-wrap{
-    display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;
+    display:flex;flex-wrap:wrap;align-items:center;
     padding:8px 20px;gap:0;
   }
   .le-header.is-scrolled .nav-wrap{padding:6px 20px;}
-  .le-header .logo{flex:1;min-width:0;}
-  .le-header .logo-img{height:38px;}
-  .le-header.is-scrolled .logo-img{height:34px;}
+  .le-header .menu-toggle{
+    order:1;display:block;flex-shrink:0;
+    padding:4px;margin:0;
+  }
+  .le-header .menu-toggle svg{width:22px;height:22px;}
+  .le-header .logo{
+    order:2;margin-left:auto;flex-shrink:0;
+    display:flex;align-items:center;justify-content:flex-end;
+  }
+  .le-header .logo-img{height:42px;width:auto;max-width:160px;object-fit:contain;}
+  .le-header.is-scrolled .logo-img{height:38px;}
   .le-header nav{
-    flex-basis:100%;width:100%;max-height:0;overflow:hidden;
+    order:3;flex-basis:100%;width:100%;max-height:0;overflow:hidden;
     transition:max-height .35s ease;
   }
   .le-header nav.open{max-height:420px;overflow:visible;}
@@ -107,17 +115,15 @@ body.nav-open{overflow:hidden;}
     padding:12px 0 6px;border-top:1px solid var(--line);background:var(--white);
   }
   .le-header nav.open .nav-mobile-cta{display:inline-flex;margin-top:4px;align-self:flex-start;}
-  .le-header .nav-cta{display:none;}
-  .le-header .menu-toggle{display:block;padding:4px;margin-right:-4px;}
-  .le-header .menu-toggle svg{width:22px;height:22px;}
+  .le-header .nav-cta{display:none;order:4;}
   .le-footer .footer-grid{grid-template-columns:1fr 1fr;}
 }
 .le-header .nav-mobile-cta{display:none;}
 @media(max-width:640px){
   .le-header .nav-wrap{padding:6px 16px;}
   .le-header.is-scrolled .nav-wrap{padding:5px 16px;}
-  .le-header .logo-img{height:32px;}
-  .le-header.is-scrolled .logo-img{height:28px;}
+  .le-header .logo-img{height:36px;max-width:140px;}
+  .le-header.is-scrolled .logo-img{height:32px;}
   .le-header .menu-toggle svg{width:20px;height:20px;}
   .le-footer .container{padding:0 20px;}
   .le-footer .footer-grid{grid-template-columns:1fr;}
